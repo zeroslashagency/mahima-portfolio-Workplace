@@ -1,0 +1,87 @@
+/* ── CUSTOM CURSOR ── */
+const cursor = document.querySelector('.cursor');
+const cursorRing = document.querySelector('.cursor-ring');
+let mouseX = 0, mouseY = 0;
+let ringX = 0, ringY = 0;
+
+document.addEventListener('mousemove', e => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+  cursor.style.left = mouseX + 'px';
+  cursor.style.top = mouseY + 'px';
+});
+
+function animateRing() {
+  ringX += (mouseX - ringX) * 0.12;
+  ringY += (mouseY - ringY) * 0.12;
+  cursorRing.style.left = ringX + 'px';
+  cursorRing.style.top = ringY + 'px';
+  requestAnimationFrame(animateRing);
+}
+animateRing();
+
+/* ── NAVBAR SHRINK ── */
+const navbar = document.querySelector('.navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+/* ── SCROLL REVEAL ── */
+const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+revealEls.forEach(el => observer.observe(el));
+
+/* ── STATS COUNTER ── */
+function animateCounter(el, target, suffix) {
+  const duration = 1800;
+  const start = performance.now();
+  const update = (now) => {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const current = Math.round(eased * target);
+    el.textContent = current + suffix;
+    if (progress < 1) requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+}
+
+const statsSection = document.querySelector('.stats');
+let statsAnimated = false;
+const statsObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting && !statsAnimated) {
+    statsAnimated = true;
+    document.querySelectorAll('.stat-number[data-target]').forEach(el => {
+      const target = parseInt(el.dataset.target);
+      const suffix = el.dataset.suffix || '';
+      animateCounter(el, target, suffix);
+    });
+  }
+}, { threshold: 0.3 });
+if (statsSection) statsObserver.observe(statsSection);
+
+/* ── SMOOTH SCROLL FROM CATALOG CARDS ── */
+document.querySelectorAll('[data-scroll-to]').forEach(card => {
+  card.addEventListener('click', () => {
+    const target = document.querySelector(card.dataset.scrollTo);
+    if (target) {
+      const offset = 72;
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  });
+});
+
+/* ── TICKER DUPLICATE for seamless loop ── */
+const track = document.querySelector('.ticker-track');
+if (track) {
+  const clone = track.innerHTML;
+  track.innerHTML = clone + clone;
+}
