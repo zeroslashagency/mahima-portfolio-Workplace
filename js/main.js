@@ -7,15 +7,19 @@ let ringX = 0, ringY = 0;
 document.addEventListener('mousemove', e => {
   mouseX = e.clientX;
   mouseY = e.clientY;
-  cursor.style.left = mouseX + 'px';
-  cursor.style.top = mouseY + 'px';
+  if (cursor) {
+    cursor.style.left = mouseX + 'px';
+    cursor.style.top = mouseY + 'px';
+  }
 });
 
 function animateRing() {
   ringX += (mouseX - ringX) * 0.12;
   ringY += (mouseY - ringY) * 0.12;
-  cursorRing.style.left = ringX + 'px';
-  cursorRing.style.top = ringY + 'px';
+  if (cursorRing) {
+    cursorRing.style.left = ringX + 'px';
+    cursorRing.style.top = ringY + 'px';
+  }
   requestAnimationFrame(animateRing);
 }
 animateRing();
@@ -23,7 +27,7 @@ animateRing();
 /* ── NAVBAR SHRINK ── */
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 60);
+  if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 60);
 });
 
 /* ── SCROLL REVEAL ── */
@@ -66,18 +70,6 @@ const statsObserver = new IntersectionObserver((entries) => {
   }
 }, { threshold: 0.3 });
 if (statsSection) statsObserver.observe(statsSection);
-
-/* ── SMOOTH SCROLL FROM CATALOG CARDS ── */
-document.querySelectorAll('[data-scroll-to]').forEach(card => {
-  card.addEventListener('click', () => {
-    const target = document.querySelector(card.dataset.scrollTo);
-    if (target) {
-      const offset = 72;
-      const top = target.getBoundingClientRect().top + window.scrollY - offset;
-      window.scrollTo({ top, behavior: 'smooth' });
-    }
-  });
-});
 
 /* ── TICKER DUPLICATE for seamless loop ── */
 const track = document.querySelector('.ticker-track');
