@@ -1,3 +1,6 @@
+/* ── COMPONENTS ── */
+import '../components/index.js';
+
 /* ── CUSTOM CURSOR ── */
 const cursor = document.querySelector('.cursor');
 const cursorRing = document.querySelector('.cursor-ring');
@@ -23,12 +26,6 @@ function animateRing() {
   requestAnimationFrame(animateRing);
 }
 animateRing();
-
-/* ── NAVBAR SHRINK ── */
-const navbar = document.querySelector('.navbar');
-window.addEventListener('scroll', () => {
-  if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 60);
-});
 
 /* ── SCROLL REVEAL ── */
 const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
