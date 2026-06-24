@@ -287,12 +287,15 @@ body:has(button:hover) .cursor-ring { width: 52px; height: 52px; }
   line-height: 1.75;
 }
 .experience-grid {
-  display: grid;
-  grid-template-columns: minmax(280px, 0.52fr) minmax(0, 1fr);
-  gap: 18px;
-  align-items: start;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 20px;
+  height: clamp(460px, 60vh, 620px);
 }
 .experience-video {
+  flex: 0 0 auto;
+  height: 100%;
   aspect-ratio: 9 / 16;
   position: relative;
   overflow: hidden;
@@ -340,12 +343,15 @@ body:has(button:hover) .cursor-ring { width: 52px; height: 52px; }
   text-align: right;
 }
 .experience-stack {
+  flex: 1 1 auto;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  gap: 18px;
+  gap: 20px;
+  height: 100%;
 }
 .experience-tile {
-  min-height: 194px;
+  min-height: 0;
+  height: 100%;
   position: relative;
   overflow: hidden;
   border-radius: 18px;
@@ -1240,12 +1246,19 @@ footer { background: #2A1F15; }
     margin-bottom: 32px;
   }
   .experience-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    height: auto;
   }
-  .experience-video { aspect-ratio: 9 / 16; }
+  .experience-video {
+    flex: none;
+    aspect-ratio: 16 / 10;
+    height: auto;
+  }
   .experience-stack {
+    flex: none;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: none;
+    height: auto;
   }
   .experience-tile { min-height: 220px; }
   .catalog { padding: 0 40px 80px; }
@@ -1380,10 +1393,12 @@ footer { background: #2A1F15; }
   }
   .experience-grid {
     gap: 14px;
+    height: auto;
   }
   .experience-video {
-    aspect-ratio: 9 / 16;
+    aspect-ratio: 16 / 11;
     border-radius: 16px;
+    height: auto;
   }
   .experience-video-caption {
     left: 20px;
