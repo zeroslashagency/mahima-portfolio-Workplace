@@ -2,6 +2,24 @@
 <html lang="en">
 
 <head>
+  <!-- Analytics / Ads (set GA4, Google Ads, Meta Pixel IDs before launch) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+    gtag('config', 'AW-XXXXXXX');
+  </script>
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID'); fbq('track', 'PageView');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Emotional Wellness & Stress Reset Program — HEALWITHMAHIMA Gurgaon</title>
@@ -10,6 +28,8 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HEALWITHMAHIMA">
+  <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://healwithmahima.com/programs/emotional-wellness-stress-reset.html">
   <meta property="og:title" content="Emotional Wellness & Stress Reset Program — HEALWITHMAHIMA">
   <meta property="og:description" content="Sound healing, breathwork & meditation for deep team restoration. Release stress, reconnect with calm, build emotional resilience.">
@@ -27,12 +47,137 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://healwithmahima.com/programs/emotional-wellness-stress-reset.html">
 
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Structured Data / Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Emotional Wellness & Stress Reset Program",
+    "serviceType": "Corporate Wellness Program",
+    "description": "Deep restoration through sound healing, breathwork & meditation. Corporate wellness program designed to release accumulated stress and build lasting emotional resilience for teams.",
+    "url": "https://healwithmahima.com/programs/emotional-wellness-stress-reset.html",
+    "image": "https://healwithmahima.com/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp",
+    "areaServed": {
+      "@type": "City",
+      "name": "Gurgaon"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://healwithmahima.com/programs/emotional-wellness-stress-reset.html"
+    },
+    "provider": {
+      "@type": "HealthAndBeautyBusiness",
+      "name": "HEALWITHMAHIMA",
+      "url": "https://healwithmahima.com"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://healwithmahima.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Emotional Wellness & Stress Reset",
+        "item": "https://healwithmahima.com/programs/emotional-wellness-stress-reset.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How large a team can join one session?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "10–80 people works well. Above 80 we split into two sittings or add a co-facilitator so the sound still reaches everyone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Our team is sceptical about sound healing. Will this feel awkward?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We keep it grounded — no chanting or forced sharing. It's guided breath, Tibetan bowls and rest. Sceptics usually leave the calmest."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "On-site or at a studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both. We travel across Gurgaon and Delhi-NCR to your office, or host at a partner studio. On-site is most popular for full teams."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it tied to any religion?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. It's a secular, nervous-system reset. Nothing devotional, nothing you need to believe in."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much space and setup do you need?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A room where people can sit or lie down. We bring bowls, mats and audio. You provide the room and 45 min of setup access."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can remote or hybrid teams do this?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — we run a guided online version for distributed teams, though on-site lands deeper."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does it cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Quoted to your team size, location and format. Book a call for a fixed number."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do we book and what's the notice?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Message on WhatsApp or send the form. We usually need 5–7 days' notice; rush dates possible."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -65,9 +210,7 @@
         </div>
       </div>
       <div class="program-hero-image">
-        <picture>
-          <img src="/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp" alt="Emotional wellness session">
-        </picture>
+        <img src="/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp" alt="Emotional wellness session" width="1672" height="941" fetchpriority="high" decoding="async">
       </div>
     </section>
 
@@ -130,6 +273,79 @@
         <div class="program-meta-value">10–80 People</div>
       </div>
     </section>
+    <!-- WHO IT'S FOR + OUTCOMES (added) -->
+    <section class="msec" id="who-for">
+      <div class="msec-head"><span class="eyebrow">WHO IT'S FOR</span><h2>Built for teams running on empty.</h2></div>
+      <div class="whofor-grid">
+        <div class="whofor-list">
+          <div class="row"><span class="mk">›</span><span>Teams post-crunch, after launches, quarter-close or long delivery pushes</span></div>
+          <div class="row"><span class="mk">›</span><span>Floors where stress shows up as short tempers, sick days and quiet burnout</span></div>
+          <div class="row"><span class="mk">›</span><span>Leaders who want a reset that needs zero prep from their people</span></div>
+        </div>
+        <div class="outcomes">
+          <div class="outcome-tile"><div class="big">Calmer</div><div class="lbl">Reported drop in tension, same-day</div></div>
+          <div class="outcome-tile"><div class="big">Sleep</div><div class="lbl">Better wind-down that night</div></div>
+          <div class="outcome-tile"><div class="big">Focus</div><div class="lbl">Sharper attention next morning</div></div>
+          <div class="outcome-tile"><div class="big">Reset</div><div class="lbl">A repeatable tool for desk stress</div></div>
+        </div>
+      </div>
+    </section>
+    <!-- WHAT TO EXPECT / PREP (added) -->
+    <section class="msec msec--tint" id="what-to-expect">
+      <div class="msec-head"><span class="eyebrow">WHAT TO EXPECT</span><h2>Simple to host. We handle the rest.</h2><p>Here's exactly what your team needs to prepare — and what we bring.</p></div>
+      <div class="prep-grid">
+        <div class="prep-card"><h3>Your team provides</h3><ul><li>A quiet room or hall, lights dimmable</li><li>Floor space for mats/cushions (we bring bowls)</li><li>60–80 min clear on the calendar</li><li>Phones on silent, no hard stops mid-session</li></ul></div>
+        <div class="prep-card"><h3>Good to know</h3><ul><li>Wear comfortable clothing</li><li>Come as you are — no experience needed</li><li>Optional: a light space, not right after a heavy lunch</li><li>We arrive 45 min early to set the room</li></ul></div>
+      </div>
+    </section>
+    <!-- Pricing (set real starting numbers before launch) -->
+    <section class="msec" id="pricing">
+      <div class="msec-head"><span class="eyebrow">PRICING</span><h2>Clear packages, custom quote.</h2><p>Every team is different — final pricing depends on size, location and format. Here's the shape.</p></div>
+      <div class="pricing-grid">
+        <div class="price-card"><div class="tier">Single Session</div><div class="amt">Custom quote<small></small></div><div class="price-desc">A one-off reset for your team.</div><ul><li>1 facilitated session</li><li>All materials included</li><li>On-site in Gurgaon/NCR</li></ul><a class="btn-cta price-cta" href="#book">Get a quote</a></div>
+        <div class="price-card featured"><span class="price-badge">POPULAR</span><div class="tier">Series (4–6)</div><div class="amt">Custom quote<small></small></div><div class="price-desc">Recurring slots that build a habit.</div><ul><li>Discounted per-session rate</li><li>Consistent facilitator</li><li>Simple feedback summary</li></ul><a class="btn-cta price-cta" href="#book">Get a quote</a></div>
+        <div class="price-card"><div class="tier">Retainer / Custom</div><div class="amt">Custom</div><div class="price-desc">Ongoing partner for larger orgs.</div><ul><li>Multi-program mix</li><li>Priority scheduling</li><li>Tailored reporting</li></ul><a class="btn-cta price-cta" href="#book">Talk to us</a></div>
+      </div>
+      <p class="price-note">Prices exclude travel for offsite and retreat formats.</p>
+    </section>
+  <!-- FAQ (added) -->
+  <section class="msec msec--tint" id="faq">
+    <div class="msec-head"><span class="eyebrow">QUESTIONS, ANSWERED</span><h2>Questions teams ask us</h2></div>
+    <div class="faq-wrap">
+      <details class="faq-item">
+        <summary>How large a team can join one session?</summary>
+        <div class="faq-a">10–80 people works well. Above 80 we split into two sittings or add a co-facilitator so the sound still reaches everyone.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Our team is sceptical about sound healing. Will this feel awkward?</summary>
+        <div class="faq-a">We keep it grounded — no chanting or forced sharing. It's guided breath, Tibetan bowls and rest. Sceptics usually leave the calmest.</div>
+      </details>
+      <details class="faq-item">
+        <summary>On-site or at a studio?</summary>
+        <div class="faq-a">Both. We travel across Gurgaon and Delhi-NCR to your office, or host at a partner studio. On-site is most popular for full teams.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Is it tied to any religion?</summary>
+        <div class="faq-a">No. It's a secular, nervous-system reset. Nothing devotional, nothing you need to believe in.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How much space and setup do you need?</summary>
+        <div class="faq-a">A room where people can sit or lie down. We bring bowls, mats and audio. You provide the room and 45 min of setup access.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can remote or hybrid teams do this?</summary>
+        <div class="faq-a">Yes — we run a guided online version for distributed teams, though on-site lands deeper.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What does it cost?</summary>
+        <div class="faq-a">Quoted to your team size, location and format. Book a call for a fixed number.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How do we book and what's the notice?</summary>
+        <div class="faq-a">Message on WhatsApp or send the form. We usually need 5–7 days' notice; rush dates possible.</div>
+      </details>
+    </div>
+  </section>
 
     <section class="related-programs related-programs--designed">
       <div class="related-heading reveal">
@@ -144,9 +360,7 @@
         <a class="related-card reveal delay-1" href="confidence-mindset-building.html">
           <span class="related-card-num">02</span>
           <div class="related-card-media">
-            <picture>
-              <img src="/assets/images/Creative%20collaboration%20in%20a%20cozy%20space.webp" alt="Confidence workshop">
-            </picture>
+            <img src="/assets/images/Creative%20collaboration%20in%20a%20cozy%20space.webp" alt="Confidence workshop" width="1672" height="941" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Confidence &amp; Mindset Building</h3>
@@ -156,9 +370,7 @@
         <a class="related-card reveal delay-2" href="movement-relaxation-sessions.html">
           <span class="related-card-num">03</span>
           <div class="related-card-media">
-            <picture>
-              <img src="/assets/images/Serene%20moments%20in%20a%20wellness%20collage.webp" alt="Movement session">
-            </picture>
+            <img src="/assets/images/Serene%20moments%20in%20a%20wellness%20collage.webp" alt="Movement session" width="1672" height="941" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Movement &amp; Relaxation Sessions</h3>
@@ -168,9 +380,7 @@
         <a class="related-card reveal delay-3" href="nature-based-wellness-retreats.html">
           <span class="related-card-num">04</span>
           <div class="related-card-media">
-            <picture>
-              <img src="/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp" alt="Nature retreat">
-            </picture>
+            <img src="/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp" alt="Nature retreat" width="1672" height="941" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Nature-Based Wellness Retreats</h3>
@@ -180,9 +390,7 @@
         <a class="related-card reveal delay-4" href="women-centric-wellness-circles.html">
           <span class="related-card-num">05</span>
           <div class="related-card-media">
-            <picture>
-              <img src="/assets/images/Cozy%20group%20discussion%20in%20modern%20lounge.webp" alt="Women circle">
-            </picture>
+            <img src="/assets/images/Cozy%20group%20discussion%20in%20modern%20lounge.webp" alt="Women circle" width="1672" height="941" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Women-Centric Wellness Circles</h3>
@@ -210,6 +418,11 @@
       <div>
         <div class="footer-brand-name">HEALWITHMAHIMA</div>
         <div class="footer-brand-sub">Corporate Wellness &amp; Mindfulness</div>
+        <address class="footer-nap" style="font-style:normal;margin-top:14px;font-size:13px;color:#7C6558;line-height:1.7;">
+          Gurgaon, Haryana &middot; Delhi-NCR, India<br>
+          <a href="tel:+919069982434" style="color:#7C6558;">+91 90699 82434</a> &middot;
+          <a href="mailto:hello@healwithmahima.com" style="color:#7C6558;">hello@healwithmahima.com</a>
+        </address>
       </div>
       <nav class="footer-nav">
         <a href="../index.html#about">About</a>

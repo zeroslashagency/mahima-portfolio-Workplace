@@ -2,6 +2,24 @@
 <html lang="en">
 
 <head>
+  <!-- Analytics / Ads (set GA4, Google Ads, Meta Pixel IDs before launch) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+    gtag('config', 'AW-XXXXXXX');
+  </script>
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID'); fbq('track', 'PageView');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nature-Based Wellness Retreats — HEALWITHMAHIMA Gurgaon</title>
@@ -9,22 +27,29 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HEALWITHMAHIMA">
+  <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://healwithmahima.com/programs/nature-based-wellness-retreats.html">
   <meta property="og:title" content="Nature-Based Wellness Retreats — HEALWITHMAHIMA Gurgaon">
   <meta property="og:description" content="Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and immersive outdoor experiences for deep team connection.">
-  <meta property="og:image" content="https://healwithmahima.com/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp">
+  <meta property="og:image" content="https://healwithmahima.com/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://healwithmahima.com/programs/nature-based-wellness-retreats.html">
   <meta property="twitter:title" content="Nature-Based Wellness Retreats — HEALWITHMAHIMA Gurgaon">
   <meta property="twitter:description" content="Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and immersive outdoor experiences for deep team connection.">
-  <meta property="twitter:image" content="https://healwithmahima.com/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp">
+  <meta property="twitter:image" content="https://healwithmahima.com/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp">
 
   <!-- Additional SEO -->
   <meta name="keywords" content="wellness retreats, nature retreats, sound healing, team building, outdoor wellness, corporate retreat, Gurgaon">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://healwithmahima.com/programs/nature-based-wellness-retreats.html">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,6 +57,126 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Structured Data / Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Nature-Based Wellness Retreats",
+    "serviceType": "Corporate Wellness Program",
+    "description": "Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and immersive outdoor experiences for deep team connection.",
+    "url": "https://healwithmahima.com/programs/nature-based-wellness-retreats.html",
+    "image": "https://healwithmahima.com/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp",
+    "areaServed": {
+      "@type": "City",
+      "name": "Gurgaon"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://healwithmahima.com/programs/nature-based-wellness-retreats.html"
+    },
+    "provider": {
+      "@type": "HealthAndBeautyBusiness",
+      "name": "HEALWITHMAHIMA",
+      "url": "https://healwithmahima.com"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://healwithmahima.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Nature-Based Wellness Retreats",
+        "item": "https://healwithmahima.com/programs/nature-based-wellness-retreats.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where do the retreats happen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "At nature venues within reach of Gurgaon/Delhi-NCR. We match the site to your group size and budget."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long are they?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Half-day, full-day or up to two days with overnight stay. Longer formats go deeper on bonding."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What group size works?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "8–30. Small enough for real sharing circles, big enough for team energy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you handle logistics and meals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We coordinate flow, facilitation and sattvic meals; travel/stay is arranged with you or your admin team."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What activities are included?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Forest bathing, outdoor sound healing, sunrise yoga, breathwork and team sharing circles."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it physically demanding?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No — gentle, restorative pacing. Walks are easy and optional."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does it cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Quoted per head depending on venue, nights and group size. Get a tailored number."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far ahead should we plan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "2–3 weeks minimum so venue and logistics lock in cleanly."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -64,9 +209,7 @@
         </div>
       </div>
       <div class="program-hero-image">
-        <picture>
-          <img src="/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp" alt="Nature wellness retreat">
-        </picture>
+        <img src="/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp" alt="Nature wellness retreat" width="1672" height="941" fetchpriority="high" decoding="async">
       </div>
     </section>
 
@@ -129,6 +272,79 @@
         <div class="program-meta-value">8–30 People</div>
       </div>
     </section>
+    <!-- WHO IT'S FOR + OUTCOMES (added) -->
+    <section class="msec" id="who-for">
+      <div class="msec-head"><span class="eyebrow">WHO IT'S FOR</span><h2>For teams that need a real reset, not a meeting room.</h2></div>
+      <div class="whofor-grid">
+        <div class="whofor-list">
+          <div class="row"><span class="mk">›</span><span>Leadership offsites and annual team resets</span></div>
+          <div class="row"><span class="mk">›</span><span>Teams that bonded over Slack but rarely in person</span></div>
+          <div class="row"><span class="mk">›</span><span>Orgs rewarding a hard year with something restorative</span></div>
+        </div>
+        <div class="outcomes">
+          <div class="outcome-tile"><div class="big">Bonded</div><div class="lbl">Real connection outside work roles</div></div>
+          <div class="outcome-tile"><div class="big">Restored</div><div class="lbl">Deep recovery, not just a break</div></div>
+          <div class="outcome-tile"><div class="big">Aligned</div><div class="lbl">Shared intention for the next quarter</div></div>
+          <div class="outcome-tile"><div class="big">Memorable</div><div class="lbl">An offsite people talk about</div></div>
+        </div>
+      </div>
+    </section>
+    <!-- WHAT TO EXPECT / PREP (added) -->
+    <section class="msec msec--tint" id="what-to-expect">
+      <div class="msec-head"><span class="eyebrow">WHAT TO EXPECT</span><h2>Simple to host. We handle the rest.</h2><p>Here's exactly what your team needs to prepare — and what we bring.</p></div>
+      <div class="prep-grid">
+        <div class="prep-card"><h3>Your team provides</h3><ul><li>We shortlist venues near Gurgaon/NCR</li><li>Half-day to 2-day formats</li><li>Transport coordinated with you</li><li>Group size locked 2 weeks ahead</li></ul></div>
+        <div class="prep-card"><h3>Good to know</h3><ul><li>Pack light, comfortable outdoor clothing</li><li>Openness to unplug from devices</li><li>Dietary needs shared in advance (sattvic meals)</li><li>We handle facilitation, flow and materials</li></ul></div>
+      </div>
+    </section>
+    <!-- Pricing (set real starting numbers before launch) -->
+    <section class="msec" id="pricing">
+      <div class="msec-head"><span class="eyebrow">PRICING</span><h2>Clear packages, custom quote.</h2><p>Every team is different — final pricing depends on size, location and format. Here's the shape.</p></div>
+      <div class="pricing-grid">
+        <div class="price-card"><div class="tier">Single Session</div><div class="amt">Custom quote<small></small></div><div class="price-desc">A one-off reset for your team.</div><ul><li>1 facilitated session</li><li>All materials included</li><li>On-site in Gurgaon/NCR</li></ul><a class="btn-cta price-cta" href="#book">Get a quote</a></div>
+        <div class="price-card featured"><span class="price-badge">POPULAR</span><div class="tier">Series (4–6)</div><div class="amt">Custom quote<small></small></div><div class="price-desc">Recurring slots that build a habit.</div><ul><li>Discounted per-session rate</li><li>Consistent facilitator</li><li>Simple feedback summary</li></ul><a class="btn-cta price-cta" href="#book">Get a quote</a></div>
+        <div class="price-card"><div class="tier">Retainer / Custom</div><div class="amt">Custom</div><div class="price-desc">Ongoing partner for larger orgs.</div><ul><li>Multi-program mix</li><li>Priority scheduling</li><li>Tailored reporting</li></ul><a class="btn-cta price-cta" href="#book">Talk to us</a></div>
+      </div>
+      <p class="price-note">Prices exclude travel for offsite and retreat formats.</p>
+    </section>
+  <!-- FAQ (added) -->
+  <section class="msec msec--tint" id="faq">
+    <div class="msec-head"><span class="eyebrow">QUESTIONS, ANSWERED</span><h2>Questions teams ask us</h2></div>
+    <div class="faq-wrap">
+      <details class="faq-item">
+        <summary>Where do the retreats happen?</summary>
+        <div class="faq-a">At nature venues within reach of Gurgaon/Delhi-NCR. We match the site to your group size and budget.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How long are they?</summary>
+        <div class="faq-a">Half-day, full-day or up to two days with overnight stay. Longer formats go deeper on bonding.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What group size works?</summary>
+        <div class="faq-a">8–30. Small enough for real sharing circles, big enough for team energy.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you handle logistics and meals?</summary>
+        <div class="faq-a">We coordinate flow, facilitation and sattvic meals; travel/stay is arranged with you or your admin team.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What activities are included?</summary>
+        <div class="faq-a">Forest bathing, outdoor sound healing, sunrise yoga, breathwork and team sharing circles.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Is it physically demanding?</summary>
+        <div class="faq-a">No — gentle, restorative pacing. Walks are easy and optional.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What does it cost?</summary>
+        <div class="faq-a">Quoted per head depending on venue, nights and group size. Get a tailored number.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How far ahead should we plan?</summary>
+        <div class="faq-a">2–3 weeks minimum so venue and logistics lock in cleanly.</div>
+      </details>
+    </div>
+  </section>
 
     <section class="related-programs related-programs--designed">
       <div class="related-heading reveal">
@@ -143,9 +359,7 @@
         <a class="related-card reveal delay-1" href="emotional-wellness-stress-reset.html">
           <span class="related-card-num">01</span>
           <div class="related-card-media">
-            <picture>
-              <img src="/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp" alt="Emotional wellness">
-            </picture>
+            <img src="/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp" alt="Emotional wellness" width="1672" height="941" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Emotional Wellness &amp; Stress Reset</h3>
@@ -155,9 +369,7 @@
         <a class="related-card reveal delay-2" href="confidence-mindset-building.html">
           <span class="related-card-num">02</span>
           <div class="related-card-media">
-            <picture>
-              <img src="/assets/images/Creative%20collaboration%20in%20a%20cozy%20space.webp" alt="Confidence workshop">
-            </picture>
+            <img src="/assets/images/Creative%20collaboration%20in%20a%20cozy%20space.webp" alt="Confidence workshop" width="1672" height="941" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Confidence &amp; Mindset Building</h3>
@@ -167,9 +379,7 @@
         <a class="related-card reveal delay-3" href="movement-relaxation-sessions.html">
           <span class="related-card-num">03</span>
           <div class="related-card-media">
-            <picture>
-              <img src="/assets/images/Serene%20moments%20in%20a%20wellness%20collage.webp" alt="Movement session">
-            </picture>
+            <img src="/assets/images/Serene%20moments%20in%20a%20wellness%20collage.webp" alt="Movement session" width="1672" height="941" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Movement &amp; Relaxation Sessions</h3>
@@ -179,9 +389,7 @@
         <a class="related-card reveal delay-4" href="women-centric-wellness-circles.html">
           <span class="related-card-num">05</span>
           <div class="related-card-media">
-            <picture>
-              <img src="/assets/images/Cozy%20group%20discussion%20in%20modern%20lounge.webp" alt="Women circle">
-            </picture>
+            <img src="/assets/images/Cozy%20group%20discussion%20in%20modern%20lounge.webp" alt="Women circle" width="1672" height="941" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Women-Centric Wellness Circles</h3>
@@ -209,6 +417,11 @@
       <div>
         <div class="footer-brand-name">HEALWITHMAHIMA</div>
         <div class="footer-brand-sub">Corporate Wellness &amp; Mindfulness</div>
+        <address class="footer-nap" style="font-style:normal;margin-top:14px;font-size:13px;color:#7C6558;line-height:1.7;">
+          Gurgaon, Haryana &middot; Delhi-NCR, India<br>
+          <a href="tel:+919069982434" style="color:#7C6558;">+91 90699 82434</a> &middot;
+          <a href="mailto:hello@healwithmahima.com" style="color:#7C6558;">hello@healwithmahima.com</a>
+        </address>
       </div>
       <nav class="footer-nav">
         <a href="../index.html#about">About</a>

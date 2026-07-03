@@ -2,6 +2,24 @@
 <html lang="en">
 
 <head>
+  <!-- Analytics / Ads (set GA4, Google Ads, Meta Pixel IDs before launch) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+    gtag('config', 'AW-XXXXXXX');
+  </script>
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID'); fbq('track', 'PageView');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Confidence & Mindset Building Program — HEALWITHMAHIMA Gurgaon</title>
@@ -9,6 +27,8 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HEALWITHMAHIMA">
+  <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://healwithmahima.com/programs/confidence-mindset-building.html">
   <meta property="og:title" content="Confidence & Mindset Building Program — HEALWITHMAHIMA Gurgaon">
   <meta property="og:description" content="Journaling, manifestation & goal-setting workshops for high-performance teams. Build confidence, shift mindsets, achieve breakthrough results.">
@@ -26,12 +46,137 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://healwithmahima.com/programs/confidence-mindset-building.html">
 
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Structured Data / Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Confidence & Mindset Building Program",
+    "serviceType": "Corporate Wellness Program",
+    "description": "Journaling, manifestation & goal-setting workshops for high-performance teams. Build confidence, shift mindsets, achieve breakthrough results.",
+    "url": "https://healwithmahima.com/programs/confidence-mindset-building.html",
+    "image": "https://healwithmahima.com/assets/images/Creative%20collaboration%20in%20a%20cozy%20space.webp",
+    "areaServed": {
+      "@type": "City",
+      "name": "Gurgaon"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://healwithmahima.com/programs/confidence-mindset-building.html"
+    },
+    "provider": {
+      "@type": "HealthAndBeautyBusiness",
+      "name": "HEALWITHMAHIMA",
+      "url": "https://healwithmahima.com"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://healwithmahima.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Confidence & Mindset Building",
+        "item": "https://healwithmahima.com/programs/confidence-mindset-building.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is this a lecture or hands-on?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hands-on. Journaling, vision-boarding and goal frameworks — people leave with a written action plan, not just notes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How big can the group be?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "8–40 works best for depth. Larger groups lose the personal reflection, so we cap or split."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will this actually change behaviour or just feel good on the day?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We build accountability frameworks and a 30-day action plan so it carries past the session."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you tailor it to managers vs individual contributors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — we adjust the goal-setting and inner-critic work to the seniority mix you tell us about."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "On-site or studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Usually on-site as a workshop; studio works for smaller cohorts. We cover Gurgaon and Delhi-NCR."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What space do we need?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A workshop-style room where people can sit in a circle or pods and write."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does it cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Quoted to your group size and duration. Get a fixed number on a quick call."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far ahead should we book?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "5–7 days is comfortable; we can move faster for urgent offsites."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -64,9 +209,7 @@
         </div>
       </div>
       <div class="program-hero-image">
-        <picture>
-          <img src="/assets/images/Creative%20collaboration%20in%20a%20cozy%20space.webp" alt="Confidence &amp; Mindset workshop">
-        </picture>
+        <img src="/assets/images/Creative%20collaboration%20in%20a%20cozy%20space.webp" alt="Confidence &amp; Mindset workshop" width="1672" height="941" fetchpriority="high" decoding="async">
       </div>
     </section>
 
@@ -129,6 +272,79 @@
         <div class="program-meta-value">8–40 People</div>
       </div>
     </section>
+    <!-- WHO IT'S FOR + OUTCOMES (added) -->
+    <section class="msec" id="who-for">
+      <div class="msec-head"><span class="eyebrow">WHO IT'S FOR</span><h2>For teams ready to think bigger.</h2></div>
+      <div class="whofor-grid">
+        <div class="whofor-list">
+          <div class="row"><span class="mk">›</span><span>New managers and high-potential ICs stepping into more ownership</span></div>
+          <div class="row"><span class="mk">›</span><span>Teams stuck in self-doubt, hesitation or fear of visibility</span></div>
+          <div class="row"><span class="mk">›</span><span>Orgs investing in growth mindset alongside skills training</span></div>
+        </div>
+        <div class="outcomes">
+          <div class="outcome-tile"><div class="big">Clarity</div><div class="lbl">Named goals people actually own</div></div>
+          <div class="outcome-tile"><div class="big">Voice</div><div class="lbl">More speaking up in the room</div></div>
+          <div class="outcome-tile"><div class="big">Drive</div><div class="lbl">Renewed momentum on stalled work</div></div>
+          <div class="outcome-tile"><div class="big">Belief</div><div class="lbl">Fewer limiting-belief blocks</div></div>
+        </div>
+      </div>
+    </section>
+    <!-- WHAT TO EXPECT / PREP (added) -->
+    <section class="msec msec--tint" id="what-to-expect">
+      <div class="msec-head"><span class="eyebrow">WHAT TO EXPECT</span><h2>Simple to host. We handle the rest.</h2><p>Here's exactly what your team needs to prepare — and what we bring.</p></div>
+      <div class="prep-grid">
+        <div class="prep-card"><h3>Your team provides</h3><ul><li>A workshop room with seating + writing surface</li><li>Whiteboard or flip-chart if available</li><li>90 min–5 hrs depending on format</li><li>Team pre-briefed that it's interactive</li></ul></div>
+        <div class="prep-card"><h3>Good to know</h3><ul><li>Bring a notebook or we provide journals</li><li>Come willing to reflect and share lightly</li><li>No prep reading required</li><li>We tailor exercises to your team's role mix</li></ul></div>
+      </div>
+    </section>
+    <!-- Pricing (set real starting numbers before launch) -->
+    <section class="msec" id="pricing">
+      <div class="msec-head"><span class="eyebrow">PRICING</span><h2>Clear packages, custom quote.</h2><p>Every team is different — final pricing depends on size, location and format. Here's the shape.</p></div>
+      <div class="pricing-grid">
+        <div class="price-card"><div class="tier">Single Session</div><div class="amt">Custom quote<small></small></div><div class="price-desc">A one-off reset for your team.</div><ul><li>1 facilitated session</li><li>All materials included</li><li>On-site in Gurgaon/NCR</li></ul><a class="btn-cta price-cta" href="#book">Get a quote</a></div>
+        <div class="price-card featured"><span class="price-badge">POPULAR</span><div class="tier">Series (4–6)</div><div class="amt">Custom quote<small></small></div><div class="price-desc">Recurring slots that build a habit.</div><ul><li>Discounted per-session rate</li><li>Consistent facilitator</li><li>Simple feedback summary</li></ul><a class="btn-cta price-cta" href="#book">Get a quote</a></div>
+        <div class="price-card"><div class="tier">Retainer / Custom</div><div class="amt">Custom</div><div class="price-desc">Ongoing partner for larger orgs.</div><ul><li>Multi-program mix</li><li>Priority scheduling</li><li>Tailored reporting</li></ul><a class="btn-cta price-cta" href="#book">Talk to us</a></div>
+      </div>
+      <p class="price-note">Prices exclude travel for offsite and retreat formats.</p>
+    </section>
+  <!-- FAQ (added) -->
+  <section class="msec msec--tint" id="faq">
+    <div class="msec-head"><span class="eyebrow">QUESTIONS, ANSWERED</span><h2>Questions teams ask us</h2></div>
+    <div class="faq-wrap">
+      <details class="faq-item">
+        <summary>Is this a lecture or hands-on?</summary>
+        <div class="faq-a">Hands-on. Journaling, vision-boarding and goal frameworks — people leave with a written action plan, not just notes.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How big can the group be?</summary>
+        <div class="faq-a">8–40 works best for depth. Larger groups lose the personal reflection, so we cap or split.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Will this actually change behaviour or just feel good on the day?</summary>
+        <div class="faq-a">We build accountability frameworks and a 30-day action plan so it carries past the session.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can you tailor it to managers vs individual contributors?</summary>
+        <div class="faq-a">Yes — we adjust the goal-setting and inner-critic work to the seniority mix you tell us about.</div>
+      </details>
+      <details class="faq-item">
+        <summary>On-site or studio?</summary>
+        <div class="faq-a">Usually on-site as a workshop; studio works for smaller cohorts. We cover Gurgaon and Delhi-NCR.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What space do we need?</summary>
+        <div class="faq-a">A workshop-style room where people can sit in a circle or pods and write.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What does it cost?</summary>
+        <div class="faq-a">Quoted to your group size and duration. Get a fixed number on a quick call.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How far ahead should we book?</summary>
+        <div class="faq-a">5–7 days is comfortable; we can move faster for urgent offsites.</div>
+      </details>
+    </div>
+  </section>
 
     <section class="related-programs related-programs--designed">
       <div class="related-heading reveal">
@@ -143,9 +359,7 @@
         <a class="related-card reveal delay-1" href="emotional-wellness-stress-reset.html">
           <span class="related-card-num">01</span>
           <div class="related-card-media">
-            <picture>
-              <img src="/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp" alt="Emotional wellness">
-            </picture>
+            <img src="/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp" alt="Emotional wellness" width="1672" height="941" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Emotional Wellness &amp; Stress Reset</h3>
@@ -155,9 +369,7 @@
         <a class="related-card reveal delay-2" href="movement-relaxation-sessions.html">
           <span class="related-card-num">03</span>
           <div class="related-card-media">
-            <picture>
-              <img src="/assets/images/Serene%20moments%20in%20a%20wellness%20collage.webp" alt="Movement session">
-            </picture>
+            <img src="/assets/images/Serene%20moments%20in%20a%20wellness%20collage.webp" alt="Movement session" width="1672" height="941" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Movement &amp; Relaxation Sessions</h3>
@@ -167,9 +379,7 @@
         <a class="related-card reveal delay-3" href="nature-based-wellness-retreats.html">
           <span class="related-card-num">04</span>
           <div class="related-card-media">
-            <picture>
-              <img src="/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp" alt="Nature retreat">
-            </picture>
+            <img src="/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp" alt="Nature retreat" width="1672" height="941" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Nature-Based Wellness Retreats</h3>
@@ -179,9 +389,7 @@
         <a class="related-card reveal delay-4" href="women-centric-wellness-circles.html">
           <span class="related-card-num">05</span>
           <div class="related-card-media">
-            <picture>
-              <img src="/assets/images/Cozy%20group%20discussion%20in%20modern%20lounge.webp" alt="Women circle">
-            </picture>
+            <img src="/assets/images/Cozy%20group%20discussion%20in%20modern%20lounge.webp" alt="Women circle" width="1672" height="941" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Women-Centric Wellness Circles</h3>
@@ -208,6 +416,11 @@
       <div>
         <div class="footer-brand-name">HEALWITHMAHIMA</div>
         <div class="footer-brand-sub">Corporate Wellness &amp; Mindfulness</div>
+        <address class="footer-nap" style="font-style:normal;margin-top:14px;font-size:13px;color:#7C6558;line-height:1.7;">
+          Gurgaon, Haryana &middot; Delhi-NCR, India<br>
+          <a href="tel:+919069982434" style="color:#7C6558;">+91 90699 82434</a> &middot;
+          <a href="mailto:hello@healwithmahima.com" style="color:#7C6558;">hello@healwithmahima.com</a>
+        </address>
       </div>
       <nav class="footer-nav">
         <a href="../index.html#about">About</a>

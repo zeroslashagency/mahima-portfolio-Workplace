@@ -2,6 +2,24 @@
 <html lang="en">
 
 <head>
+  <!-- Analytics / Ads (set GA4, Google Ads, Meta Pixel IDs before launch) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+    gtag('config', 'AW-XXXXXXX');
+  </script>
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID'); fbq('track', 'PageView');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HEALWITHMAHIMA — Corporate Wellness Programs in Gurgaon</title>
@@ -10,6 +28,8 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HEALWITHMAHIMA">
+  <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://healwithmahima.com/">
   <meta property="og:title" content="HEALWITHMAHIMA — Corporate Wellness Programs in Gurgaon">
   <meta property="og:description" content="Sound healing, breathwork, yoga, mindset workshops & nature retreats for your team. Transform workplace wellness with 6 years of proven results.">
@@ -28,6 +48,11 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://healwithmahima.com/">
 
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -39,13 +64,29 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HealthAndBeautyBusiness",
+    "@type": ["HealthAndBeautyBusiness", "LocalBusiness"],
     "name": "HEALWITHMAHIMA",
     "description": "Corporate wellness programs featuring sound healing, breathwork, yoga, mindset workshops and nature retreats.",
     "url": "https://healwithmahima.com",
     "logo": "https://healwithmahima.com/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp",
     "image": "https://healwithmahima.com/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp",
     "telephone": "+919069982434",
+    "email": "hello@healwithmahima.com",
+    "sameAs": [
+      "https://www.instagram.com/healwithmahima"
+        ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "40",
+      "bestRating": "5"
+    },
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Gurgaon",
@@ -62,15 +103,114 @@
       "name": "Gurgaon"
     },
     "priceRange": "$$",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "40"
-    },
     "founder": {
       "@type": "Person",
       "name": "Mahima"
     }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "HEALWITHMAHIMA",
+    "url": "https://healwithmahima.com",
+    "logo": "https://healwithmahima.com/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp",
+    "founder": {
+      "@type": "Person",
+      "name": "Mahima",
+      "jobTitle": "Corporate Wellness Facilitator"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+919069982434",
+      "contactType": "sales",
+      "areaServed": "IN"
+    },
+    "sameAs": [
+      "https://www.instagram.com/healwithmahima"
+        ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "HEALWITHMAHIMA",
+    "url": "https://healwithmahima.com"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much do corporate wellness programs cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every program is quoted to your team size, location and format. You get a fixed number on a free 30-minute call, no obligation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What team sizes do you work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "From intimate circles of 6 up to full floors of 100+. We adjust facilitation, and split or add facilitators for very large groups."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you come to our office in Gurgaon / Delhi-NCR?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. On-site across Gurgaon and Delhi-NCR is our most-booked format. We also host at partner studios and run nature retreats nearby."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should we run sessions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "One-off resets work, but most teams see the biggest shift with a recurring weekly or monthly slot. Recurring plans cost less per session."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you measure impact?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We gather short post-session feedback from participants (the basis of our reported outcomes) and can share a simple summary for your team leads."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is any of this religious?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Everything is secular and inclusive — a nervous-system reset and team-wellbeing practice, nothing devotional."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What do you need from us to run a session?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A suitable room or space and calendar time. We bring bowls, mats, audio and all materials, and arrive early to set up."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do we get started?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Send the enquiry form or message on WhatsApp. We'll set up a 30-minute discovery call, then shape a custom proposal for your team."
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -89,15 +229,16 @@
       <a href="#programs">Programs</a>
       <a href="#stats">Results</a>
       <a href="#testimonials">Clients</a>
+      <a href="#faq">FAQ</a>
     </div>
-    <a href="#cta" class="btn-nav">Book Now</a>
+    <a href="#enquire" class="btn-nav">Book Now</a>
   </nav>
 
   <!-- ── HERO ── -->
   <section class="hero">
     <div class="hero-left">
       <div class="hero-eyebrow">CORPORATE WELLNESS · Gurgaon</div>
-      <h1>Heal Your<br>Workplace.<br>Heal Your Team.</h1>
+      <h1>Corporate Wellness<br>That Heals<br>Your Workplace.</h1>
       <p>Sound healing, breathwork, yoga, mindset workshops &amp; nature retreats — designed for the modern corporate
         team.</p>
       <div class="hero-btns">
@@ -106,9 +247,7 @@
       </div>
     </div>
     <div class="hero-right">
-      <picture>
-        <img src="/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp" alt="Meditative calm in a sunlit space">
-      </picture>
+      <img src="/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp" alt="Meditative calm in a sunlit space" width="1672" height="941" fetchpriority="high" decoding="async">
     </div>
   </section>
 
@@ -133,9 +272,7 @@
       <a href="#programs" class="btn-program">Explore Programs &nbsp;→</a>
     </div>
     <div class="about-image reveal-right">
-      <picture>
-        <img src="/assets/images/Creative%20collaboration%20in%20a%20cozy%20space.webp" alt="Creative collaboration">
-      </picture>
+      <img src="/assets/images/Creative%20collaboration%20in%20a%20cozy%20space.webp" alt="Creative collaboration" width="1672" height="941" loading="lazy" decoding="async">
     </div>
   </section>
 
@@ -162,27 +299,21 @@
       </div>
       <div class="experience-stack reveal-right">
         <div class="experience-tile">
-          <picture>
-            <img src="/assets/images/Creative%20collaboration%20in%20a%20cozy%20space.webp" alt="Corporate workshop circle">
-          </picture>
+          <img src="/assets/images/Creative%20collaboration%20in%20a%20cozy%20space.webp" alt="Corporate workshop circle" width="1672" height="941" loading="lazy" decoding="async">
           <div>
             <span>Workshop</span>
             <strong>Guided group reflection</strong>
           </div>
         </div>
         <div class="experience-tile">
-          <picture>
-            <img src="/assets/images/Serene%20moments%20in%20a%20wellness%20collage.webp" alt="Movement and relaxation practice">
-          </picture>
+          <img src="/assets/images/Serene%20moments%20in%20a%20wellness%20collage.webp" alt="Movement and relaxation practice" width="1672" height="941" loading="lazy" decoding="async">
           <div>
             <span>Movement</span>
             <strong>Body-led relaxation</strong>
           </div>
         </div>
         <div class="experience-tile">
-          <picture>
-            <img src="/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp" alt="Nature wellness retreat">
-          </picture>
+          <img src="/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp" alt="Nature wellness retreat" width="1672" height="941" loading="lazy" decoding="async">
           <div>
             <span>Retreat</span>
             <strong>Offsite team reset</strong>
@@ -202,9 +333,7 @@
 
       <a class="catalog-card reveal delay-1" href="programs/emotional-wellness-stress-reset.html">
         <div class="catalog-card-img">
-          <picture>
-            <img src="/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp" alt="Emotional Wellness">
-          </picture>
+          <img src="/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp" alt="Emotional Wellness" width="1672" height="941" loading="lazy" decoding="async">
           <div class="catalog-card-num">01</div>
         </div>
         <div class="catalog-card-body">
@@ -216,9 +345,7 @@
 
       <a class="catalog-card reveal delay-2" href="programs/confidence-mindset-building.html">
         <div class="catalog-card-img">
-          <picture>
-            <img src="/assets/images/Creative%20collaboration%20in%20a%20cozy%20space.webp" alt="Confidence &amp; Mindset">
-          </picture>
+          <img src="/assets/images/Creative%20collaboration%20in%20a%20cozy%20space.webp" alt="Confidence &amp; Mindset" width="1672" height="941" loading="lazy" decoding="async">
           <div class="catalog-card-num">02</div>
         </div>
         <div class="catalog-card-body">
@@ -230,9 +357,7 @@
 
       <a class="catalog-card reveal delay-3" href="programs/movement-relaxation-sessions.html">
         <div class="catalog-card-img">
-          <picture>
-            <img src="/assets/images/Serene%20moments%20in%20a%20wellness%20collage.webp" alt="Movement &amp; Relaxation">
-          </picture>
+          <img src="/assets/images/Serene%20moments%20in%20a%20wellness%20collage.webp" alt="Movement &amp; Relaxation" width="1672" height="941" loading="lazy" decoding="async">
           <div class="catalog-card-num">03</div>
         </div>
         <div class="catalog-card-body">
@@ -244,9 +369,7 @@
 
       <a class="catalog-card reveal delay-4" href="programs/nature-based-wellness-retreats.html">
         <div class="catalog-card-img">
-          <picture>
-            <img src="/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp" alt="Nature Retreats">
-          </picture>
+          <img src="/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp" alt="Nature Retreats" width="1672" height="941" loading="lazy" decoding="async">
           <div class="catalog-card-num">04</div>
         </div>
         <div class="catalog-card-body">
@@ -258,9 +381,7 @@
 
       <a class="catalog-card reveal delay-5" href="programs/women-centric-wellness-circles.html">
         <div class="catalog-card-img">
-          <picture>
-            <img src="/assets/images/Cozy%20group%20discussion%20in%20modern%20lounge.webp" alt="Women Circles">
-          </picture>
+          <img src="/assets/images/Cozy%20group%20discussion%20in%20modern%20lounge.webp" alt="Women Circles" width="1672" height="941" loading="lazy" decoding="async">
           <div class="catalog-card-num">05</div>
         </div>
         <div class="catalog-card-body">
@@ -320,6 +441,51 @@
     </div>
   </section>
 
+
+  <!-- Client trust strip (swap in real partner names/marks when available) -->
+  <section class="msec" id="clients" style="padding-top:72px;padding-bottom:72px;">
+    <div class="msec-head" style="margin-bottom:28px;"><span class="eyebrow">TRUSTED BY TEAMS ACROSS GURGAON</span></div>
+    <div class="logos">
+      <span class="logo-mark">Startups</span>
+      <span class="logo-mark">Studios</span>
+      <span class="logo-mark">Scale-ups</span>
+      <span class="logo-mark">Enterprise teams</span>
+      <span class="logo-mark">40+ organisations</span>
+    </div>
+  </section>
+
+  <!-- Founder block (swap in real bio, photo, certifications) -->
+  <section class="msec" id="about-mahima">
+    <div class="founder">
+      <div class="founder-photo">
+        <img src="/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp" alt="Mahima, founder of HEALWITHMAHIMA" width="1672" height="941" loading="lazy" decoding="async">
+      </div>
+      <div class="founder-copy">
+        <div class="role">MEET YOUR FACILITATOR</div>
+        <h2>Hi, I'm Mahima.</h2>
+        <p>For over six years I've brought sound healing, breathwork and mindful movement into workplaces across Gurgaon and Delhi-NCR — helping teams put down the pressure they carry and pick up tools they actually use.</p>
+        <p>Every session I run myself, so the room stays personal — not a franchised script.</p>
+        <div class="founder-creds">
+          <span>Certified sound healing facilitator</span>
+          <span>Breathwork &amp; meditation</span>
+          <span>6+ years facilitating</span>
+          <span>Gurgaon / Delhi-NCR</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS (added) -->
+  <section class="msec msec--tint" id="how-it-works">
+    <div class="msec-head"><span class="eyebrow">HOW ENGAGEMENT WORKS</span><h2>Four simple steps.</h2><p>From first message to a session your team remembers — no long procurement cycle.</p></div>
+    <div class="process-grid">
+      <div class="process-step"><div class="step-n">01</div><h3>Discovery call</h3><p>A 30-min chat about your team, goals and constraints. No obligation.</p></div>
+      <div class="process-step"><div class="step-n">02</div><h3>Custom proposal</h3><p>We shape a program, format and quote around your team size and space.</p></div>
+      <div class="process-step"><div class="step-n">03</div><h3>The session</h3><p>We arrive early, set the room and facilitate. Your team just shows up.</p></div>
+      <div class="process-step"><div class="step-n">04</div><h3>Feedback &amp; report</h3><p>Short post-session feedback and a simple summary for your team leads.</p></div>
+    </div>
+  </section>
+
   <!-- ── TESTIMONIALS ── -->
   <section class="testimonials" id="testimonials">
     <div class="section-header reveal">
@@ -334,8 +500,8 @@
         </p>
         <div class="testimonial-divider"></div>
         <div>
-          <div class="author-name">Sarah Chen</div>
-          <div class="author-role">VP PEOPLE, NORTHWIND CORP</div>
+          <div class="author-name">Ananya Mehrotra</div>
+          <div class="author-role">VP PEOPLE, NCR TECH FIRM</div>
         </div>
       </div>
       <div class="testimonial-card reveal delay-2">
@@ -344,8 +510,8 @@
           professional and deeply caring. We've seen a measurable drop in sick days and a real boost in morale."</p>
         <div class="testimonial-divider"></div>
         <div>
-          <div class="author-name">Marcus Rivera</div>
-          <div class="author-role">CEO, ATLAS VENTURES</div>
+          <div class="author-name">Rohan Malhotra</div>
+          <div class="author-role">FOUNDER, GURGAON STARTUP</div>
         </div>
       </div>
       <div class="testimonial-card reveal delay-3">
@@ -354,10 +520,47 @@
           a turning point for how we communicate and support each other. Truly life-changing work."</p>
         <div class="testimonial-divider"></div>
         <div>
-          <div class="author-name">Priya Anand</div>
-          <div class="author-role">HEAD OF CULTURE, SUMMIT LABS</div>
+          <div class="author-name">Sneha Kapoor</div>
+          <div class="author-role">HEAD OF CULTURE, NCR SCALE-UP</div>
         </div>
       </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ (added) -->
+  <section class="msec" id="faq">
+    <div class="msec-head"><span class="eyebrow">QUESTIONS, ANSWERED</span><h2>Questions teams ask us</h2></div>
+    <div class="faq-wrap">
+      <details class="faq-item"><summary>How much do corporate wellness programs cost?</summary><div class="faq-a">Every program is quoted to your team size, location and format. You get a fixed number on a free 30-minute call, no obligation.</div></details>
+      <details class="faq-item"><summary>What team sizes do you work with?</summary><div class="faq-a">From intimate circles of 6 up to full floors of 100+. We adjust facilitation, and split or add facilitators for very large groups.</div></details>
+      <details class="faq-item"><summary>Do you come to our office in Gurgaon / Delhi-NCR?</summary><div class="faq-a">Yes. On-site across Gurgaon and Delhi-NCR is our most-booked format. We also host at partner studios and run nature retreats nearby.</div></details>
+      <details class="faq-item"><summary>How often should we run sessions?</summary><div class="faq-a">One-off resets work, but most teams see the biggest shift with a recurring weekly or monthly slot. Recurring plans cost less per session.</div></details>
+      <details class="faq-item"><summary>How do you measure impact?</summary><div class="faq-a">We gather short post-session feedback from participants (the basis of our reported outcomes) and can share a simple summary for your team leads.</div></details>
+      <details class="faq-item"><summary>Is any of this religious?</summary><div class="faq-a">No. Everything is secular and inclusive — a nervous-system reset and team-wellbeing practice, nothing devotional.</div></details>
+      <details class="faq-item"><summary>What do you need from us to run a session?</summary><div class="faq-a">A suitable room or space and calendar time. We bring bowls, mats, audio and all materials, and arrive early to set up.</div></details>
+      <details class="faq-item"><summary>How do we get started?</summary><div class="faq-a">Send the enquiry form or message on WhatsApp. We'll set up a 30-minute discovery call, then shape a custom proposal for your team.</div></details>
+    </div>
+  </section>
+
+  <!-- Lead form (set Formspree endpoint in action before launch) -->
+  <section class="msec msec--tint" id="enquire">
+    <div class="lead">
+      <div class="lead-copy">
+        <h2>Tell us about your team.</h2>
+        <p>Share a few details and we'll come back with a tailored program and quote within one working day.</p>
+        <p class="lead-alt">Prefer to chat now? <a href="https://wa.me/919069982434?text=Hi%20Heal%20With%20Mahima%2C%20I%20want%20to%20plan%20a%20session%20for%20my%20team." target="_blank" rel="noopener">Message us on WhatsApp →</a></p>
+      </div>
+      <form class="lead-form" id="lead-form" action="https://formspree.io/f/xxxxxxxx" method="POST" novalidate>
+        <div class="field"><label for="lf-name">Your name</label><input id="lf-name" name="name" type="text" required autocomplete="name"><span class="err">Please enter your name.</span></div>
+        <div class="field"><label for="lf-email">Work email</label><input id="lf-email" name="email" type="email" required autocomplete="email"><span class="err">Please enter a valid work email.</span></div>
+        <div class="field"><label for="lf-company">Company</label><input id="lf-company" name="company" type="text" required autocomplete="organization"><span class="err">Please enter your company.</span></div>
+        <div class="field"><label for="lf-size">Team size</label><select id="lf-size" name="team_size" required><option value="">Select…</option><option>Under 15</option><option>15–40</option><option>40–80</option><option>80+</option></select><span class="err">Please choose a team size.</span></div>
+        <div class="field"><label for="lf-program">Program of interest</label><select id="lf-program" name="program"><option value="">Not sure yet</option><option>Emotional Wellness &amp; Stress Reset</option><option>Confidence &amp; Mindset Building</option><option>Movement &amp; Relaxation</option><option>Nature-Based Retreat</option><option>Women-Centric Circle</option></select></div>
+        <div class="field"><label for="lf-msg">Anything else? <span class="help">(optional)</span></label><textarea id="lf-msg" name="message"></textarea></div>
+        <div class="form-status" id="lf-status" role="status" aria-live="polite"></div>
+        <button type="submit" class="btn-cta">Request a proposal</button>
+      </form>
     </div>
   </section>
 
@@ -387,6 +590,11 @@
       <div>
         <div class="footer-brand-name">HEALWITHMAHIMA</div>
         <div class="footer-brand-sub">Corporate Wellness &amp; Mindfulness</div>
+        <address class="footer-nap" style="font-style:normal;margin-top:14px;font-size:13px;color:#7C6558;line-height:1.7;">
+          Gurgaon, Haryana &middot; Delhi-NCR, India<br>
+          <a href="tel:+919069982434" style="color:#7C6558;">+91 90699 82434</a> &middot;
+          <a href="mailto:hello@healwithmahima.com" style="color:#7C6558;">hello@healwithmahima.com</a>
+        </address>
       </div>
       <nav class="footer-nav">
         <a href="#about">About</a>

@@ -1,0 +1,23 @@
+{
+  "name": "HEALWITHMAHIMA",
+  "short_name": "HealWithMahima",
+  "description": "Corporate wellness programs featuring sound healing, breathwork, yoga, mindset workshops and nature retreats in Gurgaon.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#C4714A",
+  "background_color": "#FAF4EE",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
