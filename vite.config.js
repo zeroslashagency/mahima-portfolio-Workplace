@@ -1,5 +1,13 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import { readdirSync } from 'fs';
+
+// Every programs/*.html page is a build input, so new program pages can't be forgotten.
+const programPages = Object.fromEntries(
+  readdirSync(resolve(__dirname, 'programs'))
+    .filter((f) => f.endsWith('.html'))
+    .map((f) => [f.replace(/\.html$/, ''), resolve(__dirname, 'programs', f)])
+);
 
 export default defineConfig({
   root: '.',
@@ -8,11 +16,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        emotional: resolve(__dirname, 'programs/emotional-wellness-stress-reset.html'),
-        confidence: resolve(__dirname, 'programs/confidence-mindset-building.html'),
-        movement: resolve(__dirname, 'programs/movement-relaxation-sessions.html'),
-        nature: resolve(__dirname, 'programs/nature-based-wellness-retreats.html'),
-        women: resolve(__dirname, 'programs/women-centric-wellness-circles.html'),
+        ...programPages,
       },
     },
     minify: 'terser',
