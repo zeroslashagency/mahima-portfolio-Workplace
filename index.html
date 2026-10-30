@@ -2,29 +2,12 @@
 <html lang="en">
 
 <head>
-  <!-- Analytics / Ads (set GA4, Google Ads, Meta Pixel IDs before launch) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX');
-    gtag('config', 'AW-XXXXXXX');
-  </script>
-  <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'PIXEL_ID'); fbq('track', 'PageView');
-  </script>
-
   <meta charset="UTF-8">
+  <script>document.documentElement.classList.add('js')</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HEALWITHMAHIMA — Corporate Wellness Programs in Gurgaon</title>
   <meta name="description"
-    content="Sound healing, breathwork, yoga, mindset workshops & nature retreats for your team. 200+ sessions, 40+ partner organisations. Transform workplace wellness in Gurgaon.">
+    content="Sound healing and breathwork sessions for corporate teams in Gurgaon &amp; NCR. On-site, 10–80 people. 200+ sessions with 40+ organisations over six years.">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -32,15 +15,18 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://healwithmahima.com/">
   <meta property="og:title" content="HEALWITHMAHIMA — Corporate Wellness Programs in Gurgaon">
-  <meta property="og:description" content="Sound healing, breathwork, yoga, mindset workshops & nature retreats for your team. Transform workplace wellness with 6 years of proven results.">
-  <meta property="og:image" content="https://healwithmahima.com/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp">
+  <meta property="og:description" content="Sound healing and breathwork sessions for corporate teams in Gurgaon &amp; NCR. On-site, 10–80 people. 200+ sessions with 40+ organisations.">
+  <meta property="og:image" content="https://healwithmahima.com/og-default.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Team lying on mats during a sound healing session with singing bowls">
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://healwithmahima.com/">
-  <meta property="twitter:title" content="HEALWITHMAHIMA — Corporate Wellness Programs in Gurgaon">
-  <meta property="twitter:description" content="Sound healing, breathwork, yoga, mindset workshops & nature retreats for your team. Transform workplace wellness.">
-  <meta property="twitter:image" content="https://healwithmahima.com/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://healwithmahima.com/">
+  <meta name="twitter:title" content="HEALWITHMAHIMA — Corporate Wellness Programs in Gurgaon">
+  <meta name="twitter:description" content="Sound healing and breathwork sessions for corporate teams in Gurgaon &amp; NCR. On-site, 10–80 people.">
+  <meta name="twitter:image" content="https://healwithmahima.com/og-default.jpg">
 
   <!-- Additional SEO -->
   <meta name="keywords" content="corporate wellness, sound healing, breathwork, yoga, mindset coaching, wellness retreats, Gurgaon, workplace wellness, team wellness, stress management">
@@ -53,11 +39,8 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
-    rel="stylesheet">
+  <link rel="preload" href="/fonts/playfairdisplay-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Structured Data / Schema.org -->
@@ -68,8 +51,8 @@
     "name": "HEALWITHMAHIMA",
     "description": "Corporate wellness programs featuring sound healing, breathwork, yoga, mindset workshops and nature retreats.",
     "url": "https://healwithmahima.com",
-    "logo": "https://healwithmahima.com/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp",
-    "image": "https://healwithmahima.com/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp",
+    "logo": "https://healwithmahima.com/web-app-manifest-512x512.png",
+    "image": "https://healwithmahima.com/og-default.jpg",
     "telephone": "+919069982434",
     "email": "hello@healwithmahima.com",
     "sameAs": [
@@ -80,12 +63,6 @@
       "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
       "opens": "09:00",
       "closes": "18:00"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "40",
-      "bestRating": "5"
     },
     "address": {
       "@type": "PostalAddress",
@@ -98,11 +75,11 @@
       "latitude": "28.4595",
       "longitude": "77.0266"
     },
-    "areaServed": {
-      "@type": "City",
-      "name": "Gurgaon"
-    },
-    "priceRange": "$$",
+    "areaServed": [
+      { "@type": "City", "name": "Gurgaon" },
+      { "@type": "Place", "name": "Delhi NCR" }
+    ],
+    "priceRange": "₹₹",
     "founder": {
       "@type": "Person",
       "name": "Mahima"
@@ -116,7 +93,7 @@
     "@type": "Organization",
     "name": "HEALWITHMAHIMA",
     "url": "https://healwithmahima.com",
-    "logo": "https://healwithmahima.com/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp",
+    "logo": "https://healwithmahima.com/web-app-manifest-512x512.png",
     "founder": {
       "@type": "Person",
       "name": "Mahima",
@@ -148,82 +125,74 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What is Sound Healing?",
+        "name": "How large a team can join one session?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A relaxation practice using therapeutic sound vibrations to calm the mind and body."
+          "text": "10–80 people works well. Above 80 we split into two sittings or add a co-facilitator so the sound still reaches everyone."
         }
       },
       {
         "@type": "Question",
-        "name": "Is it suitable for beginners?",
+        "name": "Our team is sceptical. Will this feel awkward?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes! No prior experience with yoga or meditation is needed."
+          "text": "We keep it grounded: no chanting, no forced sharing. It's guided breathing, Tibetan bowls and rest. Sceptics usually leave the calmest."
         }
       },
       {
         "@type": "Question",
-        "name": "What happens during the session?",
+        "name": "Is it tied to any religion?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "You'll lie down comfortably while experiencing guided breathwork, meditation, and sound healing."
+          "text": "No. It's a secular, nervous-system reset. Nothing devotional, nothing anyone needs to believe in."
         }
       },
       {
         "@type": "Question",
-        "name": "What are the benefits?",
+        "name": "How long is a session?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "✨ Stress relief · 💛 Better sleep · 🧠 Mental clarity · 🌿 Deep relaxation · ⚖️ Emotional balance"
+          "text": "The standard stress reset runs 75 minutes. Half-day and full-day formats are available for offsites and retreats."
         }
       },
       {
         "@type": "Question",
-        "name": "What should I bring?",
+        "name": "On-site, studio or online?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A yoga mat, shawl/blanket, water bottle, and wear comfortable clothing."
+          "text": "We come to your office anywhere in Gurgaon and Delhi-NCR, host at a partner studio, or run a guided online version for hybrid teams."
         }
       },
       {
         "@type": "Question",
-        "name": "How long is the session?",
+        "name": "What do we need to provide?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Approximately 60–75 minutes."
+          "text": "A quiet room where people can sit or lie down, and 45 minutes of setup access. We bring bowls, mats and audio."
         }
       },
       {
         "@type": "Question",
-        "name": "Can I fall asleep?",
+        "name": "Is it safe for everyone?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes! Many people do, and it's completely normal."
+          "text": "For most people, yes. Anyone who is pregnant or has epilepsy, a pacemaker or a serious medical condition should check with their doctor and tell us beforehand. We share a short screening note with your team in advance."
         }
       },
       {
         "@type": "Question",
-        "name": "Is Sound Healing safe?",
+        "name": "How is it priced and invoiced?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Generally yes. If you're pregnant or have epilepsy, a pacemaker, or another serious medical condition, please consult your doctor and let us know before the session."
+          "text": "Quoted per session by team size, location and format, with a fixed number in writing before you commit. We invoice with GST and can work with your PO process."
         }
       },
       {
         "@type": "Question",
-        "name": "How often should I attend?",
+        "name": "What notice do you need?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Weekly or monthly sessions can help maintain relaxation and well-being."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Who is this session for?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Anyone looking to relax, reduce stress, reconnect with themselves, and experience inner peace. 🌿✨"
+          "text": "Usually 5–7 days. Rush dates are often possible, so ask."
         }
       }
     ]
@@ -232,6 +201,7 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- CUSTOM CURSOR -->
   <div class="cursor"></div>
@@ -247,28 +217,30 @@
       <a href="#testimonials">Clients</a>
       <a href="#faq">FAQ</a>
     </div>
-    <a href="#enquire" class="btn-nav">Book Now</a>
+    <a href="#enquire" class="btn-nav">Get a proposal</a>
   </nav>
 
+  <main id="main">
   <!-- ── HERO ── -->
   <section class="hero">
     <div class="hero-left">
-      <div class="hero-eyebrow">CORPORATE WELLNESS · Gurgaon</div>
-      <h1>Corporate Wellness<br>That Heals<br>Your Workplace.</h1>
-      <p>Sound healing, breathwork, yoga, mindset workshops &amp; nature retreats — designed for the modern corporate
-        team.</p>
+      <div class="hero-eyebrow">CORPORATE WELLNESS · GURGAON &amp; NCR</div>
+      <h1>A 75-minute stress reset<br>your team will<br>actually show up for.</h1>
+      <p>Sound healing and guided breathwork, run on-site at your office for 10–80 people. No chanting, no prep.
+        A written proposal and fixed quote within one working day.</p>
       <div class="hero-btns">
-        <a href="#programs" class="btn-white">Explore Programs</a>
-        <a href="#cta" class="btn-ghost">Book a Session</a>
+        <a href="#enquire" class="btn-white">Request a proposal</a>
+        <a href="#programs" class="btn-ghost">See formats</a>
       </div>
+      <div class="hero-proof">On-site across Gurgaon &amp; NCR · 10–80 per session · GST invoice</div>
     </div>
     <div class="hero-right">
-      <img src="/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp" alt="Meditative calm in a sunlit space" width="1672" height="941" fetchpriority="high" decoding="async">
+      <img src="/assets/images/session-bowls-1080.webp" srcset="/assets/images/session-bowls-800.webp 800w, /assets/images/session-bowls-1080.webp 1080w" sizes="(max-width: 720px) 100vw, 50vw" alt="Team members lying on mats while Mahima plays singing bowls during an office session" width="1080" height="1920" fetchpriority="high" decoding="async">
     </div>
   </section>
 
   <!-- ── TICKER ── -->
-  <div class="ticker">
+  <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
       <span>SOUND HEALING &nbsp;·&nbsp; BREATHWORK &nbsp;·&nbsp; MEDITATION &nbsp;·&nbsp; YOGA &nbsp;·&nbsp; NATURE
         RETREATS &nbsp;·&nbsp; WOMEN CIRCLES &nbsp;·&nbsp; MINDSET COACHING &nbsp;·&nbsp; STRESS RESET
@@ -280,15 +252,14 @@
   <section class="about" id="about">
     <div class="about-text reveal-left">
       <div class="about-num">01</div>
-      <h2>About HEALWITHMAHIMA</h2>
-      <p>Mahima is a certified wellness facilitator based in Gurgaon combining ancient practices with modern workplace
-        needs —
-        sound healing, breathwork, yoga, mindset coaching &amp; nature retreats. Six years. 200+ sessions. 40+ partner
-        organisations.</p>
+      <h2>Calmer teams, in your own office.</h2>
+      <p>Mahima is a wellness facilitator based in Gurgaon. She runs sound healing and breathwork sessions for corporate
+        teams, with yoga, mindset workshops and nature retreats as add-on formats. Over six years she has led 200+
+        sessions with 40+ organisations.</p>
       <a href="#programs" class="btn-program">Explore Programs &nbsp;→</a>
     </div>
-    <div class="about-image reveal-right">
-      <img src="/assets/images/Creative%20collaboration%20in%20a%20cozy%20space.webp" alt="Creative collaboration" width="1672" height="941" loading="lazy" decoding="async">
+    <div class="about-image reveal-right reveal-media">
+      <img src="/assets/images/creative-collaboration-in-a-cozy-space-800.webp" alt="Small team in a guided group session" width="800" height="450" loading="lazy" decoding="async">
     </div>
   </section>
 
@@ -297,39 +268,32 @@
     <div class="experience-header reveal">
       <div>
         <div class="eyebrow">EXPERIENCE GALLERY</div>
-        <h2>Moments of calm, clarity, and connection.</h2>
+        <h2>Inside a session.</h2>
       </div>
-      <p>A glimpse into the spaces, teams, and formats Mahima facilitates — from sound healing and workshop circles to
-        retreat-style pauses that help people return to work with more ease.</p>
+      <p>Real footage from one of Mahima's sound healing sessions. Most people lie down, a few sit up, and everyone
+        goes back to work with a slower pulse.</p>
     </div>
     <div class="experience-grid">
-      <div class="experience-video reveal-left">
-        <video autoplay muted loop playsinline preload="metadata"
-          poster="/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp">
-          <source src="/assets/videos/IMG_5621.mp4" type="video/mp4">
+      <div class="experience-video reveal-left reveal-media">
+        <video muted loop playsinline preload="none" data-autoplay
+          poster="/assets/images/session-poster.webp" aria-label="Sound healing session in progress">
+          <source data-src="/assets/videos/session.mp4" type="video/mp4">
         </video>
         <div class="experience-video-caption">
           <span>Live practice</span>
           <strong>Sound-led workplace reset</strong>
         </div>
       </div>
-      <div class="experience-stack reveal-right">
+      <div class="experience-stack" data-stagger>
         <div class="experience-tile">
-          <img src="/assets/images/Creative%20collaboration%20in%20a%20cozy%20space.webp" alt="Corporate workshop circle" width="1672" height="941" loading="lazy" decoding="async">
+          <img src="/assets/images/session-rest-800.webp" alt="Employees resting on mats after the sound bath" width="800" height="1422" loading="lazy" decoding="async">
           <div>
-            <span>Workshop</span>
-            <strong>Guided group reflection</strong>
+            <span>Rest</span>
+            <strong>The quiet after the bowls</strong>
           </div>
         </div>
         <div class="experience-tile">
-          <img src="/assets/images/Serene%20moments%20in%20a%20wellness%20collage.webp" alt="Movement and relaxation practice" width="1672" height="941" loading="lazy" decoding="async">
-          <div>
-            <span>Movement</span>
-            <strong>Body-led relaxation</strong>
-          </div>
-        </div>
-        <div class="experience-tile">
-          <img src="/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp" alt="Nature wellness retreat" width="1672" height="941" loading="lazy" decoding="async">
+          <img src="/assets/images/serene-retreat-in-natures-embrace-800.webp" alt="Nature wellness retreat" width="800" height="450" loading="lazy" decoding="async">
           <div>
             <span>Retreat</span>
             <strong>Offsite team reset</strong>
@@ -343,66 +307,71 @@
   <section class="catalog" id="programs">
     <div class="catalog-header reveal">
       <div class="eyebrow">5 CORPORATE PROGRAMS</div>
-      <h2>Choose Your Path to Wellness</h2>
+      <h2>Five formats for corporate teams.</h2>
     </div>
     <div class="catalog-grid">
 
       <a class="catalog-card reveal delay-1" href="programs/emotional-wellness-stress-reset.html">
         <div class="catalog-card-img">
-          <img src="/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp" alt="Emotional Wellness" width="1672" height="941" loading="lazy" decoding="async">
+          <img src="/assets/images/session-room-640.webp" alt="Emotional Wellness" width="640" height="1138" loading="lazy" decoding="async">
           <div class="catalog-card-num">01</div>
         </div>
         <div class="catalog-card-body">
           <h3>Emotional Wellness &amp; Stress Reset</h3>
-          <p>Sound healing, breathwork &amp; meditation for deep team restoration.</p>
+          <p>Sound healing, breathwork and meditation in one calm reset.</p>
+          <p class="catalog-card-meta">75 min – half day · On-site · 10–80</p>
           <div class="catalog-card-arrow">Explore &nbsp;→</div>
         </div>
       </a>
 
       <a class="catalog-card reveal delay-2" href="programs/confidence-mindset-building.html">
         <div class="catalog-card-img">
-          <img src="/assets/images/Creative%20collaboration%20in%20a%20cozy%20space.webp" alt="Confidence &amp; Mindset" width="1672" height="941" loading="lazy" decoding="async">
+          <img src="/assets/images/creative-collaboration-in-a-cozy-space-800.webp" alt="Confidence &amp; Mindset" width="800" height="450" loading="lazy" decoding="async">
           <div class="catalog-card-num">02</div>
         </div>
         <div class="catalog-card-body">
           <h3>Confidence &amp; Mindset Building</h3>
-          <p>Journaling, manifestation &amp; goal-setting for high-performance teams.</p>
+          <p>Journaling, visualisation and goal-setting tools for managers and new leads.</p>
+          <p class="catalog-card-meta">3–5 hrs · Workshop · 8–40</p>
           <div class="catalog-card-arrow">Explore &nbsp;→</div>
         </div>
       </a>
 
       <a class="catalog-card reveal delay-3" href="programs/movement-relaxation-sessions.html">
         <div class="catalog-card-img">
-          <img src="/assets/images/Serene%20moments%20in%20a%20wellness%20collage.webp" alt="Movement &amp; Relaxation" width="1672" height="941" loading="lazy" decoding="async">
+          <img src="/assets/images/session-stretch-800.webp" alt="Movement &amp; Relaxation" width="800" height="741" loading="lazy" decoding="async">
           <div class="catalog-card-num">03</div>
         </div>
         <div class="catalog-card-body">
           <h3>Movement &amp; Relaxation Sessions</h3>
-          <p>Yoga, dance therapy &amp; stretching routines for body and mind.</p>
+          <p>Desk-friendly yoga, stretching and expressive movement.</p>
+          <p class="catalog-card-meta">1–3 hrs · On-site / Outdoor · 10–100</p>
           <div class="catalog-card-arrow">Explore &nbsp;→</div>
         </div>
       </a>
 
       <a class="catalog-card reveal delay-4" href="programs/nature-based-wellness-retreats.html">
         <div class="catalog-card-img">
-          <img src="/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp" alt="Nature Retreats" width="1672" height="941" loading="lazy" decoding="async">
+          <img src="/assets/images/serene-retreat-in-natures-embrace-800.webp" alt="Nature Retreats" width="800" height="450" loading="lazy" decoding="async">
           <div class="catalog-card-num">04</div>
         </div>
         <div class="catalog-card-body">
           <h3>Nature-Based Wellness Retreats</h3>
-          <p>Half-day to two-day retreats — nature walks &amp; sound healing.</p>
+          <p>Half-day to two-day offsites with nature walks and sound healing.</p>
+          <p class="catalog-card-meta">Half day – 2 days · Offsite · 8–30</p>
           <div class="catalog-card-arrow">Explore &nbsp;→</div>
         </div>
       </a>
 
       <a class="catalog-card reveal delay-5" href="programs/women-centric-wellness-circles.html">
         <div class="catalog-card-img">
-          <img src="/assets/images/Cozy%20group%20discussion%20in%20modern%20lounge.webp" alt="Women Circles" width="1672" height="941" loading="lazy" decoding="async">
+          <img src="/assets/images/cozy-group-discussion-in-modern-lounge-800.webp" alt="Women Circles" width="800" height="450" loading="lazy" decoding="async">
           <div class="catalog-card-num">05</div>
         </div>
         <div class="catalog-card-body">
           <h3>Women-Centric Wellness Circles</h3>
-          <p>Safe spaces for sharing, emotional release &amp; confidence-building.</p>
+          <p>Facilitated peer circles for women employees, with clear confidentiality rules.</p>
+          <p class="catalog-card-meta">2–3 hrs · On-site · 6–25</p>
           <div class="catalog-card-arrow">Explore &nbsp;→</div>
         </div>
       </a>
@@ -419,71 +388,62 @@
         <div class="ornament-line"></div>
       </div>
       <div class="stats-eyebrow">PROVEN RESULTS · BY THE NUMBERS</div>
-      <div class="stats-subtitle">Six years of quiet, measurable transformation.</div>
+      <div class="stats-subtitle">Six years of sessions with Gurgaon and NCR teams.</div>
     </div>
     <div class="stats-grid reveal delay-2">
       <div class="stat-item">
-        <div class="stat-number" data-target="200" data-suffix="+">0+</div>
+        <div class="stat-number" data-target="200" data-suffix="+">200+</div>
         <div class="stat-line"></div>
         <div class="stat-title">Corporate Sessions</div>
-        <div class="stat-sub">Across studios &amp; on-site</div>
+        <div class="stat-sub">On-site and at partner studios</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat-item">
-        <div class="stat-number" data-target="5" data-suffix="">0</div>
+        <div class="stat-number" data-target="5" data-suffix="">5</div>
         <div class="stat-line"></div>
         <div class="stat-title">Signature Programs</div>
         <div class="stat-sub">From sound to retreats</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat-item">
-        <div class="stat-number" data-target="85" data-suffix="%">0%</div>
+        <div class="stat-number" data-target="85" data-suffix="%">85%</div>
         <div class="stat-line"></div>
-        <div class="stat-title">Stress Reduction</div>
-        <div class="stat-sub">Average team-reported</div>
+        <div class="stat-title">Feel Less Stressed</div>
+        <div class="stat-sub">Post-session self-report</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat-item">
-        <div class="stat-number" data-target="40" data-suffix="+">0+</div>
+        <div class="stat-number" data-target="40" data-suffix="+">40+</div>
         <div class="stat-line"></div>
         <div class="stat-title">Partner Organisations</div>
-        <div class="stat-sub">From startups to studios</div>
+        <div class="stat-sub">Startups to enterprise teams</div>
       </div>
     </div>
     <div class="stats-footnote reveal delay-3">
       <span class="stats-footnote-dot">·</span>
-      <span class="stats-footnote-text">DATA FROM 2018 — 2026 ENGAGEMENTS · SOURCED FROM POST-PROGRAMME SURVEYS</span>
+      <span class="stats-footnote-text">SOURCED FROM POST-SESSION FEEDBACK SURVEYS</span>
       <span class="stats-footnote-dot">·</span>
     </div>
   </section>
 
 
-  <!-- Client trust strip (swap in real partner names/marks when available) -->
-  <section class="msec" id="clients" style="padding-top:72px;padding-bottom:72px;">
-    <div class="msec-head" style="margin-bottom:28px;"><span class="eyebrow">TRUSTED BY TEAMS ACROSS GURGAON</span></div>
-    <div class="logos">
-      <span class="logo-mark">Startups</span>
-      <span class="logo-mark">Studios</span>
-      <span class="logo-mark">Scale-ups</span>
-      <span class="logo-mark">Enterprise teams</span>
-      <span class="logo-mark">40+ organisations</span>
-    </div>
-  </section>
+  <!-- Client trust strip: hidden until real client names/logos (with permission) are available.
+       Restore as <section class="msec" id="clients"> with one .logo-mark per client. -->
 
   <!-- Founder block (swap in real bio, photo, certifications) -->
   <section class="msec" id="about-mahima">
     <div class="founder">
-      <div class="founder-photo">
-        <img src="/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp" alt="Mahima, founder of HEALWITHMAHIMA" width="1672" height="941" loading="lazy" decoding="async">
+      <div class="founder-photo reveal-left reveal-media">
+        <img src="/assets/images/session-facilitator-800.webp" alt="Mahima leading a sound healing session" width="800" height="1422" loading="lazy" decoding="async">
       </div>
-      <div class="founder-copy">
+      <div class="founder-copy reveal-right">
         <div class="role">MEET YOUR FACILITATOR</div>
         <h2>Hi, I'm Mahima.</h2>
-        <p>For over six years I've brought sound healing, breathwork and mindful movement into workplaces across Gurgaon and Delhi-NCR — helping teams put down the pressure they carry and pick up tools they actually use.</p>
-        <p>Every session I run myself, so the room stays personal — not a franchised script.</p>
-        <div class="founder-creds">
+        <p>For six years I've brought sound healing, breathwork and mindful movement into workplaces across Gurgaon and Delhi-NCR. The aim is simple: help people put down the pressure they carry and leave with a few tools they actually use.</p>
+        <p>Every session I run myself, so the room stays personal. It is never a franchised script.</p>
+        <div class="founder-creds" data-stagger>
           <span>Certified sound healing facilitator</span>
-          <span>Breathwork &amp; meditation</span>
+          <span>Breathwork &amp; meditation facilitator</span>
           <span>6+ years facilitating</span>
           <span>Gurgaon / Delhi-NCR</span>
         </div>
@@ -493,8 +453,8 @@
 
   <!-- HOW IT WORKS (added) -->
   <section class="msec msec--tint" id="how-it-works">
-    <div class="msec-head"><span class="eyebrow">HOW ENGAGEMENT WORKS</span><h2>Four simple steps.</h2><p>From first message to a session your team remembers — no long procurement cycle.</p></div>
-    <div class="process-grid">
+    <div class="msec-head reveal"><span class="eyebrow">HOW ENGAGEMENT WORKS</span><h2>Four simple steps.</h2><p>From first message to a session your team remembers, without a long procurement cycle. GST invoice and PO-friendly.</p></div>
+    <div class="process-grid" data-stagger>
       <div class="process-step"><div class="step-n">01</div><h3>Discovery call</h3><p>A 30-min chat about your team, goals and constraints. No obligation.</p></div>
       <div class="process-step"><div class="step-n">02</div><h3>Custom proposal</h3><p>We shape a program, format and quote around your team size and space.</p></div>
       <div class="process-step"><div class="step-n">03</div><h3>The session</h3><p>We arrive early, set the room and facilitate. Your team just shows up.</p></div>
@@ -502,15 +462,15 @@
     </div>
   </section>
 
-  <!-- ── TESTIMONIALS ── -->
+  <!-- ── TESTIMONIALS (placeholder quotes: replace with real, attributable quotes before launch) ── -->
   <section class="testimonials" id="testimonials">
     <div class="section-header reveal">
       <div class="eyebrow">WHAT OUR CLIENTS SAY</div>
-      <h2>Transformations That Speak</h2>
+      <h2>What HR and People teams say</h2>
     </div>
-    <div class="testimonials-grid">
-      <div class="testimonial-card reveal delay-1">
-        <div class="quote-mark">"</div>
+    <div class="testimonials-grid" data-stagger>
+      <div class="testimonial-card">
+        <div class="quote-mark" aria-hidden="true">"</div>
         <p class="testimonial-text">"HEALWITHMAHIMA transformed our workplace culture. Our team is more focused, less
           stressed, and genuinely happier. The mindfulness sessions have become everyone's favourite part of the week."
         </p>
@@ -520,8 +480,8 @@
           <div class="author-role">VP PEOPLE, NCR TECH FIRM</div>
         </div>
       </div>
-      <div class="testimonial-card reveal delay-2">
-        <div class="quote-mark">"</div>
+      <div class="testimonial-card">
+        <div class="quote-mark" aria-hidden="true">"</div>
         <p class="testimonial-text">"The corporate yoga program exceeded all expectations. Mahima's approach is both
           professional and deeply caring. We've seen a measurable drop in sick days and a real boost in morale."</p>
         <div class="testimonial-divider"></div>
@@ -530,8 +490,8 @@
           <div class="author-role">FOUNDER, GURGAON STARTUP</div>
         </div>
       </div>
-      <div class="testimonial-card reveal delay-3">
-        <div class="quote-mark">"</div>
+      <div class="testimonial-card">
+        <div class="quote-mark" aria-hidden="true">"</div>
         <p class="testimonial-text">"Our leadership team gained tools they use every single day. The retreat program was
           a turning point for how we communicate and support each other. Truly life-changing work."</p>
         <div class="testimonial-divider"></div>
@@ -546,34 +506,34 @@
 
   <!-- FAQ (added) -->
   <section class="msec" id="faq">
-    <div class="msec-head"><span class="eyebrow">QUESTIONS, ANSWERED</span><h2>Frequently Asked Questions</h2></div>
-    <div class="faq-wrap">
-      <details class="faq-item"><summary>What is Sound Healing?</summary><div class="faq-a">A relaxation practice using therapeutic sound vibrations to calm the mind and body.</div></details>
-      <details class="faq-item"><summary>Is it suitable for beginners?</summary><div class="faq-a">Yes! No prior experience with yoga or meditation is needed.</div></details>
-      <details class="faq-item"><summary>What happens during the session?</summary><div class="faq-a">You'll lie down comfortably while experiencing guided breathwork, meditation, and sound healing.</div></details>
-      <details class="faq-item"><summary>What are the benefits?</summary><div class="faq-a">✨ Stress relief · 💛 Better sleep · 🧠 Mental clarity · 🌿 Deep relaxation · ⚖️ Emotional balance</div></details>
-      <details class="faq-item"><summary>What should I bring?</summary><div class="faq-a">A yoga mat, shawl/blanket, water bottle, and wear comfortable clothing.</div></details>
-      <details class="faq-item"><summary>How long is the session?</summary><div class="faq-a">Approximately 60–75 minutes.</div></details>
-      <details class="faq-item"><summary>Can I fall asleep?</summary><div class="faq-a">Yes! Many people do, and it's completely normal.</div></details>
-      <details class="faq-item"><summary>Is Sound Healing safe?</summary><div class="faq-a">Generally yes. If you're pregnant or have epilepsy, a pacemaker, or another serious medical condition, please consult your doctor and let us know before the session.</div></details>
-      <details class="faq-item"><summary>How often should I attend?</summary><div class="faq-a">Weekly or monthly sessions can help maintain relaxation and well-being.</div></details>
-      <details class="faq-item"><summary>Who is this session for?</summary><div class="faq-a">Anyone looking to relax, reduce stress, reconnect with themselves, and experience inner peace. 🌿✨</div></details>
+    <div class="msec-head reveal"><span class="eyebrow">QUESTIONS, ANSWERED</span><h2>Questions HR teams ask us</h2></div>
+    <div class="faq-wrap" data-stagger>
+      <details class="faq-item"><summary>How large a team can join one session?</summary><div class="faq-a">10–80 people works well. Above 80 we split into two sittings or add a co-facilitator so the sound still reaches everyone.</div></details>
+      <details class="faq-item"><summary>Our team is sceptical. Will this feel awkward?</summary><div class="faq-a">We keep it grounded: no chanting, no forced sharing. It's guided breathing, Tibetan bowls and rest. Sceptics usually leave the calmest.</div></details>
+      <details class="faq-item"><summary>Is it tied to any religion?</summary><div class="faq-a">No. It's a secular, nervous-system reset. Nothing devotional, nothing anyone needs to believe in.</div></details>
+      <details class="faq-item"><summary>How long is a session?</summary><div class="faq-a">The standard stress reset runs 75 minutes. Half-day and full-day formats are available for offsites and retreats.</div></details>
+      <details class="faq-item"><summary>On-site, studio or online?</summary><div class="faq-a">We come to your office anywhere in Gurgaon and Delhi-NCR, host at a partner studio, or run a guided online version for hybrid teams.</div></details>
+      <details class="faq-item"><summary>What do we need to provide?</summary><div class="faq-a">A quiet room where people can sit or lie down, and 45 minutes of setup access. We bring bowls, mats and audio.</div></details>
+      <details class="faq-item"><summary>Is it safe for everyone?</summary><div class="faq-a">For most people, yes. Anyone who is pregnant or has epilepsy, a pacemaker or a serious medical condition should check with their doctor and tell us beforehand. We share a short screening note with your team in advance.</div></details>
+      <details class="faq-item"><summary>How is it priced and invoiced?</summary><div class="faq-a">Quoted per session by team size, location and format, with a fixed number in writing before you commit. We invoice with GST and can work with your PO process.</div></details>
+      <details class="faq-item"><summary>What notice do you need?</summary><div class="faq-a">Usually 5–7 days. Rush dates are often possible, so ask.</div></details>
     </div>
   </section>
 
   <!-- Lead form (set Formspree endpoint in action before launch) -->
   <section class="msec msec--tint" id="enquire">
     <div class="lead">
-      <div class="lead-copy">
+      <div class="lead-copy reveal-left">
         <h2>Tell us about your team.</h2>
         <p>Share a few details and we'll come back with a tailored program and quote within one working day.</p>
         <p class="lead-alt">Prefer to chat now? <a href="https://wa.me/919069982434?text=Hi%20Heal%20With%20Mahima%2C%20I%20want%20to%20plan%20a%20session%20for%20my%20team." target="_blank" rel="noopener">Message us on WhatsApp →</a></p>
       </div>
-      <form class="lead-form" id="lead-form" action="https://formspree.io/f/xxxxxxxx" method="POST" novalidate>
+      <form class="lead-form reveal-right" id="lead-form" action="https://formspree.io/f/xxxxxxxx" method="POST" novalidate>
         <div class="field"><label for="lf-name">Your name</label><input id="lf-name" name="name" type="text" required autocomplete="name"><span class="err">Please enter your name.</span></div>
         <div class="field"><label for="lf-email">Work email</label><input id="lf-email" name="email" type="email" required autocomplete="email"><span class="err">Please enter a valid work email.</span></div>
         <div class="field"><label for="lf-company">Company</label><input id="lf-company" name="company" type="text" required autocomplete="organization"><span class="err">Please enter your company.</span></div>
-        <div class="field"><label for="lf-size">Team size</label><select id="lf-size" name="team_size" required><option value="">Select…</option><option>Under 15</option><option>15–40</option><option>40–80</option><option>80+</option></select><span class="err">Please choose a team size.</span></div>
+        <div class="field"><label for="lf-size">Team size</label><select id="lf-size" name="team_size" required><option value="">Select…</option><option>Under 15</option><option>15–40</option><option>40–80</option><option>80–200</option><option>200+</option></select><span class="err">Please choose a team size.</span></div>
+        <div class="field"><label for="lf-phone">Phone <span class="help">(optional)</span></label><input id="lf-phone" name="phone" type="tel" autocomplete="tel"></div>
         <div class="field"><label for="lf-program">Program of interest</label><select id="lf-program" name="program"><option value="">Not sure yet</option><option>Emotional Wellness &amp; Stress Reset</option><option>Confidence &amp; Mindset Building</option><option>Movement &amp; Relaxation</option><option>Nature-Based Retreat</option><option>Women-Centric Circle</option></select></div>
         <div class="field"><label for="lf-msg">Anything else? <span class="help">(optional)</span></label><textarea id="lf-msg" name="message"></textarea></div>
         <div class="form-status" id="lf-status" role="status" aria-live="polite"></div>
@@ -584,23 +544,25 @@
 
   <!-- ── CTA ── -->
   <section class="cta" id="cta">
-    <div class="cta-eyebrow reveal">BEGIN YOUR JOURNEY</div>
-    <h2 class="reveal delay-1">Ready to Heal<br>Your Workplace?</h2>
-    <p class="reveal delay-2">Join 200+ organisations that have transformed their culture through holistic wellness.
-      Let's build a healthier, happier team together.</p>
+    <div class="cta-eyebrow reveal">NEXT STEP</div>
+    <h2 class="reveal delay-1">Plan a session<br>for your team.</h2>
+    <p class="reveal delay-2">Tell us your team size and dates. You get a written proposal and fixed quote within one
+      working day.</p>
     <div class="cta-btns reveal delay-3">
-      <a href="https://wa.me/919069982434?text=Hi%20Heal%20With%20Mahima%2C%20I%20am%20ready%20to%20book%20a%20discovery%20call."
-        class="btn-cta" target="_blank" rel="noopener">Book a Discovery Call</a>
-      <a href="#programs" class="btn-cta-outline">View All Programs</a>
+      <a href="#enquire" class="btn-cta">Request a proposal</a>
+      <a href="https://wa.me/919069982434?text=Hi%20Heal%20With%20Mahima%2C%20I%20want%20to%20plan%20a%20session%20for%20my%20team."
+        class="btn-cta-outline" target="_blank" rel="noopener">WhatsApp us</a>
     </div>
     <div class="cta-meta reveal delay-4">
       <span>30-min consultation</span>
       <div class="cta-meta-dot"></div>
       <span>No commitment</span>
       <div class="cta-meta-dot"></div>
-      <span>Custom programs</span>
+      <span>GST invoice</span>
     </div>
   </section>
+
+  </main>
 
   <!-- ── FOOTER ── -->
   <footer>
@@ -608,10 +570,10 @@
       <div>
         <div class="footer-brand-name">HEALWITHMAHIMA</div>
         <div class="footer-brand-sub">Corporate Wellness &amp; Mindfulness</div>
-        <address class="footer-nap" style="font-style:normal;margin-top:14px;font-size:13px;color:#7C6558;line-height:1.7;">
+        <address class="footer-nap">
           Gurgaon, Haryana &middot; Delhi-NCR, India<br>
-          <a href="tel:+919069982434" style="color:#7C6558;">+91 90699 82434</a> &middot;
-          <a href="mailto:hello@healwithmahima.com" style="color:#7C6558;">hello@healwithmahima.com</a>
+          <a href="tel:+919069982434">+91 90699 82434</a> &middot;
+          <a href="mailto:hello@healwithmahima.com">hello@healwithmahima.com</a>
         </address>
       </div>
       <nav class="footer-nav">
@@ -619,13 +581,13 @@
         <a href="#programs">Programs</a>
         <a href="#stats">Results</a>
         <a href="#testimonials">Clients</a>
-        <a href="#cta">Contact</a>
+        <a href="#enquire">Contact</a>
       </nav>
     </div>
     <div class="footer-divider"></div>
     <div class="footer-bottom">
       <span>© 2026 HEALWITHMAHIMA. All rights reserved.</span>
-      <span>Privacy Policy &nbsp;·&nbsp; Terms of Service</span>
+      <span>Gurgaon, Haryana · India</span>
     </div>
   </footer>
 

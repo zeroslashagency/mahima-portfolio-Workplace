@@ -25,8 +25,12 @@ export function initNavbar() {
   // Navbar scroll effect
   const navbar = document.querySelector('.navbar');
   if (navbar) {
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 60);
-    });
+    let scrolled = null;
+    const update = () => {
+      const next = window.scrollY > 60;
+      if (next !== scrolled) navbar.classList.toggle('scrolled', (scrolled = next));
+    };
+    window.addEventListener('scroll', update, { passive: true });
+    update();
   }
 }

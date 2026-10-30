@@ -2,28 +2,11 @@
 <html lang="en">
 
 <head>
-  <!-- Analytics / Ads (set GA4, Google Ads, Meta Pixel IDs before launch) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX');
-    gtag('config', 'AW-XXXXXXX');
-  </script>
-  <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'PIXEL_ID'); fbq('track', 'PageView');
-  </script>
-
   <meta charset="UTF-8">
+  <script>document.documentElement.classList.add('js')</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nature-Based Wellness Retreats — HEALWITHMAHIMA Gurgaon</title>
-  <meta name="description" content="Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and immersive outdoor experiences for deep team connection.">
+  <meta name="description" content="Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and outdoor sessions for team connection.">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -31,15 +14,18 @@
   <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://healwithmahima.com/programs/nature-based-wellness-retreats.html">
   <meta property="og:title" content="Nature-Based Wellness Retreats — HEALWITHMAHIMA Gurgaon">
-  <meta property="og:description" content="Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and immersive outdoor experiences for deep team connection.">
-  <meta property="og:image" content="https://healwithmahima.com/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp">
+  <meta property="og:description" content="Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and outdoor sessions for team connection.">
+  <meta property="og:image" content="https://healwithmahima.com/og-default.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Team lying on mats during a sound healing session with singing bowls">
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://healwithmahima.com/programs/nature-based-wellness-retreats.html">
-  <meta property="twitter:title" content="Nature-Based Wellness Retreats — HEALWITHMAHIMA Gurgaon">
-  <meta property="twitter:description" content="Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and immersive outdoor experiences for deep team connection.">
-  <meta property="twitter:image" content="https://healwithmahima.com/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://healwithmahima.com/programs/nature-based-wellness-retreats.html">
+  <meta name="twitter:title" content="Nature-Based Wellness Retreats — HEALWITHMAHIMA Gurgaon">
+  <meta name="twitter:description" content="Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and outdoor sessions for team connection.">
+  <meta name="twitter:image" content="https://healwithmahima.com/og-default.jpg">
 
   <!-- Additional SEO -->
   <meta name="keywords" content="wellness retreats, nature retreats, sound healing, team building, outdoor wellness, corporate retreat, Gurgaon">
@@ -51,11 +37,8 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
-    rel="stylesheet">
+  <link rel="preload" href="/fonts/playfairdisplay-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../css/style.css">
 
   <!-- Structured Data / Schema.org -->
@@ -65,9 +48,9 @@
     "@type": "Service",
     "name": "Nature-Based Wellness Retreats",
     "serviceType": "Corporate Wellness Program",
-    "description": "Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and immersive outdoor experiences for deep team connection.",
+    "description": "Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and outdoor sessions for team connection.",
     "url": "https://healwithmahima.com/programs/nature-based-wellness-retreats.html",
-    "image": "https://healwithmahima.com/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp",
+    "image": "https://healwithmahima.com/assets/images/serene-retreat-in-natures-embrace.webp",
     "areaServed": {
       "@type": "City",
       "name": "Gurgaon"
@@ -180,6 +163,7 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="cursor"></div>
   <div class="cursor-ring"></div>
 
@@ -191,25 +175,25 @@
       <a href="../index.html#stats">Results</a>
       <a href="../index.html#testimonials">Clients</a>
     </div>
-    <a href="#book" class="btn-nav">Book Now</a>
+    <a href="../index.html?program=Nature-Based%20Retreat#enquire" class="btn-nav">Get a proposal</a>
   </nav>
 
-  <main class="program-page program-page--refined program-page--retreat">
+  <main id="main" class="program-page program-page--refined program-page--retreat">
     <section class="program-hero">
       <div class="program-hero-copy">
         <a href="../index.html#programs" class="program-back">← Back to Programs</a>
-        <div class="program-num reveal">04</div>
+        <div class="program-num">04</div>
         <div class="hero-eyebrow">RETREATS · NATURE · TEAM RESET</div>
         <h1>Nature-Based<br>Wellness Retreats</h1>
-        <p>Step away from the office and into nature. These immersive retreats combine forest bathing, sound healing, and
-          mindful movement to create a profound reset for your entire team.</p>
+        <p>Half-day to two-day offsites near Gurgaon. Nature walks, sound healing and mindful movement, with the venue,
+          schedule and facilitation planned for you.</p>
         <div class="hero-btns">
-          <a href="#book" class="btn-white">Book This Program</a>
+          <a href="../index.html?program=Nature-Based%20Retreat#enquire" class="btn-white">Request a proposal</a>
           <a href="../index.html#programs" class="btn-ghost">View All Programs</a>
         </div>
       </div>
       <div class="program-hero-image">
-        <img src="/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp" alt="Nature wellness retreat" width="1672" height="941" fetchpriority="high" decoding="async">
+        <img src="/assets/images/serene-retreat-in-natures-embrace.webp" srcset="/assets/images/serene-retreat-in-natures-embrace-800.webp 800w, /assets/images/serene-retreat-in-natures-embrace.webp 1672w" sizes="(max-width: 720px) 100vw, 50vw" alt="Nature wellness retreat" width="1672" height="941" fetchpriority="high" decoding="async">
       </div>
     </section>
 
@@ -274,14 +258,14 @@
     </section>
     <!-- WHO IT'S FOR + OUTCOMES (added) -->
     <section class="msec" id="who-for">
-      <div class="msec-head"><span class="eyebrow">WHO IT'S FOR</span><h2>For teams that need a real reset, not a meeting room.</h2></div>
+      <div class="msec-head reveal"><span class="eyebrow">WHO IT'S FOR</span><h2>For teams that need a real reset, not a meeting room.</h2></div>
       <div class="whofor-grid">
-        <div class="whofor-list">
+        <div class="whofor-list" data-stagger>
           <div class="row"><span class="mk">›</span><span>Leadership offsites and annual team resets</span></div>
           <div class="row"><span class="mk">›</span><span>Teams that bonded over Slack but rarely in person</span></div>
           <div class="row"><span class="mk">›</span><span>Orgs rewarding a hard year with something restorative</span></div>
         </div>
-        <div class="outcomes">
+        <div class="outcomes" data-stagger>
           <div class="outcome-tile"><div class="big">Bonded</div><div class="lbl">Real connection outside work roles</div></div>
           <div class="outcome-tile"><div class="big">Restored</div><div class="lbl">Deep recovery, not just a break</div></div>
           <div class="outcome-tile"><div class="big">Aligned</div><div class="lbl">Shared intention for the next quarter</div></div>
@@ -291,26 +275,26 @@
     </section>
     <!-- WHAT TO EXPECT / PREP (added) -->
     <section class="msec msec--tint" id="what-to-expect">
-      <div class="msec-head"><span class="eyebrow">WHAT TO EXPECT</span><h2>Simple to host. We handle the rest.</h2><p>Here's exactly what your team needs to prepare — and what we bring.</p></div>
-      <div class="prep-grid">
-        <div class="prep-card"><h3>Your team provides</h3><ul><li>We shortlist venues near Gurgaon/NCR</li><li>Half-day to 2-day formats</li><li>Transport coordinated with you</li><li>Group size locked 2 weeks ahead</li></ul></div>
+      <div class="msec-head reveal"><span class="eyebrow">WHAT TO EXPECT</span><h2>Simple to host. We handle the rest.</h2><p>Here's exactly what your team needs to prepare — and what we bring.</p></div>
+      <div class="prep-grid" data-stagger>
+        <div class="prep-card"><h3>How we plan it</h3><ul><li>We shortlist venues near Gurgaon/NCR</li><li>Half-day to 2-day formats</li><li>Transport coordinated with you</li><li>Group size locked 2 weeks ahead</li></ul></div>
         <div class="prep-card"><h3>Good to know</h3><ul><li>Pack light, comfortable outdoor clothing</li><li>Openness to unplug from devices</li><li>Dietary needs shared in advance (sattvic meals)</li><li>We handle facilitation, flow and materials</li></ul></div>
       </div>
     </section>
     <!-- Pricing (set real starting numbers before launch) -->
     <section class="msec" id="pricing">
-      <div class="msec-head"><span class="eyebrow">PRICING</span><h2>Clear packages, custom quote.</h2><p>Every team is different — final pricing depends on size, location and format. Here's the shape.</p></div>
-      <div class="pricing-grid">
-        <div class="price-card"><div class="tier">Single Session</div><div class="amt">Custom quote<small></small></div><div class="price-desc">A one-off reset for your team.</div><ul><li>1 facilitated session</li><li>All materials included</li><li>On-site in Gurgaon/NCR</li></ul><a class="btn-cta price-cta" href="#book">Get a quote</a></div>
-        <div class="price-card featured"><span class="price-badge">POPULAR</span><div class="tier">Series (4–6)</div><div class="amt">Custom quote<small></small></div><div class="price-desc">Recurring slots that build a habit.</div><ul><li>Discounted per-session rate</li><li>Consistent facilitator</li><li>Simple feedback summary</li></ul><a class="btn-cta price-cta" href="#book">Get a quote</a></div>
-        <div class="price-card"><div class="tier">Retainer / Custom</div><div class="amt">Custom</div><div class="price-desc">Ongoing partner for larger orgs.</div><ul><li>Multi-program mix</li><li>Priority scheduling</li><li>Tailored reporting</li></ul><a class="btn-cta price-cta" href="#book">Talk to us</a></div>
+      <div class="msec-head reveal"><span class="eyebrow">PRICING</span><h2>How engagements are priced.</h2><p>Every quote is fixed in writing before you commit, and depends on team size, location and format. GST invoice provided.</p></div>
+      <div class="pricing-grid" data-stagger>
+        <div class="price-card"><div class="tier">Half day</div><div class="amt">Per head</div><div class="price-desc">A 4–5 hour reset at a venue near Gurgaon.</div><ul><li>Guided nature walk + sound healing</li><li>Venue shortlist and booking help</li><li>All facilitation materials</li></ul><a class="btn-cta price-cta" href="../index.html?program=Nature-Based%20Retreat#enquire">Get a quote</a></div>
+        <div class="price-card featured"><div class="tier">Full day</div><div class="amt">Per head</div><div class="price-desc">The most common offsite format.</div><ul><li>Morning and afternoon sessions</li><li>Meals planned with the venue</li><li>Short feedback summary after</li></ul><a class="btn-cta price-cta" href="../index.html?program=Nature-Based%20Retreat#enquire">Get a quote</a></div>
+        <div class="price-card"><div class="tier">Overnight</div><div class="amt">Per head</div><div class="price-desc">One or two nights for leadership groups.</div><ul><li>Evening sound bath + sunrise practice</li><li>Transport coordinated with you</li><li>Tailored agenda and debrief</li></ul><a class="btn-cta price-cta" href="../index.html?program=Nature-Based%20Retreat#enquire">Talk to us</a></div>
       </div>
-      <p class="price-note">Prices exclude travel for offsite and retreat formats.</p>
+      <p class="price-note">Prices exclude GST and travel for offsite formats. Free rescheduling with 72 hours' notice.</p>
     </section>
   <!-- FAQ (added) -->
   <section class="msec msec--tint" id="faq">
-    <div class="msec-head"><span class="eyebrow">QUESTIONS, ANSWERED</span><h2>Questions teams ask us</h2></div>
-    <div class="faq-wrap">
+    <div class="msec-head reveal"><span class="eyebrow">QUESTIONS, ANSWERED</span><h2>Questions teams ask us</h2></div>
+    <div class="faq-wrap" data-stagger>
       <details class="faq-item">
         <summary>Where do the retreats happen?</summary>
         <div class="faq-a">At nature venues within reach of Gurgaon/Delhi-NCR. We match the site to your group size and budget.</div>
@@ -350,7 +334,7 @@
       <div class="related-heading reveal">
         <div>
           <div class="eyebrow">RELATED PROGRAMS</div>
-          <h2>Explore Other Paths</h2>
+          <h2>Other formats</h2>
         </div>
         <p>Keep the retreat feeling alive through shorter in-office resets, movement sessions, mindset work, or circles
           built for emotional safety.</p>
@@ -359,7 +343,7 @@
         <a class="related-card reveal delay-1" href="emotional-wellness-stress-reset.html">
           <span class="related-card-num">01</span>
           <div class="related-card-media">
-            <img src="/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp" alt="Emotional wellness" width="1672" height="941" loading="lazy" decoding="async">
+            <img src="/assets/images/session-room-640.webp" alt="Emotional wellness" width="640" height="1138" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Emotional Wellness &amp; Stress Reset</h3>
@@ -369,7 +353,7 @@
         <a class="related-card reveal delay-2" href="confidence-mindset-building.html">
           <span class="related-card-num">02</span>
           <div class="related-card-media">
-            <img src="/assets/images/Creative%20collaboration%20in%20a%20cozy%20space.webp" alt="Confidence workshop" width="1672" height="941" loading="lazy" decoding="async">
+            <img src="/assets/images/creative-collaboration-in-a-cozy-space-800.webp" alt="Confidence workshop" width="800" height="450" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Confidence &amp; Mindset Building</h3>
@@ -379,7 +363,7 @@
         <a class="related-card reveal delay-3" href="movement-relaxation-sessions.html">
           <span class="related-card-num">03</span>
           <div class="related-card-media">
-            <img src="/assets/images/Serene%20moments%20in%20a%20wellness%20collage.webp" alt="Movement session" width="1672" height="941" loading="lazy" decoding="async">
+            <img src="/assets/images/session-stretch-800.webp" alt="Movement session" width="800" height="741" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Movement &amp; Relaxation Sessions</h3>
@@ -389,7 +373,7 @@
         <a class="related-card reveal delay-4" href="women-centric-wellness-circles.html">
           <span class="related-card-num">05</span>
           <div class="related-card-media">
-            <img src="/assets/images/Cozy%20group%20discussion%20in%20modern%20lounge.webp" alt="Women circle" width="1672" height="941" loading="lazy" decoding="async">
+            <img src="/assets/images/cozy-group-discussion-in-modern-lounge-800.webp" alt="Women circle" width="800" height="450" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Women-Centric Wellness Circles</h3>
@@ -405,9 +389,9 @@
       <p class="reveal delay-2">Start with a 30-minute consultation and shape the retreat around time, group size and
         desired depth.</p>
       <div class="cta-btns reveal delay-3">
+        <a href="../index.html?program=Nature-Based%20Retreat#enquire" class="btn-cta">Request a proposal</a>
         <a href="https://wa.me/919069982434?text=Hi%20Heal%20With%20Mahima%2C%20I%20want%20to%20book%20the%20Nature-Based%20Wellness%20Retreats%20program."
-          class="btn-cta" target="_blank" rel="noopener">Book on WhatsApp</a>
-        <a href="../index.html#programs" class="btn-cta-outline">View All Programs</a>
+          class="btn-cta-outline" target="_blank" rel="noopener">WhatsApp us</a>
       </div>
     </section>
   </main>
@@ -417,10 +401,10 @@
       <div>
         <div class="footer-brand-name">HEALWITHMAHIMA</div>
         <div class="footer-brand-sub">Corporate Wellness &amp; Mindfulness</div>
-        <address class="footer-nap" style="font-style:normal;margin-top:14px;font-size:13px;color:#7C6558;line-height:1.7;">
+        <address class="footer-nap">
           Gurgaon, Haryana &middot; Delhi-NCR, India<br>
-          <a href="tel:+919069982434" style="color:#7C6558;">+91 90699 82434</a> &middot;
-          <a href="mailto:hello@healwithmahima.com" style="color:#7C6558;">hello@healwithmahima.com</a>
+          <a href="tel:+919069982434">+91 90699 82434</a> &middot;
+          <a href="mailto:hello@healwithmahima.com">hello@healwithmahima.com</a>
         </address>
       </div>
       <nav class="footer-nav">
@@ -434,7 +418,7 @@
     <div class="footer-divider"></div>
     <div class="footer-bottom">
       <span>© 2026 HEALWITHMAHIMA. All rights reserved.</span>
-      <span>Privacy Policy &nbsp;·&nbsp; Terms of Service</span>
+      <span>Gurgaon, Haryana · India</span>
     </div>
   </footer>
 

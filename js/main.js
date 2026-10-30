@@ -1,46 +1,92 @@
 /* ── COMPONENTS ── */
 import '../components/index.js';
+import './analytics.js';
 
-/* ── CUSTOM CURSOR ── */
-const cursor = document.querySelector('.cursor');
-const cursorRing = document.querySelector('.cursor-ring');
-let mouseX = 0, mouseY = 0;
-let ringX = 0, ringY = 0;
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-document.addEventListener('mousemove', e => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-  if (cursor) {
-    cursor.style.left = mouseX + 'px';
-    cursor.style.top = mouseY + 'px';
+/* ── CUSTOM CURSOR (fine pointers only; stops its loop when idle) ── */
+(function initCursor() {
+  const cursor = document.querySelector('.cursor');
+  const ring = document.querySelector('.cursor-ring');
+  if (!cursor || !ring || reduceMotion) return;
+  if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  document.documentElement.classList.add('has-cursor');
+
+  let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0, running = false;
+  function tick() {
+    ringX += (mouseX - ringX) * 0.12;
+    ringY += (mouseY - ringY) * 0.12;
+    ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0)`;
+    if (Math.abs(mouseX - ringX) < 0.1 && Math.abs(mouseY - ringY) < 0.1) { running = false; return; }
+    requestAnimationFrame(tick);
   }
-});
+  document.addEventListener('mousemove', e => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    if (!ringX && !ringY) { ringX = mouseX; ringY = mouseY; document.documentElement.classList.add('cursor-active'); }
+    cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+    if (!running) { running = true; requestAnimationFrame(tick); }
+  }, { passive: true });
+  document.addEventListener('mouseover', e => {
+    document.documentElement.classList.toggle('cursor-hover', !!e.target.closest('a, button, summary'));
+  }, { passive: true });
+})();
 
-function animateRing() {
-  ringX += (mouseX - ringX) * 0.12;
-  ringY += (mouseY - ringY) * 0.12;
-  if (cursorRing) {
-    cursorRing.style.left = ringX + 'px';
-    cursorRing.style.top = ringY + 'px';
-  }
-  requestAnimationFrame(animateRing);
-}
-/* Only run the cursor loop on real pointer devices (skip touch / low-end phones) */
-if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) animateRing();
+/* ── HERO HEADLINE: split <br> lines for the line-mask reveal ── */
+(function splitHeroLines() {
+  const h1 = document.querySelector('.hero-left h1');
+  if (!h1 || reduceMotion) return;
+  const lines = h1.innerHTML.split(/<br\s*\/?>/i);
+  h1.setAttribute('aria-label', h1.textContent.replace(/\s+/g, ' ').trim());
+  h1.innerHTML = lines.map(l => `<span class="line" aria-hidden="true"><span>${l.trim()}</span></span>`).join('');
+})();
 
 /* ── SCROLL REVEAL ── */
-const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-revealEls.forEach(el => observer.observe(el));
+const REVEAL_CLASSES = ['reveal', 'reveal-left', 'reveal-right', 'visible', 'delay-1', 'delay-2', 'delay-3', 'delay-4', 'delay-5'];
 
-/* ── STATS COUNTER ── */
+/* [data-stagger] reveals each child in turn */
+document.querySelectorAll('[data-stagger]').forEach(group => {
+  Array.from(group.children).forEach((el, i) => {
+    el.classList.add('reveal');
+    el.style.setProperty('--reveal-delay', (i * 90) + 'ms');
+  });
+});
+
+/* After the entrance, drop the reveal classes so each element's own hover transition applies */
+function finishReveal(el) {
+  el.classList.remove(...REVEAL_CLASSES);
+  el.style.removeProperty('--reveal-delay');
+}
+
+const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+if (reduceMotion || !('IntersectionObserver' in window)) {
+  revealEls.forEach(finishReveal);
+  document.querySelectorAll('.reveal-media').forEach(el => el.classList.add('visible'));
+} else {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      observer.unobserve(el);
+      if (el.classList.contains('reveal-media') && !el.matches('.reveal, .reveal-left, .reveal-right')) {
+        el.classList.add('visible');
+        return;
+      }
+      el.addEventListener('transitionend', function done(e) {
+        if (e.target !== el || e.propertyName !== 'transform') return;
+        el.removeEventListener('transitionend', done);
+        const keepMedia = el.classList.contains('reveal-media');
+        finishReveal(el);
+        if (keepMedia) el.classList.add('visible');
+      });
+      el.classList.add('visible');
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  revealEls.forEach(el => observer.observe(el));
+  document.querySelectorAll('.reveal-media').forEach(el => observer.observe(el));
+}
+
+/* ── STATS COUNTER (real numbers ship in the HTML; JS counts up only when it runs) ── */
 function animateCounter(el, target, suffix) {
   const duration = 1800;
   const start = performance.now();
@@ -56,25 +102,55 @@ function animateCounter(el, target, suffix) {
 }
 
 const statsSection = document.querySelector('.stats');
-let statsAnimated = false;
-const statsObserver = new IntersectionObserver((entries) => {
-  if (entries[0].isIntersecting && !statsAnimated) {
-    statsAnimated = true;
-    document.querySelectorAll('.stat-number[data-target]').forEach(el => {
-      const target = parseInt(el.dataset.target);
-      const suffix = el.dataset.suffix || '';
-      animateCounter(el, target, suffix);
-    });
+if (statsSection) {
+  if (reduceMotion) {
+    statsSection.classList.add('counted');
+  } else {
+    const nums = statsSection.querySelectorAll('.stat-number[data-target]');
+    nums.forEach(el => { el.textContent = '0' + (el.dataset.suffix || ''); });
+    const statsObserver = new IntersectionObserver((entries) => {
+      if (!entries[0].isIntersecting) return;
+      statsObserver.disconnect();
+      statsSection.classList.add('counted');
+      /* wait for the grid's own fade-in so the count isn't half-transparent */
+      setTimeout(() => {
+        nums.forEach(el => animateCounter(el, parseInt(el.dataset.target, 10), el.dataset.suffix || ''));
+      }, 350);
+    }, { threshold: 0.35 });
+    statsObserver.observe(statsSection);
   }
-}, { threshold: 0.3 });
-if (statsSection) statsObserver.observe(statsSection);
+}
 
-/* ── TICKER DUPLICATE for seamless loop ── */
+/* ── TICKER: repeat content until it covers 2× the viewport, so the loop never shows a gap ── */
 const track = document.querySelector('.ticker-track');
 if (track) {
-  const clone = track.innerHTML;
-  track.innerHTML = clone + clone;
+  const unit = track.innerHTML;
+  const unitWidth = track.scrollWidth || 1;
+  const copies = Math.max(1, Math.ceil(window.innerWidth / unitWidth));
+  const half = unit.repeat(copies);
+  track.innerHTML = half + half;
+  /* keep speed constant (~45px/s) regardless of how many copies were added */
+  track.style.setProperty('--ticker-dur', Math.round((unitWidth * copies) / 45) + 's');
 }
+
+/* ── VIDEO: load and play only near the viewport; pause when off-screen ── */
+document.querySelectorAll('video[data-autoplay]').forEach(video => {
+  const source = video.querySelector('source[data-src]');
+  if (!source || !('IntersectionObserver' in window)) return;
+  let loaded = false;
+  const io = new IntersectionObserver(entries => {
+    const visible = entries[0].isIntersecting;
+    if (visible && !loaded) {
+      source.src = source.dataset.src;
+      video.load();
+      loaded = true;
+    }
+    if (reduceMotion) return;
+    if (visible) video.play().catch(() => {});
+    else video.pause();
+  }, { rootMargin: '200px 0px' });
+  io.observe(video);
+});
 
 
 /* ── MOBILE MENU (added) ── */
@@ -128,18 +204,38 @@ document.addEventListener('click', function (e) {
   if (!form) return;
   const statusEl = document.getElementById('lf-status');
 
+  /* preselect the program when arriving from a program page (?program=...) */
+  const wanted = new URLSearchParams(location.search).get('program');
+  const programSelect = form.querySelector('#lf-program');
+  if (wanted && programSelect) {
+    const match = Array.from(programSelect.options).find(o => o.text === wanted);
+    if (match) programSelect.value = match.value || match.text;
+  }
+
+  form.querySelectorAll('.field').forEach(function (wrap) {
+    const input = wrap.querySelector('input, select, textarea');
+    const err = wrap.querySelector('.err');
+    if (input && err) {
+      err.id = err.id || (input.id + '-err');
+      input.setAttribute('aria-describedby', err.id);
+    }
+  });
+
   function setInvalid(field, bad) {
     const wrap = field.closest('.field');
     if (wrap) wrap.classList.toggle('invalid', bad);
+    if (bad) field.setAttribute('aria-invalid', 'true');
+    else field.removeAttribute('aria-invalid');
   }
   function validate() {
-    let ok = true;
+    let firstBad = null;
     form.querySelectorAll('[required]').forEach(function (el) {
       const bad = !el.value.trim() || (el.type === 'email' && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(el.value));
       setInvalid(el, bad);
-      if (bad) ok = false;
+      if (bad && !firstBad) firstBad = el;
     });
-    return ok;
+    if (firstBad) firstBad.focus();
+    return !firstBad;
   }
   form.addEventListener('input', function (e) {
     if (e.target.closest('.field.invalid')) setInvalid(e.target, false);

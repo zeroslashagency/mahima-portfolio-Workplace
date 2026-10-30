@@ -2,25 +2,8 @@
 <html lang="en">
 
 <head>
-  <!-- Analytics / Ads (set GA4, Google Ads, Meta Pixel IDs before launch) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX');
-    gtag('config', 'AW-XXXXXXX');
-  </script>
-  <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'PIXEL_ID'); fbq('track', 'PageView');
-  </script>
-
   <meta charset="UTF-8">
+  <script>document.documentElement.classList.add('js')</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Women-Centric Wellness Circles — HEALWITHMAHIMA Gurgaon</title>
   <meta name="description" content="Safe spaces for women leaders. Sharing circles, emotional release practices & confidence-building designed specifically for women in the workplace.">
@@ -32,14 +15,17 @@
   <meta property="og:url" content="https://healwithmahima.com/programs/women-centric-wellness-circles.html">
   <meta property="og:title" content="Women-Centric Wellness Circles — HEALWITHMAHIMA Gurgaon">
   <meta property="og:description" content="Safe spaces for women leaders. Sharing circles, emotional release practices & confidence-building designed specifically for women in the workplace.">
-  <meta property="og:image" content="https://healwithmahima.com/assets/images/Cozy%20group%20discussion%20in%20modern%20lounge.webp">
+  <meta property="og:image" content="https://healwithmahima.com/og-default.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Team lying on mats during a sound healing session with singing bowls">
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://healwithmahima.com/programs/women-centric-wellness-circles.html">
-  <meta property="twitter:title" content="Women-Centric Wellness Circles — HEALWITHMAHIMA Gurgaon">
-  <meta property="twitter:description" content="Safe spaces for women leaders. Sharing circles, emotional release practices & confidence-building designed specifically for women in the workplace.">
-  <meta property="twitter:image" content="https://healwithmahima.com/assets/images/Cozy%20group%20discussion%20in%20modern%20lounge.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://healwithmahima.com/programs/women-centric-wellness-circles.html">
+  <meta name="twitter:title" content="Women-Centric Wellness Circles — HEALWITHMAHIMA Gurgaon">
+  <meta name="twitter:description" content="Safe spaces for women leaders. Sharing circles, emotional release practices & confidence-building designed specifically for women in the workplace.">
+  <meta name="twitter:image" content="https://healwithmahima.com/og-default.jpg">
 
   <!-- Additional SEO -->
   <meta name="keywords" content="women wellness, women circles, women leaders, emotional support, confidence building, safe space, Gurgaon">
@@ -51,11 +37,8 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
-    rel="stylesheet">
+  <link rel="preload" href="/fonts/playfairdisplay-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../css/style.css">
 
   <!-- Structured Data / Schema.org -->
@@ -67,7 +50,7 @@
     "serviceType": "Corporate Wellness Program",
     "description": "Safe spaces for women leaders. Sharing circles, emotional release practices & confidence-building designed specifically for women in the workplace.",
     "url": "https://healwithmahima.com/programs/women-centric-wellness-circles.html",
-    "image": "https://healwithmahima.com/assets/images/Cozy%20group%20discussion%20in%20modern%20lounge.webp",
+    "image": "https://healwithmahima.com/assets/images/cozy-group-discussion-in-modern-lounge.webp",
     "areaServed": {
       "@type": "City",
       "name": "Gurgaon"
@@ -180,6 +163,7 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="cursor"></div>
   <div class="cursor-ring"></div>
 
@@ -191,25 +175,25 @@
       <a href="../index.html#stats">Results</a>
       <a href="../index.html#testimonials">Clients</a>
     </div>
-    <a href="#book" class="btn-nav">Book Now</a>
+    <a href="../index.html?program=Women-Centric%20Circle#enquire" class="btn-nav">Get a proposal</a>
   </nav>
 
-  <main class="program-page program-page--refined program-page--women">
+  <main id="main" class="program-page program-page--refined program-page--women">
     <section class="program-hero">
       <div class="program-hero-copy">
         <a href="../index.html#programs" class="program-back">← Back to Programs</a>
-        <div class="program-num reveal">05</div>
+        <div class="program-num">05</div>
         <div class="hero-eyebrow">WOMEN CIRCLES · SHARING · CONFIDENCE</div>
         <h1>Women-Centric<br>Wellness Circles</h1>
-        <p>A sacred space for women in the workplace to share, heal, and rise together. These circles foster
-          psychological safety, emotional release, and deep sisterhood within your organisation.</p>
+        <p>Facilitated peer circles for women employees. Guided breathing, structured sharing and clear confidentiality
+          rules give people a safe room to talk about pressure at work and at home.</p>
         <div class="hero-btns">
-          <a href="#book" class="btn-white">Book This Program</a>
+          <a href="../index.html?program=Women-Centric%20Circle#enquire" class="btn-white">Request a proposal</a>
           <a href="../index.html#programs" class="btn-ghost">View All Programs</a>
         </div>
       </div>
       <div class="program-hero-image">
-        <img src="/assets/images/Cozy%20group%20discussion%20in%20modern%20lounge.webp" alt="Women wellness circle" width="1672" height="941" fetchpriority="high" decoding="async">
+        <img src="/assets/images/cozy-group-discussion-in-modern-lounge.webp" srcset="/assets/images/cozy-group-discussion-in-modern-lounge-800.webp 800w, /assets/images/cozy-group-discussion-in-modern-lounge.webp 1672w" sizes="(max-width: 720px) 100vw, 50vw" alt="Women wellness circle" width="1672" height="941" fetchpriority="high" decoding="async">
       </div>
     </section>
 
@@ -227,7 +211,7 @@
           <li>Emotional release &amp; somatic exercises</li>
           <li>Confidence &amp; self-worth practices</li>
           <li>Women's leadership discussion</li>
-          <li>Closing ritual &amp; intention-setting</li>
+          <li>Closing reflection &amp; intention-setting</li>
         </ul>
       </div>
     </section>
@@ -274,43 +258,43 @@
     </section>
     <!-- WHO IT'S FOR + OUTCOMES (added) -->
     <section class="msec" id="who-for">
-      <div class="msec-head"><span class="eyebrow">WHO IT'S FOR</span><h2>A safe space, held with care.</h2></div>
+      <div class="msec-head reveal"><span class="eyebrow">WHO IT'S FOR</span><h2>A safe space, held with care.</h2></div>
       <div class="whofor-grid">
-        <div class="whofor-list">
+        <div class="whofor-list" data-stagger>
           <div class="row"><span class="mk">›</span><span>Women's ERGs, networks and leadership cohorts</span></div>
           <div class="row"><span class="mk">›</span><span>Teams marking Women's Day with something real, not tokenistic</span></div>
           <div class="row"><span class="mk">›</span><span>Orgs supporting women through growth, transition or burnout</span></div>
         </div>
-        <div class="outcomes">
+        <div class="outcomes" data-stagger>
           <div class="outcome-tile"><div class="big">Safe</div><div class="lbl">A space to speak freely</div></div>
           <div class="outcome-tile"><div class="big">Seen</div><div class="lbl">Shared experience, less isolation</div></div>
           <div class="outcome-tile"><div class="big">Steady</div><div class="lbl">Emotional release and calm</div></div>
-          <div class="outcome-tile"><div class="big">Sisterhood</div><div class="lbl">Stronger peer support after</div></div>
+          <div class="outcome-tile"><div class="big">Support</div><div class="lbl">Stronger peer support after</div></div>
         </div>
       </div>
     </section>
     <!-- WHAT TO EXPECT / PREP (added) -->
     <section class="msec msec--tint" id="what-to-expect">
-      <div class="msec-head"><span class="eyebrow">WHAT TO EXPECT</span><h2>Simple to host. We handle the rest.</h2><p>Here's exactly what your team needs to prepare — and what we bring.</p></div>
-      <div class="prep-grid">
+      <div class="msec-head reveal"><span class="eyebrow">WHAT TO EXPECT</span><h2>Simple to host. We handle the rest.</h2><p>Here's exactly what your team needs to prepare — and what we bring.</p></div>
+      <div class="prep-grid" data-stagger>
         <div class="prep-card"><h3>Your team provides</h3><ul><li>A private, quiet room — no interruptions</li><li>Seating in a circle</li><li>2–3 hrs held gently</li><li>Women-only attendance respected</li></ul></div>
-        <div class="prep-card"><h3>Good to know</h3><ul><li>Come as you are — no prep needed</li><li>Sharing is invited, never forced</li><li>Confidentiality is set as a ground rule</li><li>Facilitated by Mahima personally</li></ul></div>
+        <div class="prep-card"><h3>Good to know</h3><ul><li>Come as you are — no prep needed</li><li>Sharing is invited, never forced</li><li>Confidentiality is set as a ground rule</li><li>Facilitated by Mahima personally</li><li>Not therapy: anyone who needs more support is pointed to your EAP or a counsellor</li></ul></div>
       </div>
     </section>
     <!-- Pricing (set real starting numbers before launch) -->
     <section class="msec" id="pricing">
-      <div class="msec-head"><span class="eyebrow">PRICING</span><h2>Clear packages, custom quote.</h2><p>Every team is different — final pricing depends on size, location and format. Here's the shape.</p></div>
-      <div class="pricing-grid">
-        <div class="price-card"><div class="tier">Single Session</div><div class="amt">Custom quote<small></small></div><div class="price-desc">A one-off reset for your team.</div><ul><li>1 facilitated session</li><li>All materials included</li><li>On-site in Gurgaon/NCR</li></ul><a class="btn-cta price-cta" href="#book">Get a quote</a></div>
-        <div class="price-card featured"><span class="price-badge">POPULAR</span><div class="tier">Series (4–6)</div><div class="amt">Custom quote<small></small></div><div class="price-desc">Recurring slots that build a habit.</div><ul><li>Discounted per-session rate</li><li>Consistent facilitator</li><li>Simple feedback summary</li></ul><a class="btn-cta price-cta" href="#book">Get a quote</a></div>
-        <div class="price-card"><div class="tier">Retainer / Custom</div><div class="amt">Custom</div><div class="price-desc">Ongoing partner for larger orgs.</div><ul><li>Multi-program mix</li><li>Priority scheduling</li><li>Tailored reporting</li></ul><a class="btn-cta price-cta" href="#book">Talk to us</a></div>
+      <div class="msec-head reveal"><span class="eyebrow">PRICING</span><h2>How engagements are priced.</h2><p>Every quote is fixed in writing before you commit, and depends on team size, location and format. GST invoice provided.</p></div>
+      <div class="pricing-grid" data-stagger>
+        <div class="price-card"><div class="tier">Single Session</div><div class="amt">Per session</div><div class="price-desc">A one-off reset for your team.</div><ul><li>1 facilitated session</li><li>All materials included</li><li>On-site in Gurgaon/NCR</li></ul><a class="btn-cta price-cta" href="../index.html?program=Women-Centric%20Circle#enquire">Get a quote</a></div>
+        <div class="price-card featured"><div class="tier">Series (4–6)</div><div class="amt">Per series</div><div class="price-desc">Recurring slots that build a habit.</div><ul><li>Discounted per-session rate</li><li>Consistent facilitator</li><li>Simple feedback summary</li></ul><a class="btn-cta price-cta" href="../index.html?program=Women-Centric%20Circle#enquire">Get a quote</a></div>
+        <div class="price-card"><div class="tier">Retainer</div><div class="amt">Monthly</div><div class="price-desc">Ongoing partner for larger orgs.</div><ul><li>Multi-program mix</li><li>Priority scheduling</li><li>Tailored reporting</li></ul><a class="btn-cta price-cta" href="../index.html?program=Women-Centric%20Circle#enquire">Talk to us</a></div>
       </div>
-      <p class="price-note">Prices exclude travel for offsite and retreat formats.</p>
+      <p class="price-note">Prices exclude GST and travel for offsite formats. Free rescheduling with 72 hours' notice.</p>
     </section>
   <!-- FAQ (added) -->
   <section class="msec msec--tint" id="faq">
-    <div class="msec-head"><span class="eyebrow">QUESTIONS, ANSWERED</span><h2>Questions teams ask us</h2></div>
-    <div class="faq-wrap">
+    <div class="msec-head reveal"><span class="eyebrow">QUESTIONS, ANSWERED</span><h2>Questions teams ask us</h2></div>
+    <div class="faq-wrap" data-stagger>
       <details class="faq-item">
         <summary>Who is this for?</summary>
         <div class="faq-a">Women's networks, ERGs and teams — from ICs to leadership. Built around trust and honest sharing.</div>
@@ -350,7 +334,7 @@
       <div class="related-heading reveal">
         <div>
           <div class="eyebrow">RELATED PROGRAMS</div>
-          <h2>Explore Other Paths</h2>
+          <h2>Other formats</h2>
         </div>
         <p>Extend the circle into whole-team restoration, mindset clarity, embodied relaxation, or an offsite retreat
           built around deeper reconnection.</p>
@@ -359,7 +343,7 @@
         <a class="related-card reveal delay-1" href="emotional-wellness-stress-reset.html">
           <span class="related-card-num">01</span>
           <div class="related-card-media">
-            <img src="/assets/images/Meditative%20calm%20in%20a%20sunlit%20space.webp" alt="Emotional wellness" width="1672" height="941" loading="lazy" decoding="async">
+            <img src="/assets/images/session-room-640.webp" alt="Emotional wellness" width="640" height="1138" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Emotional Wellness &amp; Stress Reset</h3>
@@ -369,7 +353,7 @@
         <a class="related-card reveal delay-2" href="confidence-mindset-building.html">
           <span class="related-card-num">02</span>
           <div class="related-card-media">
-            <img src="/assets/images/Creative%20collaboration%20in%20a%20cozy%20space.webp" alt="Confidence workshop" width="1672" height="941" loading="lazy" decoding="async">
+            <img src="/assets/images/creative-collaboration-in-a-cozy-space-800.webp" alt="Confidence workshop" width="800" height="450" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Confidence &amp; Mindset Building</h3>
@@ -379,7 +363,7 @@
         <a class="related-card reveal delay-3" href="movement-relaxation-sessions.html">
           <span class="related-card-num">03</span>
           <div class="related-card-media">
-            <img src="/assets/images/Serene%20moments%20in%20a%20wellness%20collage.webp" alt="Movement session" width="1672" height="941" loading="lazy" decoding="async">
+            <img src="/assets/images/session-stretch-800.webp" alt="Movement session" width="800" height="741" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Movement &amp; Relaxation Sessions</h3>
@@ -389,7 +373,7 @@
         <a class="related-card reveal delay-4" href="nature-based-wellness-retreats.html">
           <span class="related-card-num">04</span>
           <div class="related-card-media">
-            <img src="/assets/images/Serene%20retreat%20in%20nature%27s%20embrace.webp" alt="Nature retreat" width="1672" height="941" loading="lazy" decoding="async">
+            <img src="/assets/images/serene-retreat-in-natures-embrace-800.webp" alt="Nature retreat" width="800" height="450" loading="lazy" decoding="async">
           </div>
           <div class="related-card-copy">
             <h3>Nature-Based Wellness Retreats</h3>
@@ -404,9 +388,9 @@
       <h2 class="reveal delay-1">Create a Space<br>Women Can Trust.</h2>
       <p class="reveal delay-2">Start with a 30-minute consultation and shape the circle around your organisation's needs.</p>
       <div class="cta-btns reveal delay-3">
+        <a href="../index.html?program=Women-Centric%20Circle#enquire" class="btn-cta">Request a proposal</a>
         <a href="https://wa.me/919069982434?text=Hi%20Heal%20With%20Mahima%2C%20I%20want%20to%20book%20the%20Women-Centric%20Wellness%20Circles%20program."
-          class="btn-cta" target="_blank" rel="noopener">Book on WhatsApp</a>
-        <a href="../index.html#programs" class="btn-cta-outline">View All Programs</a>
+          class="btn-cta-outline" target="_blank" rel="noopener">WhatsApp us</a>
       </div>
     </section>
   </main>
@@ -416,10 +400,10 @@
       <div>
         <div class="footer-brand-name">HEALWITHMAHIMA</div>
         <div class="footer-brand-sub">Corporate Wellness &amp; Mindfulness</div>
-        <address class="footer-nap" style="font-style:normal;margin-top:14px;font-size:13px;color:#7C6558;line-height:1.7;">
+        <address class="footer-nap">
           Gurgaon, Haryana &middot; Delhi-NCR, India<br>
-          <a href="tel:+919069982434" style="color:#7C6558;">+91 90699 82434</a> &middot;
-          <a href="mailto:hello@healwithmahima.com" style="color:#7C6558;">hello@healwithmahima.com</a>
+          <a href="tel:+919069982434">+91 90699 82434</a> &middot;
+          <a href="mailto:hello@healwithmahima.com">hello@healwithmahima.com</a>
         </address>
       </div>
       <nav class="footer-nav">
@@ -433,7 +417,7 @@
     <div class="footer-divider"></div>
     <div class="footer-bottom">
       <span>© 2026 HEALWITHMAHIMA. All rights reserved.</span>
-      <span>Privacy Policy &nbsp;·&nbsp; Terms of Service</span>
+      <span>Gurgaon, Haryana · India</span>
     </div>
   </footer>
 
