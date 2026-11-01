@@ -2,7 +2,7 @@ backend:
   name: github
   repo: zeroslashagency/mahima-portfolio-Workplace
   branch: main
-  # base_url: https://sveltia-cms-auth.YOUR-SUBDOMAIN.workers.dev
+  base_url: https://sveltia-cms-auth.mr1398463.workers.dev
 media_folder: public/assets/images
 public_folder: /assets/images
 media_libraries:
