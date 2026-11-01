@@ -11,7 +11,7 @@ const homePath = 'content/home.json';
 const site = readJson(sitePath);
 const home = readJson(homePath);
 
-const siteOrigin = 'https://healwithmahima.com';
+const siteOrigin = 'https://www.healwithmahima.shop';
 const normalizePublicUrl = (value) => {
   try {
     const url = new URL(value, siteOrigin);
@@ -33,8 +33,8 @@ const homeJsonLd = {
     '@type': ['HealthAndBeautyBusiness', 'LocalBusiness'],
     name: 'HEALWITHMAHIMA',
     description: 'Corporate wellness programs featuring sound healing, breathwork, yoga, mindset workshops and nature retreats.',
-    url: 'https://healwithmahima.com',
-    logo: 'https://healwithmahima.com/web-app-manifest-512x512.png',
+    url: 'https://www.healwithmahima.shop',
+    logo: 'https://www.healwithmahima.shop/web-app-manifest-512x512.png',
     image: normalizePublicUrl(readJson(homePath).seo.ogImage),
     telephone: site.phone.href,
     email: site.email,
@@ -53,12 +53,12 @@ const homeJsonLd = {
   },
   organization: {
     '@context': 'https://schema.org', '@type': 'Organization', name: 'HEALWITHMAHIMA',
-    url: 'https://healwithmahima.com', logo: 'https://healwithmahima.com/web-app-manifest-512x512.png',
+    url: 'https://www.healwithmahima.shop', logo: 'https://www.healwithmahima.shop/web-app-manifest-512x512.png',
     founder: { '@type': 'Person', name: 'Mahima', jobTitle: 'Corporate Wellness Facilitator' },
     contactPoint: { '@type': 'ContactPoint', telephone: site.phone.href, contactType: 'sales', areaServed: 'IN' },
     sameAs: ['https://www.instagram.com/healwithmahima'],
   },
-  website: { '@context': 'https://schema.org', '@type': 'WebSite', name: 'HEALWITHMAHIMA', url: 'https://healwithmahima.com' },
+  website: { '@context': 'https://schema.org', '@type': 'WebSite', name: 'HEALWITHMAHIMA', url: 'https://www.healwithmahima.shop' },
   faq: {
     '@context': 'https://schema.org', '@type': 'FAQPage',
     mainEntity: home.faq.items.map(({ question, answer }) => ({

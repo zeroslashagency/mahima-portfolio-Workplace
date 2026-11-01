@@ -5,14 +5,14 @@
     "title": "Emotional Wellness & Stress Reset Program — HEALWITHMAHIMA Gurgaon",
     "description": "Deep restoration through sound healing, breathwork & meditation. Corporate wellness program designed to release accumulated stress and build lasting emotional resilience for teams.",
     "keywords": "emotional wellness, stress reset, sound healing, breathwork, meditation, corporate wellness, team restoration, Gurgaon",
-    "canonical": "https://healwithmahima.com/programs/emotional-wellness-stress-reset.html",
+    "canonical": "https://www.healwithmahima.shop/programs/emotional-wellness-stress-reset.html",
     "ogTitle": "Emotional Wellness & Stress Reset Program — HEALWITHMAHIMA",
     "ogDescription": "Sound healing, breathwork & meditation for deep team restoration. Release stress, reconnect with calm, build emotional resilience.",
-    "ogImage": "https://healwithmahima.com/og-default.jpg",
+    "ogImage": "https://www.healwithmahima.shop/og-default.jpg",
     "ogImageAlt": "Team lying on mats during a sound healing session with singing bowls",
     "twitterTitle": "Emotional Wellness & Stress Reset Program",
     "twitterDescription": "Sound healing, breathwork & meditation for deep team restoration.",
-    "twitterImage": "https://healwithmahima.com/og-default.jpg"
+    "twitterImage": "https://www.healwithmahima.shop/og-default.jpg"
   },
   "jsonLd": {
     "service": {
@@ -21,8 +21,8 @@
       "name": "Emotional Wellness & Stress Reset Program",
       "serviceType": "Corporate Wellness Program",
       "description": "Deep restoration through sound healing, breathwork & meditation. Corporate wellness program designed to release accumulated stress and build lasting emotional resilience for teams.",
-      "url": "https://healwithmahima.com/programs/emotional-wellness-stress-reset.html",
-      "image": "https://healwithmahima.com/og-default.jpg",
+      "url": "https://www.healwithmahima.shop/programs/emotional-wellness-stress-reset.html",
+      "image": "https://www.healwithmahima.shop/og-default.jpg",
       "areaServed": {
         "@type": "City",
         "name": "Gurgaon"
@@ -31,12 +31,12 @@
         "@type": "Offer",
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
-        "url": "https://healwithmahima.com/programs/emotional-wellness-stress-reset.html"
+        "url": "https://www.healwithmahima.shop/programs/emotional-wellness-stress-reset.html"
       },
       "provider": {
         "@type": "HealthAndBeautyBusiness",
         "name": "HEALWITHMAHIMA",
-        "url": "https://healwithmahima.com"
+        "url": "https://www.healwithmahima.shop"
       }
     }
   },

@@ -5,14 +5,14 @@
     "title": "Women-Centric Wellness Circles — HEALWITHMAHIMA Gurgaon",
     "description": "Safe spaces for women leaders. Sharing circles, emotional release practices & confidence-building designed specifically for women in the workplace.",
     "keywords": "women wellness, women circles, women leaders, emotional support, confidence building, safe space, Gurgaon",
-    "canonical": "https://healwithmahima.com/programs/women-centric-wellness-circles.html",
+    "canonical": "https://www.healwithmahima.shop/programs/women-centric-wellness-circles.html",
     "ogTitle": "Women-Centric Wellness Circles — HEALWITHMAHIMA Gurgaon",
     "ogDescription": "Safe spaces for women leaders. Sharing circles, emotional release practices & confidence-building designed specifically for women in the workplace.",
-    "ogImage": "https://healwithmahima.com/og-default.jpg",
+    "ogImage": "https://www.healwithmahima.shop/og-default.jpg",
     "ogImageAlt": "Team lying on mats during a sound healing session with singing bowls",
     "twitterTitle": "Women-Centric Wellness Circles — HEALWITHMAHIMA Gurgaon",
     "twitterDescription": "Safe spaces for women leaders. Sharing circles, emotional release practices & confidence-building designed specifically for women in the workplace.",
-    "twitterImage": "https://healwithmahima.com/og-default.jpg"
+    "twitterImage": "https://www.healwithmahima.shop/og-default.jpg"
   },
   "jsonLd": {
     "service": {
@@ -21,8 +21,8 @@
       "name": "Women-Centric Wellness Circles",
       "serviceType": "Corporate Wellness Program",
       "description": "Safe spaces for women leaders. Sharing circles, emotional release practices & confidence-building designed specifically for women in the workplace.",
-      "url": "https://healwithmahima.com/programs/women-centric-wellness-circles.html",
-      "image": "https://healwithmahima.com/assets/images/session-office-1080.webp",
+      "url": "https://www.healwithmahima.shop/programs/women-centric-wellness-circles.html",
+      "image": "https://www.healwithmahima.shop/assets/images/session-office-1080.webp",
       "areaServed": {
         "@type": "City",
         "name": "Gurgaon"
@@ -31,12 +31,12 @@
         "@type": "Offer",
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
-        "url": "https://healwithmahima.com/programs/women-centric-wellness-circles.html"
+        "url": "https://www.healwithmahima.shop/programs/women-centric-wellness-circles.html"
       },
       "provider": {
         "@type": "HealthAndBeautyBusiness",
         "name": "HEALWITHMAHIMA",
-        "url": "https://healwithmahima.com"
+        "url": "https://www.healwithmahima.shop"
       }
     }
   },

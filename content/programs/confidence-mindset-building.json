@@ -5,14 +5,14 @@
     "title": "Confidence & Mindset Building Program — HEALWITHMAHIMA Gurgaon",
     "description": "Journaling, visualisation & goal-setting workshops for high-performance teams. Build confidence, shift mindsets, set clearer goals.",
     "keywords": "confidence building, mindset coaching, visualisation, goal setting, journaling, high performance teams, Gurgaon",
-    "canonical": "https://healwithmahima.com/programs/confidence-mindset-building.html",
+    "canonical": "https://www.healwithmahima.shop/programs/confidence-mindset-building.html",
     "ogTitle": "Confidence & Mindset Building Program — HEALWITHMAHIMA Gurgaon",
     "ogDescription": "Journaling, visualisation & goal-setting workshops for high-performance teams. Build confidence, shift mindsets, set clearer goals.",
-    "ogImage": "https://healwithmahima.com/og-default.jpg",
+    "ogImage": "https://www.healwithmahima.shop/og-default.jpg",
     "ogImageAlt": "Team lying on mats during a sound healing session with singing bowls",
     "twitterTitle": "Confidence & Mindset Building Program — HEALWITHMAHIMA Gurgaon",
     "twitterDescription": "Journaling, visualisation & goal-setting workshops for high-performance teams. Build confidence, shift mindsets, set clearer goals.",
-    "twitterImage": "https://healwithmahima.com/og-default.jpg"
+    "twitterImage": "https://www.healwithmahima.shop/og-default.jpg"
   },
   "jsonLd": {
     "service": {
@@ -21,8 +21,8 @@
       "name": "Confidence & Mindset Building Program",
       "serviceType": "Corporate Wellness Program",
       "description": "Journaling, visualisation & goal-setting workshops for high-performance teams. Build confidence, shift mindsets, set clearer goals.",
-      "url": "https://healwithmahima.com/programs/confidence-mindset-building.html",
-      "image": "https://healwithmahima.com/assets/images/corp-team-1080.webp",
+      "url": "https://www.healwithmahima.shop/programs/confidence-mindset-building.html",
+      "image": "https://www.healwithmahima.shop/assets/images/corp-team-1080.webp",
       "areaServed": {
         "@type": "City",
         "name": "Gurgaon"
@@ -31,12 +31,12 @@
         "@type": "Offer",
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
-        "url": "https://healwithmahima.com/programs/confidence-mindset-building.html"
+        "url": "https://www.healwithmahima.shop/programs/confidence-mindset-building.html"
       },
       "provider": {
         "@type": "HealthAndBeautyBusiness",
         "name": "HEALWITHMAHIMA",
-        "url": "https://healwithmahima.com"
+        "url": "https://www.healwithmahima.shop"
       }
     }
   },

@@ -2,7 +2,7 @@
 
 The site uses [Sveltia CMS](https://sveltiacms.app/en/docs) as a Git-based editor at `/admin/`. It has no database and no paid CMS service.
 
-The CMS saves directly to GitHub `main`. These implementation changes are currently uncommitted local work, so the production CMS will not show them until an owner reviews and merges them to `main`. No push is part of this change.
+The CMS saves directly to GitHub `main`. The CMS code is published on `main`; production GitHub OAuth requires the authenticator setup below.
 
 ## How it works
 
@@ -48,7 +48,7 @@ In the Worker settings, add:
 
 - `GITHUB_CLIENT_ID`: the OAuth app client ID.
 - `GITHUB_CLIENT_SECRET`: the OAuth app client secret, stored as an encrypted secret.
-- `ALLOWED_DOMAINS`: every production hostname that can open `/admin/`, separated by commas. If both hostnames serve the site, include `healwithmahima.com,www.healwithmahima.com`.
+- `ALLOWED_DOMAINS`: every production hostname that can open `/admin/`, separated by commas. If both hostnames serve the site, include `healwithmahima.shop,www.healwithmahima.shop`.
 
 For preview deployments, explicitly allowlist only preview hostnames that need CMS access. Update the value if the preview hostname changes.
 

@@ -5,14 +5,14 @@
     "title": "Movement & Relaxation Sessions — HEALWITHMAHIMA Gurgaon",
     "description": "Yoga, expressive movement & stretching routines designed for body and mind wellness. Release tension, improve mobility, energize your team.",
     "keywords": "yoga, expressive movement, stretching, movement, relaxation, body wellness, corporate fitness, Gurgaon",
-    "canonical": "https://healwithmahima.com/programs/movement-relaxation-sessions.html",
+    "canonical": "https://www.healwithmahima.shop/programs/movement-relaxation-sessions.html",
     "ogTitle": "Movement & Relaxation Sessions — HEALWITHMAHIMA Gurgaon",
     "ogDescription": "Yoga, expressive movement & stretching routines designed for body and mind wellness. Release tension, improve mobility, energize your team.",
-    "ogImage": "https://healwithmahima.com/og-default.jpg",
+    "ogImage": "https://www.healwithmahima.shop/og-default.jpg",
     "ogImageAlt": "Team lying on mats during a sound healing session with singing bowls",
     "twitterTitle": "Movement & Relaxation Sessions — HEALWITHMAHIMA Gurgaon",
     "twitterDescription": "Yoga, expressive movement & stretching routines designed for body and mind wellness. Release tension, improve mobility, energize your team.",
-    "twitterImage": "https://healwithmahima.com/og-default.jpg"
+    "twitterImage": "https://www.healwithmahima.shop/og-default.jpg"
   },
   "jsonLd": {
     "service": {
@@ -21,8 +21,8 @@
       "name": "Movement & Relaxation Sessions",
       "serviceType": "Corporate Wellness Program",
       "description": "Yoga, expressive movement & stretching routines designed for body and mind wellness. Release tension, improve mobility, energize your team.",
-      "url": "https://healwithmahima.com/programs/movement-relaxation-sessions.html",
-      "image": "https://healwithmahima.com/assets/images/session-movement-760.webp",
+      "url": "https://www.healwithmahima.shop/programs/movement-relaxation-sessions.html",
+      "image": "https://www.healwithmahima.shop/assets/images/session-movement-760.webp",
       "areaServed": {
         "@type": "City",
         "name": "Gurgaon"
@@ -31,12 +31,12 @@
         "@type": "Offer",
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
-        "url": "https://healwithmahima.com/programs/movement-relaxation-sessions.html"
+        "url": "https://www.healwithmahima.shop/programs/movement-relaxation-sessions.html"
       },
       "provider": {
         "@type": "HealthAndBeautyBusiness",
         "name": "HEALWITHMAHIMA",
-        "url": "https://healwithmahima.com"
+        "url": "https://www.healwithmahima.shop"
       }
     }
   },

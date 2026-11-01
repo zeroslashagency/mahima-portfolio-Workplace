@@ -5,14 +5,14 @@
     "title": "Nature-Based Wellness Retreats — HEALWITHMAHIMA Gurgaon",
     "description": "Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and outdoor sessions for team connection.",
     "keywords": "wellness retreats, nature retreats, sound healing, team building, outdoor wellness, corporate retreat, Gurgaon",
-    "canonical": "https://healwithmahima.com/programs/nature-based-wellness-retreats.html",
+    "canonical": "https://www.healwithmahima.shop/programs/nature-based-wellness-retreats.html",
     "ogTitle": "Nature-Based Wellness Retreats — HEALWITHMAHIMA Gurgaon",
     "ogDescription": "Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and outdoor sessions for team connection.",
-    "ogImage": "https://healwithmahima.com/og-default.jpg",
+    "ogImage": "https://www.healwithmahima.shop/og-default.jpg",
     "ogImageAlt": "Team lying on mats during a sound healing session with singing bowls",
     "twitterTitle": "Nature-Based Wellness Retreats — HEALWITHMAHIMA Gurgaon",
     "twitterDescription": "Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and outdoor sessions for team connection.",
-    "twitterImage": "https://healwithmahima.com/og-default.jpg"
+    "twitterImage": "https://www.healwithmahima.shop/og-default.jpg"
   },
   "jsonLd": {
     "service": {
@@ -21,8 +21,8 @@
       "name": "Nature-Based Wellness Retreats",
       "serviceType": "Corporate Wellness Program",
       "description": "Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and outdoor sessions for team connection.",
-      "url": "https://healwithmahima.com/programs/nature-based-wellness-retreats.html",
-      "image": "https://healwithmahima.com/assets/images/session-mats-1080.webp",
+      "url": "https://www.healwithmahima.shop/programs/nature-based-wellness-retreats.html",
+      "image": "https://www.healwithmahima.shop/assets/images/session-mats-1080.webp",
       "areaServed": {
         "@type": "City",
         "name": "Gurgaon"
@@ -31,12 +31,12 @@
         "@type": "Offer",
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
-        "url": "https://healwithmahima.com/programs/nature-based-wellness-retreats.html"
+        "url": "https://www.healwithmahima.shop/programs/nature-based-wellness-retreats.html"
       },
       "provider": {
         "@type": "HealthAndBeautyBusiness",
         "name": "HEALWITHMAHIMA",
-        "url": "https://healwithmahima.com"
+        "url": "https://www.healwithmahima.shop"
       }
     }
   },
