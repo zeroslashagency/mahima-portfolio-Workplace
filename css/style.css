@@ -17,35 +17,8 @@ body {
   color: #1A1A1A;
   overflow-x: hidden;
 }
-/* custom cursor only on fine pointers, opted in from JS; form fields keep the native cursor */
-html.has-cursor body, html.has-cursor a, html.has-cursor button, html.has-cursor summary { cursor: none; }
-html.has-cursor input, html.has-cursor textarea, html.has-cursor select { cursor: auto; }
 a { text-decoration: none; color: inherit; }
 img { display: block; width: 100%; height: 100%; object-fit: cover; }
-
-/* ── CUSTOM CURSOR ── */
-.cursor, .cursor-ring {
-  position: fixed;
-  top: 0; left: 0;
-  border-radius: 50%;
-  pointer-events: none;
-  display: none;
-}
-html.has-cursor.cursor-active .cursor, html.has-cursor.cursor-active .cursor-ring { display: block; }
-.cursor {
-  width: 8px; height: 8px;
-  margin: -4px 0 0 -4px;
-  background: #C4714A;
-  z-index: 9999;
-}
-.cursor-ring {
-  width: 36px; height: 36px;
-  margin: -18px 0 0 -18px;
-  border: 1px solid rgba(196,113,74,0.5);
-  z-index: 9998;
-}
-html.cursor-hover .cursor { background: #3A2A1E; }
-html.cursor-hover .cursor-ring { border-color: rgba(196,113,74,0.85); }
 
 /* ── NAVBAR ── */
 .navbar {
@@ -248,78 +221,6 @@ body.nav-locked { overflow: hidden; }
 }
 @keyframes heroImgIn {
   to { transform: scale(1); }
-}
-
-/* ── TICKER ── */
-.ticker {
-  background: #3A2A1E;
-  height: 52px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-}
-.ticker-track {
-  display: flex;
-  gap: 0;
-  animation: ticker var(--ticker-dur, 40s) linear infinite;
-  white-space: nowrap;
-}
-.ticker:hover .ticker-track { animation-play-state: paused; }
-.ticker-track span {
-  font-size: 12px;
-  font-weight: 700;
-  color: #E8C4A8;
-  letter-spacing: 2px;
-  padding-right: 60px;
-}
-@keyframes ticker {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
-/* ── ABOUT ── */
-.about {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  padding: 100px 72px;
-  background: #FAF4EE;
-}
-.about-text {
-  width: 520px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.about-num {
-  font-size: 96px;
-  font-weight: 700;
-  color: rgba(196,113,74,0.12);
-  line-height: 1;
-  font-family: 'Playfair Display', serif;
-}
-.about-text h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-.about-text p {
-  font-size: 15px;
-  color: #7C5F50;
-  line-height: 1.75;
-}
-.about-image {
-  flex: 1;
-  height: 440px;
-  border-radius: 24px;
-  overflow: hidden;
-}
-.about-image img {
-  transition: transform 0.9s var(--ease-out);
 }
 
 /* ── EXPERIENCE GALLERY ── */
@@ -1091,8 +992,6 @@ body.nav-locked { overflow: hidden; }
   width: 36px; height: 1px; background: #C4714A;
   transform-origin: center;
 }
-.js .stats .stat-line { transform: scaleX(0); transition: transform 0.9s var(--ease-out) 1.2s; }
-.js .stats.counted .stat-line { transform: scaleX(1); }
 .stat-title {
   font-size: 13px;
   font-weight: 600;
@@ -1119,14 +1018,6 @@ body.nav-locked { overflow: hidden; }
   letter-spacing: 2.5px;
 }
 
-/* ── TESTIMONIALS ── */
-.testimonials {
-  background: #FAF4EE;
-  padding: 100px 72px;
-  display: flex;
-  flex-direction: column;
-  gap: 64px;
-}
 .section-header {
   display: flex;
   flex-direction: column;
@@ -1140,37 +1031,6 @@ body.nav-locked { overflow: hidden; }
   font-weight: 700;
   line-height: 1.2;
 }
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-.testimonial-card {
-  background: #fff;
-  padding: 40px 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  border-top: 2px solid #E8C4A8;
-  transition: transform 0.4s var(--ease-calm), box-shadow 0.4s var(--ease-calm);
-}
-.quote-mark {
-  font-family: 'Playfair Display', serif;
-  font-size: 64px;
-  font-weight: 700;
-  color: #C4714A;
-  line-height: 0.8;
-}
-.testimonial-text {
-  font-size: 15px;
-  color: #1A1A1A;
-  line-height: 1.75;
-  flex: 1;
-}
-.testimonial-divider { height: 1px; background: #E0DDD5; }
-.author-name { font-size: 14px; font-weight: 700; }
-.author-role { font-size: 12px; color: #6B6B5E; letter-spacing: 1px; margin-top: 4px; }
-
 /* ── CTA ── */
 .cta {
   background: #3A2A1E;
@@ -1290,7 +1150,6 @@ footer { background: #2A1F15; }
   .btn-cta-outline:hover { background: rgba(232,196,168,0.1); transform: translateY(-2px); }
   .btn-program:hover { background: #8E4727; transform: translateY(-2px); }
   .btn-white:active, .btn-ghost:active, .btn-cta:active, .btn-cta-outline:active, .btn-program:active { transform: translateY(0) scale(0.98); }
-  .about-image:hover img { transform: scale(1.04); }
   .catalog-card:hover { transform: translateY(-4px); box-shadow: 0 20px 48px rgba(58,42,30,0.12); }
   .catalog-card:hover .catalog-card-img img { transform: scale(1.05); }
   .catalog-card:hover .catalog-card-body h3 { background-size: 100% 1px; }
@@ -1300,7 +1159,6 @@ footer { background: #2A1F15; }
   .program-page--refined .related-programs--designed .related-card:hover { transform: translateY(-4px); box-shadow: 0 24px 54px rgba(58,42,30,0.12); }
   .program-page--refined .related-programs--designed .related-card:hover .related-card-media img { transform: scale(1.05); }
   .program-arc-card:hover { background: #fff; transform: translateY(-3px); }
-  .testimonial-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(58,42,30,0.08); }
   .process-step:hover { border-color: #E8C4A8; transform: translateY(-3px); }
   .outcome-tile:hover, .prep-card:hover, .price-card:hover { transform: translateY(-3px); box-shadow: 0 14px 34px rgba(58,42,30,0.07); }
 }
@@ -1399,8 +1257,13 @@ footer { background: #2A1F15; }
 .lead { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
 .lead-copy h2 { font-family: 'Playfair Display', serif; font-size: 36px; line-height: 1.15; color: #1A1A1A; margin-bottom: 14px; }
 .lead-copy p { font-size: 16px; color: #6E5446; line-height: 1.7; margin-bottom: 20px; max-width: 46ch; }
-.lead-copy .lead-alt { font-size: 14px; color: #3A2A1E; }
-.lead-copy .lead-alt a { color: var(--accent-ink); font-weight: 600; }
+.lead-contact { display: grid; gap: 4px; background: #fff; border: 1px solid #EDE5DC; border-radius: 20px; padding: 32px; }
+.lead-contact .btn-cta { justify-content: center; margin-bottom: 16px; }
+.lead-contact-row { display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; border-top: 1px solid #EDE5DC; font-size: 15px; font-weight: 600; color: #1A1A1A; }
+.lead-contact-row span { font-weight: 400; color: #6E5446; }
+.lead-contact-row:hover { color: var(--accent-ink); }
+.lead-contact-note { font-size: 13px; color: #6E5446; margin-top: 12px; }
+.lead-form[hidden] { display: none; }
 .lead-form { display: grid; gap: 16px; background: #fff; border: 1px solid #EDE5DC; border-radius: 20px; padding: 32px; }
 .field { display: grid; gap: 6px; }
 .field label { font-size: 13px; font-weight: 600; color: #3A2A1E; }
@@ -1438,8 +1301,6 @@ section[id] { scroll-margin-top: 72px; }
   .navbar-links { gap: 24px; }
   .hero-left { padding: 0 40px; }
   .program-page .msec { padding: 80px 40px; }
-  .about { padding: 80px 40px; gap: 40px; }
-  .about-text { width: 420px; }
   .experience-gallery { padding: 0 40px 90px; }
   .experience-header {
     grid-template-columns: 1fr;
@@ -1501,8 +1362,6 @@ section[id] { scroll-margin-top: 72px; }
     padding: 44px;
   }
   .stats { padding: 64px 40px; }
-  .testimonials { padding: 80px 40px; gap: 48px; }
-  .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
   .cta { padding: 80px 40px; }
   .footer-top { padding: 40px 40px 28px; }
   .footer-bottom { padding: 20px 40px; }
@@ -1591,27 +1450,6 @@ section[id] { scroll-margin-top: 72px; }
     width: 100%;
     height: 320px;
     flex: none;
-  }
-
-  /* TICKER */
-  .ticker { height: 44px; }
-  .ticker-track span { font-size: 11px; letter-spacing: 1.5px; padding-right: 40px; }
-
-  /* ABOUT */
-  .about {
-    flex-direction: column;
-    padding: 64px 24px;
-    gap: 28px;
-    align-items: stretch;
-  }
-  .about-text { width: 100%; gap: 16px; }
-  .about-num { font-size: 64px; }
-  .about-text h2 { font-size: 28px; }
-  .about-text p { font-size: 14px; }
-  .about-image {
-    width: 100%;
-    height: 260px;
-    border-radius: 16px;
   }
 
   /* EXPERIENCE GALLERY */
@@ -1809,19 +1647,7 @@ section[id] { scroll-margin-top: 72px; }
   .stats-footnote { padding: 0 8px; }
   .stats-footnote-text { font-size: 9px; letter-spacing: 1.8px; }
 
-  /* TESTIMONIALS */
-  .testimonials {
-    padding: 64px 24px;
-    gap: 36px;
-  }
   .section-header h2 { font-size: 28px; }
-  .testimonials-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-  .testimonial-card { padding: 28px 24px; gap: 16px; }
-  .quote-mark { font-size: 48px; }
-  .testimonial-text { font-size: 14px; line-height: 1.7; }
 
   /* CTA */
   .cta {
@@ -1913,7 +1739,9 @@ section[id] { scroll-margin-top: 72px; }
   .lead { grid-template-columns: 1fr; gap: 24px; }
   .lead-copy h2 { font-size: 26px; }
   .lead-copy p { font-size: 15px; max-width: 100%; }
-  .lead-form { padding: 22px 18px; gap: 14px; }
+  .lead-form, .lead-contact { padding: 22px 18px; gap: 14px; }
+  .lead-contact { gap: 0; }
+  .lead-contact-row { font-size: 14px; }
   .lead-form input, .lead-form select, .lead-form textarea { font-size: 16px; } /* 16px avoids iOS zoom */
 
   .faq-item summary { font-size: 15.5px; padding-right: 36px; }
@@ -1923,7 +1751,7 @@ section[id] { scroll-margin-top: 72px; }
 @media (max-width: 380px) {
   .hero-left { padding: 48px 20px 56px; }
   .hero-left h1 { font-size: 30px; }
-  .about, .catalog, .experience-gallery, .testimonials, .cta { padding-left: 20px; padding-right: 20px; }
+  .catalog, .experience-gallery, .cta { padding-left: 20px; padding-right: 20px; }
   .catalog { padding-bottom: 56px; }
   .experience-video { max-height: 420px; }
   .program-content { padding: 40px 20px 56px; }
@@ -1970,10 +1798,6 @@ select:focus-visible {
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
   }
-  .ticker-track { animation: none !important; }
-  .cursor, .cursor-ring { display: none !important; }
-  html.has-cursor body { cursor: auto; }
   .reveal, .reveal-left, .reveal-right { opacity: 1 !important; transform: none !important; }
   .hero-left h1 .line > span { transform: none !important; }
-  .js .stats .stat-line { transform: none !important; }
 }

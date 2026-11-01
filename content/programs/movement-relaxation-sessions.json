@@ -1,0 +1,305 @@
+{
+  "slug": "movement-relaxation-sessions",
+  "styleModifier": "program-page--movement",
+  "seo": {
+    "title": "Movement & Relaxation Sessions — HEALWITHMAHIMA Gurgaon",
+    "description": "Yoga, expressive movement & stretching routines designed for body and mind wellness. Release tension, improve mobility, energize your team.",
+    "keywords": "yoga, expressive movement, stretching, movement, relaxation, body wellness, corporate fitness, Gurgaon",
+    "canonical": "https://healwithmahima.com/programs/movement-relaxation-sessions.html",
+    "ogTitle": "Movement & Relaxation Sessions — HEALWITHMAHIMA Gurgaon",
+    "ogDescription": "Yoga, expressive movement & stretching routines designed for body and mind wellness. Release tension, improve mobility, energize your team.",
+    "ogImage": "https://healwithmahima.com/og-default.jpg",
+    "ogImageAlt": "Team lying on mats during a sound healing session with singing bowls",
+    "twitterTitle": "Movement & Relaxation Sessions — HEALWITHMAHIMA Gurgaon",
+    "twitterDescription": "Yoga, expressive movement & stretching routines designed for body and mind wellness. Release tension, improve mobility, energize your team.",
+    "twitterImage": "https://healwithmahima.com/og-default.jpg"
+  },
+  "jsonLd": {
+    "service": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Movement & Relaxation Sessions",
+      "serviceType": "Corporate Wellness Program",
+      "description": "Yoga, expressive movement & stretching routines designed for body and mind wellness. Release tension, improve mobility, energize your team.",
+      "url": "https://healwithmahima.com/programs/movement-relaxation-sessions.html",
+      "image": "https://healwithmahima.com/assets/images/session-movement-760.webp",
+      "areaServed": {
+        "@type": "City",
+        "name": "Gurgaon"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://healwithmahima.com/programs/movement-relaxation-sessions.html"
+      },
+      "provider": {
+        "@type": "HealthAndBeautyBusiness",
+        "name": "HEALWITHMAHIMA",
+        "url": "https://healwithmahima.com"
+      }
+    }
+  },
+  "enquiryHref": "../index.html?program=Movement%20%26%20Relaxation#enquire",
+  "hero": {
+    "number": "03",
+    "eyebrow": "MOVEMENT · YOGA · RELAXATION",
+    "headingHtml": "Movement &amp;<br/>Relaxation Sessions",
+    "intro": "Desk-friendly yoga, stretching and expressive movement that release the neck, back and shoulder tension of long screen days. No fitness level or experience needed.",
+    "image": {
+      "src": "/assets/images/session-movement-760.webp",
+      "alt": "Mahima leading a movement session in an office room",
+      "width": "760",
+      "height": "1000",
+      "sizes": ""
+    }
+  },
+  "shift": {
+    "eyebrow": "THE RELEASE",
+    "heading": "For teams that sit too long and carry stress in the body.",
+    "body": "This session brings movement back into the work culture. The flow is beginner-friendly, practical and designed\n          to release tension without making people feel exposed or out of place."
+  },
+  "includes": {
+    "eyebrow": "INSIDE THE SESSION",
+    "items": [
+      "Corporate yoga (beginner-friendly)",
+      "Expressive movement & free movement",
+      "Guided stretching & mobility routines",
+      "Desk-yoga micro-sessions",
+      "Relaxation & Yoga Nidra cool-down"
+    ]
+  },
+  "rhythm": {
+    "eyebrow": "SESSION RHYTHM",
+    "heading": "Body first, mind follows.",
+    "body": "This session keeps movement accessible and grounded. The sequence opens gently, builds energy without pressure,\n          and closes with relaxation so people return to work lighter.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Mobilise",
+        "description": "Simple stretching and breath-led warmups release stiffness from desk posture and long meetings."
+      },
+      {
+        "number": "02",
+        "title": "Express",
+        "description": "Gentle yoga or free movement helps the group move energy without performance pressure."
+      },
+      {
+        "number": "03",
+        "title": "Restore",
+        "description": "Relaxation and Yoga Nidra settle the body before the team returns to the workday."
+      }
+    ]
+  },
+  "meta": [
+    {
+      "label": "DURATION",
+      "value": "1–3 Hours"
+    },
+    {
+      "label": "FORMAT",
+      "value": "On-site / Outdoor"
+    },
+    {
+      "label": "TEAM SIZE",
+      "value": "10–100 People"
+    }
+  ],
+  "whoFor": {
+    "eyebrow": "WHO IT'S FOR",
+    "heading": "For teams that sit all day.",
+    "items": [
+      "Desk-bound teams with stiff necks, backs and low afternoon energy",
+      "Offices wanting a recurring weekly or fortnightly wellness slot",
+      "Groups that prefer moving to sitting still"
+    ],
+    "outcomes": [
+      {
+        "value": "Loose",
+        "label": "Less desk-related stiffness"
+      },
+      {
+        "value": "Energy",
+        "label": "An afternoon lift, not a slump"
+      },
+      {
+        "value": "Mood",
+        "label": "Lighter, more connected team"
+      },
+      {
+        "value": "Habit",
+        "label": "Desk moves they reuse daily"
+      }
+    ]
+  },
+  "prep": {
+    "eyebrow": "WHAT TO EXPECT",
+    "heading": "Simple to host. We handle the rest.",
+    "intro": "Here's exactly what your team needs to prepare — and what we bring.",
+    "cards": [
+      {
+        "title": "Your team provides",
+        "items": [
+          "Open floor space (cleared room or lawn)",
+          "Room for mats — we can bring them",
+          "45 min–3 hrs depending on format",
+          "Ideally not straight after a heavy meal"
+        ]
+      },
+      {
+        "title": "Good to know",
+        "items": [
+          "Wear clothes you can move in",
+          "Beginners fully welcome — no yoga experience",
+          "Water bottle handy",
+          "Outdoor option if you have a garden/terrace"
+        ]
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "PRICING",
+    "heading": "How engagements are priced.",
+    "intro": "Every quote is fixed in writing before you commit, and depends on team size, location and format. GST invoice provided.",
+    "cards": [
+      {
+        "featured": false,
+        "tier": "Single Session",
+        "amount": "Per session",
+        "description": "A one-off reset for your team.",
+        "items": [
+          "1 facilitated session",
+          "All materials included",
+          "On-site in Gurgaon/NCR"
+        ],
+        "ctaLabel": "Get a quote"
+      },
+      {
+        "featured": true,
+        "tier": "Series (4–6)",
+        "amount": "Per series",
+        "description": "Recurring slots that build a habit.",
+        "items": [
+          "Discounted per-session rate",
+          "Consistent facilitator",
+          "Simple feedback summary"
+        ],
+        "ctaLabel": "Get a quote"
+      },
+      {
+        "featured": false,
+        "tier": "Retainer",
+        "amount": "Monthly",
+        "description": "Ongoing partner for larger orgs.",
+        "items": [
+          "Multi-program mix",
+          "Priority scheduling",
+          "Tailored reporting"
+        ],
+        "ctaLabel": "Talk to us"
+      }
+    ],
+    "note": "Prices exclude GST and travel for offsite formats. Free rescheduling with 72 hours' notice."
+  },
+  "faq": {
+    "eyebrow": "QUESTIONS, ANSWERED",
+    "heading": "Questions teams ask us",
+    "items": [
+      {
+        "question": "Do people need to be fit or flexible?",
+        "answer": "No. Everything is beginner-friendly and scalable — desk-yoga to gentle flow. People modify at their own level."
+      },
+      {
+        "question": "How many can join?",
+        "answer": "10–100. Big groups work outdoors or in a hall; we bring extra facilitation for large counts."
+      },
+      {
+        "question": "Indoor or outdoor?",
+        "answer": "Either. On-site indoors, your terrace/lawn, or a studio. Outdoor sunrise sessions are a favourite."
+      },
+      {
+        "question": "Can it be a recurring slot?",
+        "answer": "Yes — many teams book weekly or fortnightly. Recurring packages are cheaper per session."
+      },
+      {
+        "question": "What should the team wear?",
+        "answer": "Comfortable, movement-friendly clothing. No special gear needed."
+      },
+      {
+        "question": "What space and equipment do you need?",
+        "answer": "Cleared floor space; we provide mats and any props on request."
+      },
+      {
+        "question": "What does it cost?",
+        "answer": "Quoted per session, lower on recurring plans. Book a call for your number."
+      },
+      {
+        "question": "How much notice to book?",
+        "answer": "5–7 days for one-offs; recurring slots are scheduled up front."
+      }
+    ]
+  },
+  "related": {
+    "eyebrow": "RELATED PROGRAMS",
+    "heading": "Other formats",
+    "intro": "Pair movement with deeper emotional reset, mindset clarity, retreat space, or focused women-centric circles. The design stays calm; the outcome shifts.",
+    "items": [
+      {
+        "href": "emotional-wellness-stress-reset.html",
+        "number": "01",
+        "title": "Emotional Wellness & Stress Reset",
+        "description": "For teams that need nervous-system calm, breathwork and deep emotional restoration.",
+        "image": {
+          "src": "/assets/images/session-room-640.webp",
+          "alt": "Emotional wellness"
+        },
+        "width": "640",
+        "height": "1138"
+      },
+      {
+        "href": "confidence-mindset-building.html",
+        "number": "02",
+        "title": "Confidence & Mindset Building",
+        "description": "For teams ready to turn reflection into clearer goals and stronger self-belief.",
+        "image": {
+          "src": "/assets/images/session-gong-800.webp",
+          "alt": "Confidence workshop"
+        },
+        "width": "800",
+        "height": "1000"
+      },
+      {
+        "href": "nature-based-wellness-retreats.html",
+        "number": "04",
+        "title": "Nature-Based Wellness Retreats",
+        "description": "For deeper offsite recovery, team bonding and a full reset outside routine.",
+        "image": {
+          "src": "/assets/images/session-mats-800.webp",
+          "alt": "Nature retreat"
+        },
+        "width": "800",
+        "height": "1000"
+      },
+      {
+        "href": "women-centric-wellness-circles.html",
+        "number": "05",
+        "title": "Women-Centric Wellness Circles",
+        "description": "For safe, facilitated sharing spaces built around trust and emotional release.",
+        "image": {
+          "src": "/assets/images/session-office-800.webp",
+          "alt": "Women circle"
+        },
+        "width": "800",
+        "height": "1000"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "BOOK PROGRAM 03",
+    "headingHtml": "Move Better.<br/>Reset Faster.",
+    "body": "Start with a 30-minute consultation and choose the right movement format for your team.",
+    "primaryLabel": "Request a proposal",
+    "whatsappLabel": "WhatsApp us",
+    "whatsappText": "Hi Heal With Mahima, I want to book the Movement and Relaxation Sessions program."
+  }
+}

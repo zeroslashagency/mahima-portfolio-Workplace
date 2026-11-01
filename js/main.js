@@ -4,34 +4,6 @@ import './analytics.js';
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-/* ── CUSTOM CURSOR (fine pointers only; stops its loop when idle) ── */
-(function initCursor() {
-  const cursor = document.querySelector('.cursor');
-  const ring = document.querySelector('.cursor-ring');
-  if (!cursor || !ring || reduceMotion) return;
-  if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
-  document.documentElement.classList.add('has-cursor');
-
-  let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0, running = false;
-  function tick() {
-    ringX += (mouseX - ringX) * 0.12;
-    ringY += (mouseY - ringY) * 0.12;
-    ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0)`;
-    if (Math.abs(mouseX - ringX) < 0.1 && Math.abs(mouseY - ringY) < 0.1) { running = false; return; }
-    requestAnimationFrame(tick);
-  }
-  document.addEventListener('mousemove', e => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    if (!ringX && !ringY) { ringX = mouseX; ringY = mouseY; document.documentElement.classList.add('cursor-active'); }
-    cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-    if (!running) { running = true; requestAnimationFrame(tick); }
-  }, { passive: true });
-  document.addEventListener('mouseover', e => {
-    document.documentElement.classList.toggle('cursor-hover', !!e.target.closest('a, button, summary'));
-  }, { passive: true });
-})();
-
 /* ── HERO HEADLINE: split <br> lines for the line-mask reveal ── */
 (function splitHeroLines() {
   const h1 = document.querySelector('.hero-left h1');
@@ -84,53 +56,6 @@ if (reduceMotion || !('IntersectionObserver' in window)) {
   }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
   revealEls.forEach(el => observer.observe(el));
   document.querySelectorAll('.reveal-media').forEach(el => observer.observe(el));
-}
-
-/* ── STATS COUNTER (real numbers ship in the HTML; JS counts up only when it runs) ── */
-function animateCounter(el, target, suffix) {
-  const duration = 1800;
-  const start = performance.now();
-  const update = (now) => {
-    const elapsed = now - start;
-    const progress = Math.min(elapsed / duration, 1);
-    const eased = 1 - Math.pow(1 - progress, 3);
-    const current = Math.round(eased * target);
-    el.textContent = current + suffix;
-    if (progress < 1) requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
-}
-
-const statsSection = document.querySelector('.stats');
-if (statsSection) {
-  if (reduceMotion) {
-    statsSection.classList.add('counted');
-  } else {
-    const nums = statsSection.querySelectorAll('.stat-number[data-target]');
-    nums.forEach(el => { el.textContent = '0' + (el.dataset.suffix || ''); });
-    const statsObserver = new IntersectionObserver((entries) => {
-      if (!entries[0].isIntersecting) return;
-      statsObserver.disconnect();
-      statsSection.classList.add('counted');
-      /* wait for the grid's own fade-in so the count isn't half-transparent */
-      setTimeout(() => {
-        nums.forEach(el => animateCounter(el, parseInt(el.dataset.target, 10), el.dataset.suffix || ''));
-      }, 350);
-    }, { threshold: 0.35 });
-    statsObserver.observe(statsSection);
-  }
-}
-
-/* ── TICKER: repeat content until it covers 2× the viewport, so the loop never shows a gap ── */
-const track = document.querySelector('.ticker-track');
-if (track) {
-  const unit = track.innerHTML;
-  const unitWidth = track.scrollWidth || 1;
-  const copies = Math.max(1, Math.ceil(window.innerWidth / unitWidth));
-  const half = unit.repeat(copies);
-  track.innerHTML = half + half;
-  /* keep speed constant (~45px/s) regardless of how many copies were added */
-  track.style.setProperty('--ticker-dur', Math.round((unitWidth * copies) / 45) + 's');
 }
 
 /* ── VIDEO: load and play only near the viewport; pause when off-screen ── */

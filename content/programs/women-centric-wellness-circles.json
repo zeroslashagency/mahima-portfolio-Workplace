@@ -1,0 +1,306 @@
+{
+  "slug": "women-centric-wellness-circles",
+  "styleModifier": "program-page--women",
+  "seo": {
+    "title": "Women-Centric Wellness Circles — HEALWITHMAHIMA Gurgaon",
+    "description": "Safe spaces for women leaders. Sharing circles, emotional release practices & confidence-building designed specifically for women in the workplace.",
+    "keywords": "women wellness, women circles, women leaders, emotional support, confidence building, safe space, Gurgaon",
+    "canonical": "https://healwithmahima.com/programs/women-centric-wellness-circles.html",
+    "ogTitle": "Women-Centric Wellness Circles — HEALWITHMAHIMA Gurgaon",
+    "ogDescription": "Safe spaces for women leaders. Sharing circles, emotional release practices & confidence-building designed specifically for women in the workplace.",
+    "ogImage": "https://healwithmahima.com/og-default.jpg",
+    "ogImageAlt": "Team lying on mats during a sound healing session with singing bowls",
+    "twitterTitle": "Women-Centric Wellness Circles — HEALWITHMAHIMA Gurgaon",
+    "twitterDescription": "Safe spaces for women leaders. Sharing circles, emotional release practices & confidence-building designed specifically for women in the workplace.",
+    "twitterImage": "https://healwithmahima.com/og-default.jpg"
+  },
+  "jsonLd": {
+    "service": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Women-Centric Wellness Circles",
+      "serviceType": "Corporate Wellness Program",
+      "description": "Safe spaces for women leaders. Sharing circles, emotional release practices & confidence-building designed specifically for women in the workplace.",
+      "url": "https://healwithmahima.com/programs/women-centric-wellness-circles.html",
+      "image": "https://healwithmahima.com/assets/images/session-office-1080.webp",
+      "areaServed": {
+        "@type": "City",
+        "name": "Gurgaon"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://healwithmahima.com/programs/women-centric-wellness-circles.html"
+      },
+      "provider": {
+        "@type": "HealthAndBeautyBusiness",
+        "name": "HEALWITHMAHIMA",
+        "url": "https://healwithmahima.com"
+      }
+    }
+  },
+  "enquiryHref": "../index.html?program=Women-Centric%20Circle#enquire",
+  "hero": {
+    "number": "05",
+    "eyebrow": "WOMEN CIRCLES · SHARING · CONFIDENCE",
+    "headingHtml": "Women-Centric<br/>Wellness Circles",
+    "intro": "Facilitated peer circles for women employees. Guided breathing, structured sharing and clear confidentiality rules give people a safe room to talk about pressure at work and at home.",
+    "image": {
+      "src": "/assets/images/session-office-1080.webp",
+      "alt": "Women wellness circle",
+      "width": "1080",
+      "height": "1350",
+      "sizes": "(max-width: 720px) 100vw, 50vw"
+    }
+  },
+  "shift": {
+    "eyebrow": "THE CIRCLE",
+    "heading": "For women who need a grounded space to share, release and rise.",
+    "body": "This circle is designed to support emotional honesty, confidence and workplace belonging. The tone is warm,\n          contained and practical, with facilitation that respects privacy and group comfort."
+  },
+  "includes": {
+    "eyebrow": "INSIDE THE CIRCLE",
+    "items": [
+      "Facilitated sharing & listening circles",
+      "Emotional release & somatic exercises",
+      "Confidence & self-worth practices",
+      "Women's leadership discussion",
+      "Closing reflection & intention-setting"
+    ]
+  },
+  "rhythm": {
+    "eyebrow": "CIRCLE RHYTHM",
+    "heading": "Safety first, then sharing.",
+    "body": "The circle is designed to feel held and respectful. It moves slowly from trust-building into guided expression,\n          then closes with confidence and personal intention.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Ground",
+        "description": "Simple rituals and listening agreements create a calm, private container for the group."
+      },
+      {
+        "number": "02",
+        "title": "Share",
+        "description": "Facilitated prompts and somatic exercises support release without pressure to perform."
+      },
+      {
+        "number": "03",
+        "title": "Rise",
+        "description": "Confidence practices and intentions turn the circle into grounded workplace support."
+      }
+    ]
+  },
+  "meta": [
+    {
+      "label": "DURATION",
+      "value": "2–3 Hours"
+    },
+    {
+      "label": "FORMAT",
+      "value": "Women Only"
+    },
+    {
+      "label": "TEAM SIZE",
+      "value": "6–25 People"
+    }
+  ],
+  "whoFor": {
+    "eyebrow": "WHO IT'S FOR",
+    "heading": "A safe space, held with care.",
+    "items": [
+      "Women's ERGs, networks and leadership cohorts",
+      "Teams marking Women's Day with something real, not tokenistic",
+      "Orgs supporting women through growth, transition or burnout"
+    ],
+    "outcomes": [
+      {
+        "value": "Safe",
+        "label": "A space to speak freely"
+      },
+      {
+        "value": "Seen",
+        "label": "Shared experience, less isolation"
+      },
+      {
+        "value": "Steady",
+        "label": "Emotional release and calm"
+      },
+      {
+        "value": "Support",
+        "label": "Stronger peer support after"
+      }
+    ]
+  },
+  "prep": {
+    "eyebrow": "WHAT TO EXPECT",
+    "heading": "Simple to host. We handle the rest.",
+    "intro": "Here's exactly what your team needs to prepare — and what we bring.",
+    "cards": [
+      {
+        "title": "Your team provides",
+        "items": [
+          "A private, quiet room — no interruptions",
+          "Seating in a circle",
+          "2–3 hrs held gently",
+          "Women-only attendance respected"
+        ]
+      },
+      {
+        "title": "Good to know",
+        "items": [
+          "Come as you are — no prep needed",
+          "Sharing is invited, never forced",
+          "Confidentiality is set as a ground rule",
+          "Facilitated by Mahima personally",
+          "Not therapy: anyone who needs more support is pointed to your EAP or a counsellor"
+        ]
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "PRICING",
+    "heading": "How engagements are priced.",
+    "intro": "Every quote is fixed in writing before you commit, and depends on team size, location and format. GST invoice provided.",
+    "cards": [
+      {
+        "featured": false,
+        "tier": "Single Session",
+        "amount": "Per session",
+        "description": "A one-off reset for your team.",
+        "items": [
+          "1 facilitated session",
+          "All materials included",
+          "On-site in Gurgaon/NCR"
+        ],
+        "ctaLabel": "Get a quote"
+      },
+      {
+        "featured": true,
+        "tier": "Series (4–6)",
+        "amount": "Per series",
+        "description": "Recurring slots that build a habit.",
+        "items": [
+          "Discounted per-session rate",
+          "Consistent facilitator",
+          "Simple feedback summary"
+        ],
+        "ctaLabel": "Get a quote"
+      },
+      {
+        "featured": false,
+        "tier": "Retainer",
+        "amount": "Monthly",
+        "description": "Ongoing partner for larger orgs.",
+        "items": [
+          "Multi-program mix",
+          "Priority scheduling",
+          "Tailored reporting"
+        ],
+        "ctaLabel": "Talk to us"
+      }
+    ],
+    "note": "Prices exclude GST and travel for offsite formats. Free rescheduling with 72 hours' notice."
+  },
+  "faq": {
+    "eyebrow": "QUESTIONS, ANSWERED",
+    "heading": "Questions teams ask us",
+    "items": [
+      {
+        "question": "Who is this for?",
+        "answer": "Women's networks, ERGs and teams — from ICs to leadership. Built around trust and honest sharing."
+      },
+      {
+        "question": "Is sharing mandatory?",
+        "answer": "Never. The circle invites sharing but listening is always enough. No one is put on the spot."
+      },
+      {
+        "question": "How many can join a circle?",
+        "answer": "6–25. Smaller keeps it intimate and safe; we split larger groups into circles."
+      },
+      {
+        "question": "Is confidentiality protected?",
+        "answer": "Yes — we open every circle with a confidentiality agreement so people feel safe to be honest."
+      },
+      {
+        "question": "On-site or studio?",
+        "answer": "Either — a private room at your office or a calm studio in Gurgaon/NCR."
+      },
+      {
+        "question": "Can we run this for Women's Day?",
+        "answer": "Yes, it's a popular Women's Day and IWD-week booking. Reserve early — those dates fill fast."
+      },
+      {
+        "question": "What does it cost?",
+        "answer": "Quoted per circle, scaled to size and duration. Book a call for a number."
+      },
+      {
+        "question": "How much notice do you need?",
+        "answer": "5–7 days typically; more for Women's Day week."
+      }
+    ]
+  },
+  "related": {
+    "eyebrow": "RELATED PROGRAMS",
+    "heading": "Other formats",
+    "intro": "Extend the circle into whole-team restoration, mindset clarity, embodied relaxation, or an offsite retreat built around deeper reconnection.",
+    "items": [
+      {
+        "href": "emotional-wellness-stress-reset.html",
+        "number": "01",
+        "title": "Emotional Wellness & Stress Reset",
+        "description": "For teams that need nervous-system calm, breathwork and deep emotional restoration.",
+        "image": {
+          "src": "/assets/images/session-room-640.webp",
+          "alt": "Emotional wellness"
+        },
+        "width": "640",
+        "height": "1138"
+      },
+      {
+        "href": "confidence-mindset-building.html",
+        "number": "02",
+        "title": "Confidence & Mindset Building",
+        "description": "For teams ready to turn reflection into clearer goals and stronger self-belief.",
+        "image": {
+          "src": "/assets/images/session-gong-800.webp",
+          "alt": "Confidence workshop"
+        },
+        "width": "800",
+        "height": "1000"
+      },
+      {
+        "href": "movement-relaxation-sessions.html",
+        "number": "03",
+        "title": "Movement & Relaxation Sessions",
+        "description": "For body-led release through yoga, mobility, stretching and gentle movement.",
+        "image": {
+          "src": "/assets/images/session-movement-800.webp",
+          "alt": "Movement session"
+        },
+        "width": "800",
+        "height": "590"
+      },
+      {
+        "href": "nature-based-wellness-retreats.html",
+        "number": "04",
+        "title": "Nature-Based Wellness Retreats",
+        "description": "For deeper offsite recovery, team bonding and a full reset outside routine.",
+        "image": {
+          "src": "/assets/images/session-mats-800.webp",
+          "alt": "Nature retreat"
+        },
+        "width": "800",
+        "height": "1000"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "BOOK PROGRAM 05",
+    "headingHtml": "Create a Space<br/>Women Can Trust.",
+    "body": "Start with a 30-minute consultation and shape the circle around your organisation's needs.",
+    "primaryLabel": "Request a proposal",
+    "whatsappLabel": "WhatsApp us",
+    "whatsappText": "Hi Heal With Mahima, I want to book the Women-Centric Wellness Circles program."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "phone": {
+    "display": "+91 90699 82434",
+    "href": "+919069982434"
+  },
+  "email": "hello@healwithmahima.com",
+  "whatsapp": {
+    "number": "919069982434",
+    "prefilledText": "Hi Heal With Mahima, I want to plan a session for my team."
+  },
+  "contactCard": {
+    "whatsappLabel": "WhatsApp us",
+    "emailLabel": "Email",
+    "emailSubject": "Corporate session enquiry",
+    "phoneLabel": "Phone",
+    "note": "Replies within one working day · GST invoice · PO-friendly"
+  }
+}

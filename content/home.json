@@ -1,0 +1,249 @@
+{
+  "seo": {
+    "title": "HEALWITHMAHIMA — Corporate Wellness Programs in Gurgaon",
+    "description": "Sound healing and breathwork sessions for corporate teams in Gurgaon & NCR. On-site, 10–80 people. 200+ sessions with 40+ organisations over six years.",
+    "keywords": "corporate wellness, sound healing, breathwork, yoga, mindset coaching, wellness retreats, Gurgaon, workplace wellness, team wellness, stress management",
+    "ogTitle": "HEALWITHMAHIMA — Corporate Wellness Programs in Gurgaon",
+    "ogDescription": "Sound healing and breathwork sessions for corporate teams in Gurgaon & NCR. On-site, 10–80 people. 200+ sessions with 40+ organisations.",
+    "ogImage": "https://healwithmahima.com/og-default.jpg",
+    "ogImageAlt": "Team lying on mats during a sound healing session with singing bowls",
+    "twitterTitle": "HEALWITHMAHIMA — Corporate Wellness Programs in Gurgaon",
+    "twitterDescription": "Sound healing and breathwork sessions for corporate teams in Gurgaon & NCR. On-site, 10–80 people."
+  },
+  "hero": {
+    "eyebrow": "CORPORATE WELLNESS · GURGAON & NCR",
+    "headingHtml": "A 75-minute stress reset<br/>your team will<br/>actually show up for.",
+    "intro": "Sound healing and guided breathwork, run on-site at your office for 10–80 people. No chanting, no prep. A written proposal and fixed quote within one working day.",
+    "primaryCta": "Request a proposal",
+    "secondaryCta": "See formats",
+    "proof": "200+ corporate sessions · 40+ organisations · GST invoice & PO-friendly",
+    "image": {
+      "src": "/assets/images/corp-rest-1080.webp",
+      "alt": "Employees lying on mats in their office gym while Mahima plays singing bowls"
+    }
+  },
+  "experience": {
+    "eyebrow": "EXPERIENCE GALLERY",
+    "heading": "Inside a session.",
+    "intro": "Real footage from one of Mahima's sound healing sessions. Most people lie down, a few sit up, and everyone goes back to work with a slower pulse.",
+    "video": {
+      "src": "/assets/videos/session-loop.mp4",
+      "poster": {
+        "src": "/assets/images/session-poster-clean.webp",
+        "alt": "Sound healing session in progress"
+      },
+      "label": "Live practice",
+      "title": "Sound-led workplace reset"
+    },
+    "tiles": [
+      {
+        "label": "Rest",
+        "title": "The quiet after the bowls",
+        "image": {
+          "src": "/assets/images/session-rest-800.webp",
+          "alt": "Employees resting on mats after the sound bath"
+        }
+      },
+      {
+        "label": "Reset",
+        "title": "75 minutes, lying down",
+        "image": {
+          "src": "/assets/images/corp-office-800.webp",
+          "alt": "A team resting on mats during an in-office sound bath"
+        }
+      }
+    ]
+  },
+  "catalog": {
+    "eyebrow": "5 CORPORATE PROGRAMS",
+    "heading": "Five formats for corporate teams.",
+    "cards": [
+      {
+        "href": "programs/emotional-wellness-stress-reset.html",
+        "number": "01",
+        "title": "Emotional Wellness & Stress Reset",
+        "description": "Sound healing, breathwork and meditation in one calm reset.",
+        "meta": "75 min – half day · On-site · 10–80",
+        "linkLabel": "Explore  →",
+        "image": {
+          "src": "/assets/images/corp-gong-800.webp",
+          "alt": "Employees seated in a circle around a gong during a sound healing session"
+        }
+      },
+      {
+        "href": "programs/confidence-mindset-building.html",
+        "number": "02",
+        "title": "Confidence & Mindset Building",
+        "description": "Journaling, visualisation and goal-setting tools for managers and new leads.",
+        "meta": "3–5 hrs · Workshop · 8–40",
+        "linkLabel": "Explore  →",
+        "image": {
+          "src": "/assets/images/corp-group-800.webp",
+          "alt": "Participants in namaste after a corporate yoga and sound session"
+        }
+      },
+      {
+        "href": "programs/movement-relaxation-sessions.html",
+        "number": "03",
+        "title": "Movement & Relaxation Sessions",
+        "description": "Desk-friendly yoga, stretching and expressive movement.",
+        "meta": "1–3 hrs · On-site / Outdoor · 10–100",
+        "linkLabel": "Explore  →",
+        "image": {
+          "src": "/assets/images/session-movement-800.webp",
+          "alt": "Movement & Relaxation"
+        }
+      },
+      {
+        "href": "programs/nature-based-wellness-retreats.html",
+        "number": "04",
+        "title": "Nature-Based Wellness Retreats",
+        "description": "Half-day to two-day offsites with nature walks and sound healing.",
+        "meta": "Half day – 2 days · Offsite · 8–30",
+        "linkLabel": "Explore  →",
+        "image": {
+          "src": "/assets/images/session-mats-800.webp",
+          "alt": "Participants resting during a long-format session"
+        }
+      },
+      {
+        "href": "programs/women-centric-wellness-circles.html",
+        "number": "05",
+        "title": "Women-Centric Wellness Circles",
+        "description": "Facilitated peer circles for women employees, with clear confidentiality rules.",
+        "meta": "2–3 hrs · On-site · 6–25",
+        "linkLabel": "Explore  →",
+        "image": {
+          "src": "/assets/images/session-office-800.webp",
+          "alt": "Women participants in a guided breathing practice"
+        }
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "PROVEN RESULTS · BY THE NUMBERS",
+    "subtitle": "Six years of sessions with Gurgaon and NCR teams.",
+    "items": [
+      {
+        "value": "200+",
+        "target": "200",
+        "suffix": "+",
+        "title": "Corporate Sessions",
+        "description": "On-site and at partner studios"
+      },
+      {
+        "value": "5",
+        "target": "5",
+        "suffix": "",
+        "title": "Signature Programs",
+        "description": "From sound to retreats"
+      },
+      {
+        "value": "85%",
+        "target": "85",
+        "suffix": "%",
+        "title": "Feel Less Stressed",
+        "description": "Post-session self-report"
+      },
+      {
+        "value": "40+",
+        "target": "40",
+        "suffix": "+",
+        "title": "Partner Organisations",
+        "description": "Startups to enterprise teams"
+      }
+    ],
+    "footnote": "SOURCED FROM POST-SESSION FEEDBACK SURVEYS"
+  },
+  "founder": {
+    "eyebrow": "MEET YOUR FACILITATOR",
+    "heading": "Hi, I'm Mahima.",
+    "paragraphs": [
+      "For six years I've brought sound healing, breathwork and mindful movement into workplaces across Gurgaon and Delhi-NCR. The aim is simple: help people put down the pressure they carry and leave with a few tools they actually use.",
+      "Every session I run myself, so the room stays personal. It is never a franchised script."
+    ],
+    "credentials": [
+      "Certified sound healing facilitator",
+      "Breathwork & meditation facilitator",
+      "6+ years facilitating",
+      "Gurgaon / Delhi-NCR"
+    ],
+    "image": {
+      "src": "/assets/images/mahima-founder-1080.webp",
+      "alt": "Mahima, sound healing facilitator, standing beside her singing bowls"
+    }
+  },
+  "process": {
+    "eyebrow": "HOW ENGAGEMENT WORKS",
+    "heading": "Four simple steps.",
+    "intro": "From first message to a session your team remembers, without a long procurement cycle. GST invoice and PO-friendly.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Discovery call",
+        "description": "A 30-min chat about your team, goals and constraints. No obligation."
+      },
+      {
+        "number": "02",
+        "title": "Custom proposal",
+        "description": "We shape a program, format and quote around your team size and space."
+      },
+      {
+        "number": "03",
+        "title": "The session",
+        "description": "We arrive early, set the room and facilitate. Your team just shows up."
+      },
+      {
+        "number": "04",
+        "title": "Feedback & report",
+        "description": "Short post-session feedback and a simple summary for your team leads."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "QUESTIONS, ANSWERED",
+    "heading": "Questions HR teams ask us",
+    "items": [
+      {
+        "question": "How large a team can join one session?",
+        "answer": "10–80 people works well. Above 80 we split into two sittings or add a co-facilitator so the sound still reaches everyone."
+      },
+      {
+        "question": "Our team is sceptical. Will this feel awkward?",
+        "answer": "We keep it grounded: no chanting, no forced sharing. It's guided breathing, Tibetan bowls and rest. Sceptics usually leave the calmest."
+      },
+      {
+        "question": "Is it tied to any religion?",
+        "answer": "No. It's a secular, nervous-system reset. Nothing devotional, nothing anyone needs to believe in."
+      },
+      {
+        "question": "How long is a session?",
+        "answer": "The standard stress reset runs 75 minutes. Half-day and full-day formats are available for offsites and retreats."
+      },
+      {
+        "question": "On-site, studio or online?",
+        "answer": "We come to your office anywhere in Gurgaon and Delhi-NCR, host at a partner studio, or run a guided online version for hybrid teams."
+      },
+      {
+        "question": "What do we need to provide?",
+        "answer": "A quiet room where people can sit or lie down, and 45 minutes of setup access. We bring bowls, mats and audio."
+      },
+      {
+        "question": "Is it safe for everyone?",
+        "answer": "For most people, yes. Anyone who is pregnant or has epilepsy, a pacemaker or a serious medical condition should check with their doctor and tell us beforehand. We share a short screening note with your team in advance."
+      },
+      {
+        "question": "How is it priced and invoiced?",
+        "answer": "Quoted per session by team size, location and format, with a fixed number in writing before you commit. We invoice with GST and can work with your PO process."
+      },
+      {
+        "question": "What notice do you need?",
+        "answer": "Usually 5–7 days. Rush dates are often possible, so ask."
+      }
+    ]
+  },
+  "enquire": {
+    "heading": "Tell us about your team.",
+    "body": "Send your team size, preferred dates and office location. You get a written proposal and fixed quote within one working day."
+  }
+}

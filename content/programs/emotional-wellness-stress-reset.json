@@ -1,0 +1,305 @@
+{
+  "slug": "emotional-wellness-stress-reset",
+  "styleModifier": "program-page--emotional",
+  "seo": {
+    "title": "Emotional Wellness & Stress Reset Program — HEALWITHMAHIMA Gurgaon",
+    "description": "Deep restoration through sound healing, breathwork & meditation. Corporate wellness program designed to release accumulated stress and build lasting emotional resilience for teams.",
+    "keywords": "emotional wellness, stress reset, sound healing, breathwork, meditation, corporate wellness, team restoration, Gurgaon",
+    "canonical": "https://healwithmahima.com/programs/emotional-wellness-stress-reset.html",
+    "ogTitle": "Emotional Wellness & Stress Reset Program — HEALWITHMAHIMA",
+    "ogDescription": "Sound healing, breathwork & meditation for deep team restoration. Release stress, reconnect with calm, build emotional resilience.",
+    "ogImage": "https://healwithmahima.com/og-default.jpg",
+    "ogImageAlt": "Team lying on mats during a sound healing session with singing bowls",
+    "twitterTitle": "Emotional Wellness & Stress Reset Program",
+    "twitterDescription": "Sound healing, breathwork & meditation for deep team restoration.",
+    "twitterImage": "https://healwithmahima.com/og-default.jpg"
+  },
+  "jsonLd": {
+    "service": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Emotional Wellness & Stress Reset Program",
+      "serviceType": "Corporate Wellness Program",
+      "description": "Deep restoration through sound healing, breathwork & meditation. Corporate wellness program designed to release accumulated stress and build lasting emotional resilience for teams.",
+      "url": "https://healwithmahima.com/programs/emotional-wellness-stress-reset.html",
+      "image": "https://healwithmahima.com/og-default.jpg",
+      "areaServed": {
+        "@type": "City",
+        "name": "Gurgaon"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://healwithmahima.com/programs/emotional-wellness-stress-reset.html"
+      },
+      "provider": {
+        "@type": "HealthAndBeautyBusiness",
+        "name": "HEALWITHMAHIMA",
+        "url": "https://healwithmahima.com"
+      }
+    }
+  },
+  "enquiryHref": "../index.html?program=Emotional%20Wellness%20%26%20Stress%20Reset#enquire",
+  "hero": {
+    "number": "01",
+    "eyebrow": "EMOTIONAL WELLNESS · STRESS RESET",
+    "headingHtml": "Emotional Wellness<br/>&amp; Stress Reset",
+    "intro": "A 75-minute reset inside the workday. Sound healing, guided breathwork and meditation help people settle their nervous system and leave with a breathing tool they can use at their desk.",
+    "image": {
+      "src": "/assets/images/corp-office-1080.webp",
+      "alt": "A team resting on mats during an in-office stress reset session",
+      "width": "1080",
+      "height": "1350",
+      "sizes": "(max-width: 720px) 100vw, 50vw"
+    }
+  },
+  "shift": {
+    "eyebrow": "THE RESET",
+    "heading": "For teams carrying pressure, fatigue, and mental noise.",
+    "body": "This session creates a calm reset inside the workday. The format blends sound healing, guided breathwork and\n          meditation so people can settle their nervous system and leave with repeatable tools."
+  },
+  "includes": {
+    "eyebrow": "INSIDE THE SESSION",
+    "items": [
+      "Guided sound healing with Tibetan bowls",
+      "Breathwork & pranayama sessions",
+      "Mindfulness & body-scan meditation",
+      "Stress-mapping workshop",
+      "Take-home practice toolkit"
+    ]
+  },
+  "rhythm": {
+    "eyebrow": "SESSION RHYTHM",
+    "heading": "Quiet structure, not a rushed workshop.",
+    "body": "The experience is paced like a nervous-system reset: soft arrival, guided release, and a grounded close that\n          turns the session into something people can carry back to work.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Settle",
+        "description": "Breathwork and body awareness bring the team out of work-mode and into a calmer shared room."
+      },
+      {
+        "number": "02",
+        "title": "Release",
+        "description": "Tibetan bowls, guided meditation and emotional mapping help clear built-up stress without forcing discussion."
+      },
+      {
+        "number": "03",
+        "title": "Integrate",
+        "description": "Simple take-home practices make the reset practical for desks, meetings and high-pressure days."
+      }
+    ]
+  },
+  "meta": [
+    {
+      "label": "DURATION",
+      "value": "75 min – Half day"
+    },
+    {
+      "label": "FORMAT",
+      "value": "On-site / Studio"
+    },
+    {
+      "label": "TEAM SIZE",
+      "value": "10–80 People"
+    }
+  ],
+  "whoFor": {
+    "eyebrow": "WHO IT'S FOR",
+    "heading": "Built for teams running on empty.",
+    "items": [
+      "Teams post-crunch, after launches, quarter-close or long delivery pushes",
+      "Floors where stress shows up as short tempers, sick days and quiet burnout",
+      "Leaders who want a reset that needs zero prep from their people"
+    ],
+    "outcomes": [
+      {
+        "value": "Calmer",
+        "label": "Reported drop in tension, same-day"
+      },
+      {
+        "value": "Sleep",
+        "label": "Better wind-down that night"
+      },
+      {
+        "value": "Focus",
+        "label": "Sharper attention next morning"
+      },
+      {
+        "value": "Reset",
+        "label": "A repeatable tool for desk stress"
+      }
+    ]
+  },
+  "prep": {
+    "eyebrow": "WHAT TO EXPECT",
+    "heading": "Simple to host. We handle the rest.",
+    "intro": "Here's exactly what your team needs to prepare — and what we bring.",
+    "cards": [
+      {
+        "title": "Your team provides",
+        "items": [
+          "A quiet room or hall, lights dimmable",
+          "Floor space for mats/cushions (we bring bowls)",
+          "90 min clear on the calendar (75-min session + settle-in)",
+          "Phones on silent, no hard stops mid-session"
+        ]
+      },
+      {
+        "title": "Good to know",
+        "items": [
+          "Wear comfortable clothing",
+          "Come as you are — no experience needed",
+          "Optional: a light space, not right after a heavy lunch",
+          "We arrive 45 min early to set the room"
+        ]
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "PRICING",
+    "heading": "How engagements are priced.",
+    "intro": "Every quote is fixed in writing before you commit, and depends on team size, location and format. GST invoice provided.",
+    "cards": [
+      {
+        "featured": false,
+        "tier": "Single Session",
+        "amount": "Per session",
+        "description": "A one-off reset for your team.",
+        "items": [
+          "1 facilitated session",
+          "All materials included",
+          "On-site in Gurgaon/NCR"
+        ],
+        "ctaLabel": "Get a quote"
+      },
+      {
+        "featured": true,
+        "tier": "Series (4–6)",
+        "amount": "Per series",
+        "description": "Recurring slots that build a habit.",
+        "items": [
+          "Discounted per-session rate",
+          "Consistent facilitator",
+          "Simple feedback summary"
+        ],
+        "ctaLabel": "Get a quote"
+      },
+      {
+        "featured": false,
+        "tier": "Retainer",
+        "amount": "Monthly",
+        "description": "Ongoing partner for larger orgs.",
+        "items": [
+          "Multi-program mix",
+          "Priority scheduling",
+          "Tailored reporting"
+        ],
+        "ctaLabel": "Talk to us"
+      }
+    ],
+    "note": "Prices exclude GST and travel for offsite formats. Free rescheduling with 72 hours' notice."
+  },
+  "faq": {
+    "eyebrow": "QUESTIONS, ANSWERED",
+    "heading": "Questions teams ask us",
+    "items": [
+      {
+        "question": "How large a team can join one session?",
+        "answer": "10–80 people works well. Above 80 we split into two sittings or add a co-facilitator so the sound still reaches everyone."
+      },
+      {
+        "question": "Our team is sceptical about sound healing. Will this feel awkward?",
+        "answer": "We keep it grounded — no chanting or forced sharing. It's guided breath, Tibetan bowls and rest. Sceptics usually leave the calmest."
+      },
+      {
+        "question": "On-site or at a studio?",
+        "answer": "Both. We travel across Gurgaon and Delhi-NCR to your office, or host at a partner studio. On-site is most popular for full teams."
+      },
+      {
+        "question": "Is it tied to any religion?",
+        "answer": "No. It's a secular, nervous-system reset. Nothing devotional, nothing you need to believe in."
+      },
+      {
+        "question": "How much space and setup do you need?",
+        "answer": "A room where people can sit or lie down. We bring bowls, mats and audio. You provide the room and 45 min of setup access."
+      },
+      {
+        "question": "Can remote or hybrid teams do this?",
+        "answer": "Yes — we run a guided online version for distributed teams, though on-site lands deeper."
+      },
+      {
+        "question": "What does it cost?",
+        "answer": "Quoted to your team size, location and format. Book a call for a fixed number."
+      },
+      {
+        "question": "How do we book and what's the notice?",
+        "answer": "Message on WhatsApp or send the form. We usually need 5–7 days' notice; rush dates possible."
+      }
+    ]
+  },
+  "related": {
+    "eyebrow": "RELATED PROGRAMS",
+    "heading": "Other formats",
+    "intro": "Move from restoration into the next layer of workplace wellbeing. Each one is run by Mahima and can be combined into a series.",
+    "items": [
+      {
+        "href": "confidence-mindset-building.html",
+        "number": "02",
+        "title": "Confidence & Mindset Building",
+        "description": "For teams ready to turn reflection into clearer goals and stronger self-belief.",
+        "image": {
+          "src": "/assets/images/session-gong-800.webp",
+          "alt": "Confidence workshop"
+        },
+        "width": "800",
+        "height": "1000"
+      },
+      {
+        "href": "movement-relaxation-sessions.html",
+        "number": "03",
+        "title": "Movement & Relaxation Sessions",
+        "description": "For body-led release through yoga, mobility, stretching and gentle movement.",
+        "image": {
+          "src": "/assets/images/session-movement-800.webp",
+          "alt": "Movement session"
+        },
+        "width": "800",
+        "height": "590"
+      },
+      {
+        "href": "nature-based-wellness-retreats.html",
+        "number": "04",
+        "title": "Nature-Based Wellness Retreats",
+        "description": "For deeper offsite recovery, team bonding and a full reset outside routine.",
+        "image": {
+          "src": "/assets/images/session-mats-800.webp",
+          "alt": "Nature retreat"
+        },
+        "width": "800",
+        "height": "1000"
+      },
+      {
+        "href": "women-centric-wellness-circles.html",
+        "number": "05",
+        "title": "Women-Centric Wellness Circles",
+        "description": "For safe, facilitated sharing spaces built around trust and emotional release.",
+        "image": {
+          "src": "/assets/images/session-office-800.webp",
+          "alt": "Women circle"
+        },
+        "width": "800",
+        "height": "1000"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "BOOK PROGRAM 01",
+    "headingHtml": "Ready for a<br/>Stress Reset?",
+    "body": "Start with a 30-minute consultation and shape this session around your team size,\n        location, and wellness goals.",
+    "primaryLabel": "Request a proposal",
+    "whatsappLabel": "WhatsApp us",
+    "whatsappText": "Hi Heal With Mahima, I want to book the Emotional Wellness and Stress Reset program."
+  }
+}

@@ -1,0 +1,3071 @@
+backend:
+  name: github
+  repo: zeroslashagency/mahima-portfolio-Workplace
+  branch: main
+  # base_url: https://sveltia-cms-auth.YOUR-SUBDOMAIN.workers.dev
+media_folder: public/assets/images
+public_folder: /assets/images
+media_libraries:
+  default:
+    config:
+      slugify_filename: true
+      transformations:
+        raster_image:
+          format: webp
+          quality: 85
+          width: 2048
+          height: 2048
+collections:
+- name: site
+  label: Site settings
+  format: json
+  files:
+  - name: site
+    label: Contact settings
+    file: content/site.json
+    fields:
+    - label: Phone
+      name: phone
+      widget: object
+      collapsed: true
+      fields:
+      - label: Displayed number
+        name: display
+        widget: string
+      - label: Dialling number
+        name: href
+        widget: string
+    - label: Email
+      name: email
+      widget: string
+    - label: Whatsapp
+      name: whatsapp
+      widget: object
+      collapsed: true
+      fields:
+      - label: Number
+        name: number
+        widget: string
+      - label: Prefilled message
+        name: prefilledText
+        widget: text
+    - label: Contact card
+      name: contactCard
+      widget: object
+      collapsed: true
+      fields:
+      - label: WhatsApp button label
+        name: whatsappLabel
+        widget: string
+      - label: Email label
+        name: emailLabel
+        widget: string
+      - label: Email subject
+        name: emailSubject
+        widget: string
+      - label: Phone label
+        name: phoneLabel
+        widget: string
+      - label: Pricing note
+        name: note
+        widget: text
+- name: homepage
+  label: Homepage
+  format: json
+  files:
+  - name: home
+    label: Homepage content
+    file: content/home.json
+    fields:
+    - label: SEO and sharing
+      name: seo
+      widget: object
+      collapsed: true
+      fields:
+      - label: Title
+        name: title
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Description
+        name: description
+        widget: text
+      - label: Keywords
+        name: keywords
+        widget: text
+        hint: Comma-separated search phrases.
+      - label: Open Graph title
+        name: ogTitle
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Open Graph description
+        name: ogDescription
+        widget: text
+      - label: Open Graph image
+        name: ogImage
+        widget: string
+        pattern:
+        - ^https://[^\s]+$
+        - Enter a full https:// image URL.
+        hint: Use a full https:// URL for social previews.
+      - label: Open Graph image alt text
+        name: ogImageAlt
+        widget: string
+      - label: X / Twitter title
+        name: twitterTitle
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: X / Twitter description
+        name: twitterDescription
+        widget: text
+    - label: Hero
+      name: hero
+      widget: object
+      collapsed: false
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: headingHtml
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+        hint: Simple inline HTML is allowed for intentional line breaks, for example <br>. Other fields are plain
+          text.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Primary button label
+        name: primaryCta
+        widget: string
+      - label: Secondary button label
+        name: secondaryCta
+        widget: string
+      - label: Proof line
+        name: proof
+        widget: text
+      - label: Image
+        name: image
+        widget: object
+        collapsed: true
+        fields:
+        - label: Image
+          name: src
+          widget: image
+          hint: Choose an existing image or upload a WebP image. Uploads are saved in public/assets/images.
+        - label: Alternative text
+          name: alt
+          widget: string
+          hint: Describe the image for people using screen readers.
+    - label: Experience gallery
+      name: experience
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Video
+        name: video
+        widget: object
+        collapsed: true
+        fields:
+        - label: Video file
+          name: src
+          widget: file
+          media_folder: /public/assets/videos
+          public_folder: /assets/videos
+        - label: Video poster
+          name: poster
+          widget: object
+          collapsed: true
+          fields:
+          - label: Poster image
+            name: src
+            widget: image
+          - label: Alternative text
+            name: alt
+            widget: string
+            hint: Describe the image for people using screen readers.
+        - label: Label
+          name: label
+          widget: string
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+      - label: Tiles
+        name: tiles
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Label
+          name: label
+          widget: string
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Image
+          name: image
+          widget: object
+          collapsed: true
+          fields:
+          - label: Image
+            name: src
+            widget: image
+            hint: Choose an existing image or upload a WebP image. Uploads are saved in public/assets/images.
+          - label: Alternative text
+            name: alt
+            widget: string
+            hint: Describe the image for people using screen readers.
+    - label: Program catalog
+      name: catalog
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Cards
+        name: cards
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Dialling number
+          name: href
+          widget: string
+        - label: Number
+          name: number
+          widget: string
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Description
+          name: description
+          widget: text
+        - label: Program facts
+          name: meta
+          widget: string
+        - label: Link Label
+          name: linkLabel
+          widget: string
+        - label: Image
+          name: image
+          widget: object
+          collapsed: true
+          fields:
+          - label: Image
+            name: src
+            widget: image
+            hint: Choose an existing image or upload a WebP image. Uploads are saved in public/assets/images.
+          - label: Alternative text
+            name: alt
+            widget: string
+            hint: Describe the image for people using screen readers.
+    - label: Results statistics
+      name: stats
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Subtitle
+        name: subtitle
+        widget: string
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Value
+          name: value
+          widget: string
+        - label: Counter target
+          name: target
+          widget: string
+          hint: Numeric value used by the animated counter.
+        - label: Counter suffix
+          name: suffix
+          widget: string
+          required: false
+          hint: Text shown after the counter, such as + or %.
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Description
+          name: description
+          widget: text
+      - label: Footnote
+        name: footnote
+        widget: string
+    - label: Founder section
+      name: founder
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Paragraphs
+        name: paragraphs
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        field:
+          label: Item
+          name: item
+          widget: text
+      - label: Credentials
+        name: credentials
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        field:
+          label: Item
+          name: item
+          widget: string
+      - label: Image
+        name: image
+        widget: object
+        collapsed: true
+        fields:
+        - label: Image
+          name: src
+          widget: image
+          hint: Choose an existing image or upload a WebP image. Uploads are saved in public/assets/images.
+        - label: Alternative text
+          name: alt
+          widget: string
+          hint: Describe the image for people using screen readers.
+    - label: How it works
+      name: process
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Steps
+        name: steps
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Number
+          name: number
+          widget: string
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Description
+          name: description
+          widget: text
+    - label: Frequently asked questions
+      name: faq
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.question}}'
+        fields:
+        - label: Question
+          name: question
+          widget: string
+        - label: Answer
+          name: answer
+          widget: text
+    - label: Enquiry section
+      name: enquire
+      widget: object
+      collapsed: true
+      fields:
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Body copy
+        name: body
+        widget: text
+- name: programs
+  label: Programs
+  format: json
+  files:
+  - name: emotional_wellness_stress_reset
+    label: Emotional Wellness & Stress Reset
+    file: content/programs/emotional-wellness-stress-reset.json
+    fields:
+    - label: Slug
+      name: slug
+      widget: hidden
+    - label: Page style class
+      name: styleModifier
+      widget: hidden
+    - label: SEO and sharing
+      name: seo
+      widget: object
+      collapsed: true
+      fields:
+      - label: Title
+        name: title
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Description
+        name: description
+        widget: text
+      - label: Keywords
+        name: keywords
+        widget: string
+        hint: Comma-separated search phrases.
+      - label: Canonical URL
+        name: canonical
+        widget: hidden
+      - label: Open Graph title
+        name: ogTitle
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Open Graph description
+        name: ogDescription
+        widget: text
+      - label: Open Graph image
+        name: ogImage
+        widget: string
+        pattern:
+        - ^https://[^\s]+$
+        - Enter a full https:// image URL.
+        hint: Use a full https:// URL for social previews.
+      - label: Open Graph image alt text
+        name: ogImageAlt
+        widget: string
+      - label: X / Twitter title
+        name: twitterTitle
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: X / Twitter description
+        name: twitterDescription
+        widget: text
+      - label: X / Twitter image
+        name: twitterImage
+        widget: string
+        required: false
+        pattern:
+        - ^https://[^\s]+$
+        - Enter a full https:// image URL.
+        hint: Use a full https:// URL for social previews.
+    - label: Structured data (JSON-LD)
+      name: jsonLd
+      widget: object
+      collapsed: true
+      hint: Structured search-engine data. Keep visible FAQ copy and FAQ structured data aligned.
+      fields:
+      - label: Service schema
+        name: service
+        widget: object
+        collapsed: true
+        fields:
+        - label: '@context'
+          name: '@context'
+          widget: hidden
+        - label: '@type'
+          name: '@type'
+          widget: hidden
+        - label: Name
+          name: name
+          widget: string
+        - label: Service Type
+          name: serviceType
+          widget: string
+        - label: Description
+          name: description
+          widget: text
+        - label: Url
+          name: url
+          widget: string
+        - label: Image
+          name: image
+          widget: string
+        - label: Area Served
+          name: areaServed
+          widget: object
+          collapsed: true
+          fields:
+          - label: '@type'
+            name: '@type'
+            widget: hidden
+          - label: Name
+            name: name
+            widget: string
+        - label: Offers
+          name: offers
+          widget: object
+          collapsed: true
+          fields:
+          - label: '@type'
+            name: '@type'
+            widget: hidden
+          - label: Price Currency
+            name: priceCurrency
+            widget: string
+          - label: Availability
+            name: availability
+            widget: string
+          - label: Url
+            name: url
+            widget: string
+        - label: Provider
+          name: provider
+          widget: object
+          collapsed: true
+          fields:
+          - label: '@type'
+            name: '@type'
+            widget: hidden
+          - label: Name
+            name: name
+            widget: string
+          - label: Url
+            name: url
+            widget: string
+    - label: Enquiry link
+      name: enquiryHref
+      widget: hidden
+    - label: Hero
+      name: hero
+      widget: object
+      collapsed: false
+      fields:
+      - label: Number
+        name: number
+        widget: string
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: headingHtml
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+        hint: Simple inline HTML is allowed for intentional line breaks, for example <br>. Other fields are plain
+          text.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Image
+        name: image
+        widget: object
+        collapsed: true
+        fields:
+        - label: Image
+          name: src
+          widget: image
+          hint: Choose an existing image or upload a WebP image. Uploads are saved in public/assets/images.
+        - label: Alternative text
+          name: alt
+          widget: string
+          hint: Describe the image for people using screen readers.
+        - label: Image width
+          name: width
+          widget: string
+          required: false
+          hint: Intrinsic pixel width used to prevent layout shift.
+        - label: Image height
+          name: height
+          widget: string
+          required: false
+          hint: Intrinsic pixel height used to prevent layout shift.
+        - label: Responsive sizes
+          name: sizes
+          widget: string
+          required: false
+          hint: Browser responsive-image sizes rule. Leave blank for a single-source image.
+    - label: Shift section
+      name: shift
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Body copy
+        name: body
+        widget: text
+    - label: Includes list
+      name: includes
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        field:
+          label: Item
+          name: item
+          widget: string
+    - label: Session rhythm
+      name: rhythm
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Body copy
+        name: body
+        widget: text
+      - label: Steps
+        name: steps
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Number
+          name: number
+          widget: string
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Description
+          name: description
+          widget: text
+    - label: Program facts
+      name: meta
+      widget: list
+      collapsed: true
+      minimize_collapsed: true
+      summary: '{{fields.label}}'
+      fields:
+      - label: Label
+        name: label
+        widget: string
+      - label: Value
+        name: value
+        widget: string
+    - label: Who it's for
+      name: whoFor
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        field:
+          label: Item
+          name: item
+          widget: string
+      - label: Outcome tiles
+        name: outcomes
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.label}}'
+        fields:
+        - label: Value
+          name: value
+          widget: string
+        - label: Label
+          name: label
+          widget: string
+    - label: Preparation
+      name: prep
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Cards
+        name: cards
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Items
+          name: items
+          widget: list
+          collapsed: true
+          minimize_collapsed: true
+          field:
+            label: Item
+            name: item
+            widget: string
+    - label: Pricing
+      name: pricing
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Cards
+        name: cards
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.tier}}'
+        fields:
+        - label: Featured card
+          name: featured
+          widget: boolean
+        - label: Tier name
+          name: tier
+          widget: string
+        - label: Amount label
+          name: amount
+          widget: string
+        - label: Description
+          name: description
+          widget: text
+        - label: Items
+          name: items
+          widget: list
+          collapsed: true
+          minimize_collapsed: true
+          field:
+            label: Item
+            name: item
+            widget: string
+        - label: Button label
+          name: ctaLabel
+          widget: string
+      - label: Pricing note
+        name: note
+        widget: text
+    - label: Frequently asked questions
+      name: faq
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.question}}'
+        fields:
+        - label: Question
+          name: question
+          widget: string
+        - label: Answer
+          name: answer
+          widget: text
+    - label: Related programs
+      name: related
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Dialling number
+          name: href
+          widget: string
+        - label: Number
+          name: number
+          widget: string
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Description
+          name: description
+          widget: text
+        - label: Image
+          name: image
+          widget: object
+          collapsed: true
+          fields:
+          - label: Image
+            name: src
+            widget: image
+            hint: Choose an existing image or upload a WebP image. Uploads are saved in public/assets/images.
+          - label: Alternative text
+            name: alt
+            widget: string
+            hint: Describe the image for people using screen readers.
+        - label: Image width
+          name: width
+          widget: string
+          required: false
+          hint: Intrinsic pixel width used to prevent layout shift.
+        - label: Image height
+          name: height
+          widget: string
+          required: false
+          hint: Intrinsic pixel height used to prevent layout shift.
+    - label: Closing call to action
+      name: cta
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: headingHtml
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+        hint: Simple inline HTML is allowed for intentional line breaks, for example <br>. Other fields are plain
+          text.
+      - label: Body copy
+        name: body
+        widget: text
+      - label: Primary button label
+        name: primaryLabel
+        widget: string
+      - label: WhatsApp button label
+        name: whatsappLabel
+        widget: string
+      - label: WhatsApp prefilled text
+        name: whatsappText
+        widget: text
+        hint: Message inserted into WhatsApp when someone clicks the program button.
+  - name: confidence_mindset_building
+    label: Confidence & Mindset Building
+    file: content/programs/confidence-mindset-building.json
+    fields:
+    - label: Slug
+      name: slug
+      widget: hidden
+    - label: Page style class
+      name: styleModifier
+      widget: hidden
+    - label: SEO and sharing
+      name: seo
+      widget: object
+      collapsed: true
+      fields:
+      - label: Title
+        name: title
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Description
+        name: description
+        widget: text
+      - label: Keywords
+        name: keywords
+        widget: string
+        hint: Comma-separated search phrases.
+      - label: Canonical URL
+        name: canonical
+        widget: hidden
+      - label: Open Graph title
+        name: ogTitle
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Open Graph description
+        name: ogDescription
+        widget: text
+      - label: Open Graph image
+        name: ogImage
+        widget: string
+        pattern:
+        - ^https://[^\s]+$
+        - Enter a full https:// image URL.
+        hint: Use a full https:// URL for social previews.
+      - label: Open Graph image alt text
+        name: ogImageAlt
+        widget: string
+      - label: X / Twitter title
+        name: twitterTitle
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: X / Twitter description
+        name: twitterDescription
+        widget: text
+      - label: X / Twitter image
+        name: twitterImage
+        widget: string
+        required: false
+        pattern:
+        - ^https://[^\s]+$
+        - Enter a full https:// image URL.
+        hint: Use a full https:// URL for social previews.
+    - label: Structured data (JSON-LD)
+      name: jsonLd
+      widget: object
+      collapsed: true
+      hint: Structured search-engine data. Keep visible FAQ copy and FAQ structured data aligned.
+      fields:
+      - label: Service schema
+        name: service
+        widget: object
+        collapsed: true
+        fields:
+        - label: '@context'
+          name: '@context'
+          widget: hidden
+        - label: '@type'
+          name: '@type'
+          widget: hidden
+        - label: Name
+          name: name
+          widget: string
+        - label: Service Type
+          name: serviceType
+          widget: string
+        - label: Description
+          name: description
+          widget: text
+        - label: Url
+          name: url
+          widget: string
+        - label: Image
+          name: image
+          widget: string
+        - label: Area Served
+          name: areaServed
+          widget: object
+          collapsed: true
+          fields:
+          - label: '@type'
+            name: '@type'
+            widget: hidden
+          - label: Name
+            name: name
+            widget: string
+        - label: Offers
+          name: offers
+          widget: object
+          collapsed: true
+          fields:
+          - label: '@type'
+            name: '@type'
+            widget: hidden
+          - label: Price Currency
+            name: priceCurrency
+            widget: string
+          - label: Availability
+            name: availability
+            widget: string
+          - label: Url
+            name: url
+            widget: string
+        - label: Provider
+          name: provider
+          widget: object
+          collapsed: true
+          fields:
+          - label: '@type'
+            name: '@type'
+            widget: hidden
+          - label: Name
+            name: name
+            widget: string
+          - label: Url
+            name: url
+            widget: string
+    - label: Enquiry link
+      name: enquiryHref
+      widget: hidden
+    - label: Hero
+      name: hero
+      widget: object
+      collapsed: false
+      fields:
+      - label: Number
+        name: number
+        widget: string
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: headingHtml
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+        hint: Simple inline HTML is allowed for intentional line breaks, for example <br>. Other fields are plain
+          text.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Image
+        name: image
+        widget: object
+        collapsed: true
+        fields:
+        - label: Image
+          name: src
+          widget: image
+          hint: Choose an existing image or upload a WebP image. Uploads are saved in public/assets/images.
+        - label: Alternative text
+          name: alt
+          widget: string
+          hint: Describe the image for people using screen readers.
+        - label: Image width
+          name: width
+          widget: string
+          required: false
+          hint: Intrinsic pixel width used to prevent layout shift.
+        - label: Image height
+          name: height
+          widget: string
+          required: false
+          hint: Intrinsic pixel height used to prevent layout shift.
+        - label: Responsive sizes
+          name: sizes
+          widget: string
+          required: false
+          hint: Browser responsive-image sizes rule. Leave blank for a single-source image.
+    - label: Shift section
+      name: shift
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Body copy
+        name: body
+        widget: text
+    - label: Includes list
+      name: includes
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        field:
+          label: Item
+          name: item
+          widget: string
+    - label: Session rhythm
+      name: rhythm
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Body copy
+        name: body
+        widget: text
+      - label: Steps
+        name: steps
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Number
+          name: number
+          widget: string
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Description
+          name: description
+          widget: text
+    - label: Program facts
+      name: meta
+      widget: list
+      collapsed: true
+      minimize_collapsed: true
+      summary: '{{fields.label}}'
+      fields:
+      - label: Label
+        name: label
+        widget: string
+      - label: Value
+        name: value
+        widget: string
+    - label: Who it's for
+      name: whoFor
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        field:
+          label: Item
+          name: item
+          widget: string
+      - label: Outcome tiles
+        name: outcomes
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.label}}'
+        fields:
+        - label: Value
+          name: value
+          widget: string
+        - label: Label
+          name: label
+          widget: string
+    - label: Preparation
+      name: prep
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Cards
+        name: cards
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Items
+          name: items
+          widget: list
+          collapsed: true
+          minimize_collapsed: true
+          field:
+            label: Item
+            name: item
+            widget: string
+    - label: Pricing
+      name: pricing
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Cards
+        name: cards
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.tier}}'
+        fields:
+        - label: Featured card
+          name: featured
+          widget: boolean
+        - label: Tier name
+          name: tier
+          widget: string
+        - label: Amount label
+          name: amount
+          widget: string
+        - label: Description
+          name: description
+          widget: text
+        - label: Items
+          name: items
+          widget: list
+          collapsed: true
+          minimize_collapsed: true
+          field:
+            label: Item
+            name: item
+            widget: string
+        - label: Button label
+          name: ctaLabel
+          widget: string
+      - label: Pricing note
+        name: note
+        widget: text
+    - label: Frequently asked questions
+      name: faq
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.question}}'
+        fields:
+        - label: Question
+          name: question
+          widget: string
+        - label: Answer
+          name: answer
+          widget: text
+    - label: Related programs
+      name: related
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Dialling number
+          name: href
+          widget: string
+        - label: Number
+          name: number
+          widget: string
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Description
+          name: description
+          widget: text
+        - label: Image
+          name: image
+          widget: object
+          collapsed: true
+          fields:
+          - label: Image
+            name: src
+            widget: image
+            hint: Choose an existing image or upload a WebP image. Uploads are saved in public/assets/images.
+          - label: Alternative text
+            name: alt
+            widget: string
+            hint: Describe the image for people using screen readers.
+        - label: Image width
+          name: width
+          widget: string
+          required: false
+          hint: Intrinsic pixel width used to prevent layout shift.
+        - label: Image height
+          name: height
+          widget: string
+          required: false
+          hint: Intrinsic pixel height used to prevent layout shift.
+    - label: Closing call to action
+      name: cta
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: headingHtml
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+        hint: Simple inline HTML is allowed for intentional line breaks, for example <br>. Other fields are plain
+          text.
+      - label: Body copy
+        name: body
+        widget: text
+      - label: Primary button label
+        name: primaryLabel
+        widget: string
+      - label: WhatsApp button label
+        name: whatsappLabel
+        widget: string
+      - label: WhatsApp prefilled text
+        name: whatsappText
+        widget: text
+        hint: Message inserted into WhatsApp when someone clicks the program button.
+  - name: movement_relaxation_sessions
+    label: Movement & Relaxation Sessions
+    file: content/programs/movement-relaxation-sessions.json
+    fields:
+    - label: Slug
+      name: slug
+      widget: hidden
+    - label: Page style class
+      name: styleModifier
+      widget: hidden
+    - label: SEO and sharing
+      name: seo
+      widget: object
+      collapsed: true
+      fields:
+      - label: Title
+        name: title
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Description
+        name: description
+        widget: text
+      - label: Keywords
+        name: keywords
+        widget: string
+        hint: Comma-separated search phrases.
+      - label: Canonical URL
+        name: canonical
+        widget: hidden
+      - label: Open Graph title
+        name: ogTitle
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Open Graph description
+        name: ogDescription
+        widget: text
+      - label: Open Graph image
+        name: ogImage
+        widget: string
+        pattern:
+        - ^https://[^\s]+$
+        - Enter a full https:// image URL.
+        hint: Use a full https:// URL for social previews.
+      - label: Open Graph image alt text
+        name: ogImageAlt
+        widget: string
+      - label: X / Twitter title
+        name: twitterTitle
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: X / Twitter description
+        name: twitterDescription
+        widget: text
+      - label: X / Twitter image
+        name: twitterImage
+        widget: string
+        required: false
+        pattern:
+        - ^https://[^\s]+$
+        - Enter a full https:// image URL.
+        hint: Use a full https:// URL for social previews.
+    - label: Structured data (JSON-LD)
+      name: jsonLd
+      widget: object
+      collapsed: true
+      hint: Structured search-engine data. Keep visible FAQ copy and FAQ structured data aligned.
+      fields:
+      - label: Service schema
+        name: service
+        widget: object
+        collapsed: true
+        fields:
+        - label: '@context'
+          name: '@context'
+          widget: hidden
+        - label: '@type'
+          name: '@type'
+          widget: hidden
+        - label: Name
+          name: name
+          widget: string
+        - label: Service Type
+          name: serviceType
+          widget: string
+        - label: Description
+          name: description
+          widget: text
+        - label: Url
+          name: url
+          widget: string
+        - label: Image
+          name: image
+          widget: string
+        - label: Area Served
+          name: areaServed
+          widget: object
+          collapsed: true
+          fields:
+          - label: '@type'
+            name: '@type'
+            widget: hidden
+          - label: Name
+            name: name
+            widget: string
+        - label: Offers
+          name: offers
+          widget: object
+          collapsed: true
+          fields:
+          - label: '@type'
+            name: '@type'
+            widget: hidden
+          - label: Price Currency
+            name: priceCurrency
+            widget: string
+          - label: Availability
+            name: availability
+            widget: string
+          - label: Url
+            name: url
+            widget: string
+        - label: Provider
+          name: provider
+          widget: object
+          collapsed: true
+          fields:
+          - label: '@type'
+            name: '@type'
+            widget: hidden
+          - label: Name
+            name: name
+            widget: string
+          - label: Url
+            name: url
+            widget: string
+    - label: Enquiry link
+      name: enquiryHref
+      widget: hidden
+    - label: Hero
+      name: hero
+      widget: object
+      collapsed: false
+      fields:
+      - label: Number
+        name: number
+        widget: string
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: headingHtml
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+        hint: Simple inline HTML is allowed for intentional line breaks, for example <br>. Other fields are plain
+          text.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Image
+        name: image
+        widget: object
+        collapsed: true
+        fields:
+        - label: Image
+          name: src
+          widget: image
+          hint: Choose an existing image or upload a WebP image. Uploads are saved in public/assets/images.
+        - label: Alternative text
+          name: alt
+          widget: string
+          hint: Describe the image for people using screen readers.
+        - label: Image width
+          name: width
+          widget: string
+          required: false
+          hint: Intrinsic pixel width used to prevent layout shift.
+        - label: Image height
+          name: height
+          widget: string
+          required: false
+          hint: Intrinsic pixel height used to prevent layout shift.
+        - label: Responsive sizes
+          name: sizes
+          widget: string
+          required: false
+          hint: Browser responsive-image sizes rule. Leave blank for a single-source image.
+    - label: Shift section
+      name: shift
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Body copy
+        name: body
+        widget: text
+    - label: Includes list
+      name: includes
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        field:
+          label: Item
+          name: item
+          widget: string
+    - label: Session rhythm
+      name: rhythm
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Body copy
+        name: body
+        widget: text
+      - label: Steps
+        name: steps
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Number
+          name: number
+          widget: string
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Description
+          name: description
+          widget: text
+    - label: Program facts
+      name: meta
+      widget: list
+      collapsed: true
+      minimize_collapsed: true
+      summary: '{{fields.label}}'
+      fields:
+      - label: Label
+        name: label
+        widget: string
+      - label: Value
+        name: value
+        widget: string
+    - label: Who it's for
+      name: whoFor
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        field:
+          label: Item
+          name: item
+          widget: string
+      - label: Outcome tiles
+        name: outcomes
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.label}}'
+        fields:
+        - label: Value
+          name: value
+          widget: string
+        - label: Label
+          name: label
+          widget: string
+    - label: Preparation
+      name: prep
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Cards
+        name: cards
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Items
+          name: items
+          widget: list
+          collapsed: true
+          minimize_collapsed: true
+          field:
+            label: Item
+            name: item
+            widget: string
+    - label: Pricing
+      name: pricing
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Cards
+        name: cards
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.tier}}'
+        fields:
+        - label: Featured card
+          name: featured
+          widget: boolean
+        - label: Tier name
+          name: tier
+          widget: string
+        - label: Amount label
+          name: amount
+          widget: string
+        - label: Description
+          name: description
+          widget: text
+        - label: Items
+          name: items
+          widget: list
+          collapsed: true
+          minimize_collapsed: true
+          field:
+            label: Item
+            name: item
+            widget: string
+        - label: Button label
+          name: ctaLabel
+          widget: string
+      - label: Pricing note
+        name: note
+        widget: text
+    - label: Frequently asked questions
+      name: faq
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.question}}'
+        fields:
+        - label: Question
+          name: question
+          widget: string
+        - label: Answer
+          name: answer
+          widget: text
+    - label: Related programs
+      name: related
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Dialling number
+          name: href
+          widget: string
+        - label: Number
+          name: number
+          widget: string
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Description
+          name: description
+          widget: text
+        - label: Image
+          name: image
+          widget: object
+          collapsed: true
+          fields:
+          - label: Image
+            name: src
+            widget: image
+            hint: Choose an existing image or upload a WebP image. Uploads are saved in public/assets/images.
+          - label: Alternative text
+            name: alt
+            widget: string
+            hint: Describe the image for people using screen readers.
+        - label: Image width
+          name: width
+          widget: string
+          required: false
+          hint: Intrinsic pixel width used to prevent layout shift.
+        - label: Image height
+          name: height
+          widget: string
+          required: false
+          hint: Intrinsic pixel height used to prevent layout shift.
+    - label: Closing call to action
+      name: cta
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: headingHtml
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+        hint: Simple inline HTML is allowed for intentional line breaks, for example <br>. Other fields are plain
+          text.
+      - label: Body copy
+        name: body
+        widget: text
+      - label: Primary button label
+        name: primaryLabel
+        widget: string
+      - label: WhatsApp button label
+        name: whatsappLabel
+        widget: string
+      - label: WhatsApp prefilled text
+        name: whatsappText
+        widget: text
+        hint: Message inserted into WhatsApp when someone clicks the program button.
+  - name: nature_based_wellness_retreats
+    label: Nature-Based Wellness Retreats
+    file: content/programs/nature-based-wellness-retreats.json
+    fields:
+    - label: Slug
+      name: slug
+      widget: hidden
+    - label: Page style class
+      name: styleModifier
+      widget: hidden
+    - label: SEO and sharing
+      name: seo
+      widget: object
+      collapsed: true
+      fields:
+      - label: Title
+        name: title
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Description
+        name: description
+        widget: text
+      - label: Keywords
+        name: keywords
+        widget: string
+        hint: Comma-separated search phrases.
+      - label: Canonical URL
+        name: canonical
+        widget: hidden
+      - label: Open Graph title
+        name: ogTitle
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Open Graph description
+        name: ogDescription
+        widget: text
+      - label: Open Graph image
+        name: ogImage
+        widget: string
+        pattern:
+        - ^https://[^\s]+$
+        - Enter a full https:// image URL.
+        hint: Use a full https:// URL for social previews.
+      - label: Open Graph image alt text
+        name: ogImageAlt
+        widget: string
+      - label: X / Twitter title
+        name: twitterTitle
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: X / Twitter description
+        name: twitterDescription
+        widget: text
+      - label: X / Twitter image
+        name: twitterImage
+        widget: string
+        required: false
+        pattern:
+        - ^https://[^\s]+$
+        - Enter a full https:// image URL.
+        hint: Use a full https:// URL for social previews.
+    - label: Structured data (JSON-LD)
+      name: jsonLd
+      widget: object
+      collapsed: true
+      hint: Structured search-engine data. Keep visible FAQ copy and FAQ structured data aligned.
+      fields:
+      - label: Service schema
+        name: service
+        widget: object
+        collapsed: true
+        fields:
+        - label: '@context'
+          name: '@context'
+          widget: hidden
+        - label: '@type'
+          name: '@type'
+          widget: hidden
+        - label: Name
+          name: name
+          widget: string
+        - label: Service Type
+          name: serviceType
+          widget: string
+        - label: Description
+          name: description
+          widget: text
+        - label: Url
+          name: url
+          widget: string
+        - label: Image
+          name: image
+          widget: string
+        - label: Area Served
+          name: areaServed
+          widget: object
+          collapsed: true
+          fields:
+          - label: '@type'
+            name: '@type'
+            widget: hidden
+          - label: Name
+            name: name
+            widget: string
+        - label: Offers
+          name: offers
+          widget: object
+          collapsed: true
+          fields:
+          - label: '@type'
+            name: '@type'
+            widget: hidden
+          - label: Price Currency
+            name: priceCurrency
+            widget: string
+          - label: Availability
+            name: availability
+            widget: string
+          - label: Url
+            name: url
+            widget: string
+        - label: Provider
+          name: provider
+          widget: object
+          collapsed: true
+          fields:
+          - label: '@type'
+            name: '@type'
+            widget: hidden
+          - label: Name
+            name: name
+            widget: string
+          - label: Url
+            name: url
+            widget: string
+    - label: Enquiry link
+      name: enquiryHref
+      widget: hidden
+    - label: Hero
+      name: hero
+      widget: object
+      collapsed: false
+      fields:
+      - label: Number
+        name: number
+        widget: string
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: headingHtml
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+        hint: Simple inline HTML is allowed for intentional line breaks, for example <br>. Other fields are plain
+          text.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Image
+        name: image
+        widget: object
+        collapsed: true
+        fields:
+        - label: Image
+          name: src
+          widget: image
+          hint: Choose an existing image or upload a WebP image. Uploads are saved in public/assets/images.
+        - label: Alternative text
+          name: alt
+          widget: string
+          hint: Describe the image for people using screen readers.
+        - label: Image width
+          name: width
+          widget: string
+          required: false
+          hint: Intrinsic pixel width used to prevent layout shift.
+        - label: Image height
+          name: height
+          widget: string
+          required: false
+          hint: Intrinsic pixel height used to prevent layout shift.
+        - label: Responsive sizes
+          name: sizes
+          widget: string
+          required: false
+          hint: Browser responsive-image sizes rule. Leave blank for a single-source image.
+    - label: Shift section
+      name: shift
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Body copy
+        name: body
+        widget: text
+    - label: Includes list
+      name: includes
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        field:
+          label: Item
+          name: item
+          widget: string
+    - label: Session rhythm
+      name: rhythm
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Body copy
+        name: body
+        widget: text
+      - label: Steps
+        name: steps
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Number
+          name: number
+          widget: string
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Description
+          name: description
+          widget: text
+    - label: Program facts
+      name: meta
+      widget: list
+      collapsed: true
+      minimize_collapsed: true
+      summary: '{{fields.label}}'
+      fields:
+      - label: Label
+        name: label
+        widget: string
+      - label: Value
+        name: value
+        widget: string
+    - label: Who it's for
+      name: whoFor
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        field:
+          label: Item
+          name: item
+          widget: string
+      - label: Outcome tiles
+        name: outcomes
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.label}}'
+        fields:
+        - label: Value
+          name: value
+          widget: string
+        - label: Label
+          name: label
+          widget: string
+    - label: Preparation
+      name: prep
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Cards
+        name: cards
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Items
+          name: items
+          widget: list
+          collapsed: true
+          minimize_collapsed: true
+          field:
+            label: Item
+            name: item
+            widget: string
+    - label: Pricing
+      name: pricing
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Cards
+        name: cards
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.tier}}'
+        fields:
+        - label: Featured card
+          name: featured
+          widget: boolean
+        - label: Tier name
+          name: tier
+          widget: string
+        - label: Amount label
+          name: amount
+          widget: string
+        - label: Description
+          name: description
+          widget: text
+        - label: Items
+          name: items
+          widget: list
+          collapsed: true
+          minimize_collapsed: true
+          field:
+            label: Item
+            name: item
+            widget: string
+        - label: Button label
+          name: ctaLabel
+          widget: string
+      - label: Pricing note
+        name: note
+        widget: text
+    - label: Frequently asked questions
+      name: faq
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.question}}'
+        fields:
+        - label: Question
+          name: question
+          widget: string
+        - label: Answer
+          name: answer
+          widget: text
+    - label: Related programs
+      name: related
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Dialling number
+          name: href
+          widget: string
+        - label: Number
+          name: number
+          widget: string
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Description
+          name: description
+          widget: text
+        - label: Image
+          name: image
+          widget: object
+          collapsed: true
+          fields:
+          - label: Image
+            name: src
+            widget: image
+            hint: Choose an existing image or upload a WebP image. Uploads are saved in public/assets/images.
+          - label: Alternative text
+            name: alt
+            widget: string
+            hint: Describe the image for people using screen readers.
+        - label: Image width
+          name: width
+          widget: string
+          required: false
+          hint: Intrinsic pixel width used to prevent layout shift.
+        - label: Image height
+          name: height
+          widget: string
+          required: false
+          hint: Intrinsic pixel height used to prevent layout shift.
+    - label: Closing call to action
+      name: cta
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: headingHtml
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+        hint: Simple inline HTML is allowed for intentional line breaks, for example <br>. Other fields are plain
+          text.
+      - label: Body copy
+        name: body
+        widget: text
+      - label: Primary button label
+        name: primaryLabel
+        widget: string
+      - label: WhatsApp button label
+        name: whatsappLabel
+        widget: string
+      - label: WhatsApp prefilled text
+        name: whatsappText
+        widget: text
+        hint: Message inserted into WhatsApp when someone clicks the program button.
+  - name: women_centric_wellness_circles
+    label: Women-Centric Wellness Circles
+    file: content/programs/women-centric-wellness-circles.json
+    fields:
+    - label: Slug
+      name: slug
+      widget: hidden
+    - label: Page style class
+      name: styleModifier
+      widget: hidden
+    - label: SEO and sharing
+      name: seo
+      widget: object
+      collapsed: true
+      fields:
+      - label: Title
+        name: title
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Description
+        name: description
+        widget: text
+      - label: Keywords
+        name: keywords
+        widget: string
+        hint: Comma-separated search phrases.
+      - label: Canonical URL
+        name: canonical
+        widget: hidden
+      - label: Open Graph title
+        name: ogTitle
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Open Graph description
+        name: ogDescription
+        widget: text
+      - label: Open Graph image
+        name: ogImage
+        widget: string
+        pattern:
+        - ^https://[^\s]+$
+        - Enter a full https:// image URL.
+        hint: Use a full https:// URL for social previews.
+      - label: Open Graph image alt text
+        name: ogImageAlt
+        widget: string
+      - label: X / Twitter title
+        name: twitterTitle
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: X / Twitter description
+        name: twitterDescription
+        widget: text
+      - label: X / Twitter image
+        name: twitterImage
+        widget: string
+        required: false
+        pattern:
+        - ^https://[^\s]+$
+        - Enter a full https:// image URL.
+        hint: Use a full https:// URL for social previews.
+    - label: Structured data (JSON-LD)
+      name: jsonLd
+      widget: object
+      collapsed: true
+      hint: Structured search-engine data. Keep visible FAQ copy and FAQ structured data aligned.
+      fields:
+      - label: Service schema
+        name: service
+        widget: object
+        collapsed: true
+        fields:
+        - label: '@context'
+          name: '@context'
+          widget: hidden
+        - label: '@type'
+          name: '@type'
+          widget: hidden
+        - label: Name
+          name: name
+          widget: string
+        - label: Service Type
+          name: serviceType
+          widget: string
+        - label: Description
+          name: description
+          widget: text
+        - label: Url
+          name: url
+          widget: string
+        - label: Image
+          name: image
+          widget: string
+        - label: Area Served
+          name: areaServed
+          widget: object
+          collapsed: true
+          fields:
+          - label: '@type'
+            name: '@type'
+            widget: hidden
+          - label: Name
+            name: name
+            widget: string
+        - label: Offers
+          name: offers
+          widget: object
+          collapsed: true
+          fields:
+          - label: '@type'
+            name: '@type'
+            widget: hidden
+          - label: Price Currency
+            name: priceCurrency
+            widget: string
+          - label: Availability
+            name: availability
+            widget: string
+          - label: Url
+            name: url
+            widget: string
+        - label: Provider
+          name: provider
+          widget: object
+          collapsed: true
+          fields:
+          - label: '@type'
+            name: '@type'
+            widget: hidden
+          - label: Name
+            name: name
+            widget: string
+          - label: Url
+            name: url
+            widget: string
+    - label: Enquiry link
+      name: enquiryHref
+      widget: hidden
+    - label: Hero
+      name: hero
+      widget: object
+      collapsed: false
+      fields:
+      - label: Number
+        name: number
+        widget: string
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: headingHtml
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+        hint: Simple inline HTML is allowed for intentional line breaks, for example <br>. Other fields are plain
+          text.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Image
+        name: image
+        widget: object
+        collapsed: true
+        fields:
+        - label: Image
+          name: src
+          widget: image
+          hint: Choose an existing image or upload a WebP image. Uploads are saved in public/assets/images.
+        - label: Alternative text
+          name: alt
+          widget: string
+          hint: Describe the image for people using screen readers.
+        - label: Image width
+          name: width
+          widget: string
+          required: false
+          hint: Intrinsic pixel width used to prevent layout shift.
+        - label: Image height
+          name: height
+          widget: string
+          required: false
+          hint: Intrinsic pixel height used to prevent layout shift.
+        - label: Responsive sizes
+          name: sizes
+          widget: string
+          required: false
+          hint: Browser responsive-image sizes rule. Leave blank for a single-source image.
+    - label: Shift section
+      name: shift
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Body copy
+        name: body
+        widget: text
+    - label: Includes list
+      name: includes
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        field:
+          label: Item
+          name: item
+          widget: string
+    - label: Session rhythm
+      name: rhythm
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Body copy
+        name: body
+        widget: text
+      - label: Steps
+        name: steps
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Number
+          name: number
+          widget: string
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Description
+          name: description
+          widget: text
+    - label: Program facts
+      name: meta
+      widget: list
+      collapsed: true
+      minimize_collapsed: true
+      summary: '{{fields.label}}'
+      fields:
+      - label: Label
+        name: label
+        widget: string
+      - label: Value
+        name: value
+        widget: string
+    - label: Who it's for
+      name: whoFor
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        field:
+          label: Item
+          name: item
+          widget: string
+      - label: Outcome tiles
+        name: outcomes
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.label}}'
+        fields:
+        - label: Value
+          name: value
+          widget: string
+        - label: Label
+          name: label
+          widget: string
+    - label: Preparation
+      name: prep
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Cards
+        name: cards
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Items
+          name: items
+          widget: list
+          collapsed: true
+          minimize_collapsed: true
+          field:
+            label: Item
+            name: item
+            widget: string
+    - label: Pricing
+      name: pricing
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Cards
+        name: cards
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.tier}}'
+        fields:
+        - label: Featured card
+          name: featured
+          widget: boolean
+        - label: Tier name
+          name: tier
+          widget: string
+        - label: Amount label
+          name: amount
+          widget: string
+        - label: Description
+          name: description
+          widget: text
+        - label: Items
+          name: items
+          widget: list
+          collapsed: true
+          minimize_collapsed: true
+          field:
+            label: Item
+            name: item
+            widget: string
+        - label: Button label
+          name: ctaLabel
+          widget: string
+      - label: Pricing note
+        name: note
+        widget: text
+    - label: Frequently asked questions
+      name: faq
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.question}}'
+        fields:
+        - label: Question
+          name: question
+          widget: string
+        - label: Answer
+          name: answer
+          widget: text
+    - label: Related programs
+      name: related
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: heading
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+      - label: Introduction
+        name: intro
+        widget: text
+      - label: Items
+        name: items
+        widget: list
+        collapsed: true
+        minimize_collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - label: Dialling number
+          name: href
+          widget: string
+        - label: Number
+          name: number
+          widget: string
+        - label: Title
+          name: title
+          widget: string
+          pattern:
+          - ^[\s\S]{1,140}$
+          - Use 140 characters or fewer.
+        - label: Description
+          name: description
+          widget: text
+        - label: Image
+          name: image
+          widget: object
+          collapsed: true
+          fields:
+          - label: Image
+            name: src
+            widget: image
+            hint: Choose an existing image or upload a WebP image. Uploads are saved in public/assets/images.
+          - label: Alternative text
+            name: alt
+            widget: string
+            hint: Describe the image for people using screen readers.
+        - label: Image width
+          name: width
+          widget: string
+          required: false
+          hint: Intrinsic pixel width used to prevent layout shift.
+        - label: Image height
+          name: height
+          widget: string
+          required: false
+          hint: Intrinsic pixel height used to prevent layout shift.
+    - label: Closing call to action
+      name: cta
+      widget: object
+      collapsed: true
+      fields:
+      - label: Eyebrow
+        name: eyebrow
+        widget: string
+      - label: Heading
+        name: headingHtml
+        widget: string
+        pattern:
+        - ^[\s\S]{1,140}$
+        - Use 140 characters or fewer.
+        hint: Simple inline HTML is allowed for intentional line breaks, for example <br>. Other fields are plain
+          text.
+      - label: Body copy
+        name: body
+        widget: text
+      - label: Primary button label
+        name: primaryLabel
+        widget: string
+      - label: WhatsApp button label
+        name: whatsappLabel
+        widget: string
+      - label: WhatsApp prefilled text
+        name: whatsappText
+        widget: text
+        hint: Message inserted into WhatsApp when someone clicks the program button.

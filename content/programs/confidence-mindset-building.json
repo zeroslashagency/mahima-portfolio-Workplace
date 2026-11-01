@@ -1,0 +1,305 @@
+{
+  "slug": "confidence-mindset-building",
+  "styleModifier": "program-page--mindset",
+  "seo": {
+    "title": "Confidence & Mindset Building Program — HEALWITHMAHIMA Gurgaon",
+    "description": "Journaling, visualisation & goal-setting workshops for high-performance teams. Build confidence, shift mindsets, set clearer goals.",
+    "keywords": "confidence building, mindset coaching, visualisation, goal setting, journaling, high performance teams, Gurgaon",
+    "canonical": "https://healwithmahima.com/programs/confidence-mindset-building.html",
+    "ogTitle": "Confidence & Mindset Building Program — HEALWITHMAHIMA Gurgaon",
+    "ogDescription": "Journaling, visualisation & goal-setting workshops for high-performance teams. Build confidence, shift mindsets, set clearer goals.",
+    "ogImage": "https://healwithmahima.com/og-default.jpg",
+    "ogImageAlt": "Team lying on mats during a sound healing session with singing bowls",
+    "twitterTitle": "Confidence & Mindset Building Program — HEALWITHMAHIMA Gurgaon",
+    "twitterDescription": "Journaling, visualisation & goal-setting workshops for high-performance teams. Build confidence, shift mindsets, set clearer goals.",
+    "twitterImage": "https://healwithmahima.com/og-default.jpg"
+  },
+  "jsonLd": {
+    "service": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Confidence & Mindset Building Program",
+      "serviceType": "Corporate Wellness Program",
+      "description": "Journaling, visualisation & goal-setting workshops for high-performance teams. Build confidence, shift mindsets, set clearer goals.",
+      "url": "https://healwithmahima.com/programs/confidence-mindset-building.html",
+      "image": "https://healwithmahima.com/assets/images/corp-team-1080.webp",
+      "areaServed": {
+        "@type": "City",
+        "name": "Gurgaon"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://healwithmahima.com/programs/confidence-mindset-building.html"
+      },
+      "provider": {
+        "@type": "HealthAndBeautyBusiness",
+        "name": "HEALWITHMAHIMA",
+        "url": "https://healwithmahima.com"
+      }
+    }
+  },
+  "enquiryHref": "../index.html?program=Confidence%20%26%20Mindset%20Building#enquire",
+  "hero": {
+    "number": "02",
+    "eyebrow": "CONFIDENCE · MINDSET · GOALS",
+    "headingHtml": "Confidence &amp;<br/>Mindset Building",
+    "intro": "A practical workshop for managers and new leads. Guided journaling, visualisation and goal-setting frameworks help people name what holds them back and leave with a written 30-day plan.",
+    "image": {
+      "src": "/assets/images/corp-team-1080.webp",
+      "alt": "A client team in namaste after an on-site wellness workshop",
+      "width": "1080",
+      "height": "1350",
+      "sizes": "(max-width: 720px) 100vw, 50vw"
+    }
+  },
+  "shift": {
+    "eyebrow": "THE SHIFT",
+    "heading": "For teams that need clarity, self-belief, and intentional action.",
+    "body": "This workshop turns reflection into practical momentum. People identify limiting beliefs, define stronger goals\n          and leave with a personal action plan they can use immediately."
+  },
+  "includes": {
+    "eyebrow": "INSIDE THE SESSION",
+    "items": [
+      "Guided journaling & reflection exercises",
+      "Visualisation & vision-boarding workshop",
+      "Goal-setting with accountability frameworks",
+      "Inner critic & limiting beliefs session",
+      "Personal growth action plan"
+    ]
+  },
+  "rhythm": {
+    "eyebrow": "SESSION RHYTHM",
+    "heading": "Reflect, reframe, then move with intent.",
+    "body": "The workshop is paced to move from honest self-observation into practical direction. It gives teams space to\n          name blocks, reset their internal language, and leave with sharper personal goals.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Reflect",
+        "description": "Guided journaling helps people see patterns, pressure points and the beliefs shaping their workday."
+      },
+      {
+        "number": "02",
+        "title": "Reframe",
+        "description": "Mindset exercises turn inner critic loops into clearer, more useful language for growth."
+      },
+      {
+        "number": "03",
+        "title": "Commit",
+        "description": "Goal-setting and accountability tools turn the workshop into a practical next-step plan."
+      }
+    ]
+  },
+  "meta": [
+    {
+      "label": "DURATION",
+      "value": "3–5 Hours"
+    },
+    {
+      "label": "FORMAT",
+      "value": "Workshop"
+    },
+    {
+      "label": "TEAM SIZE",
+      "value": "8–40 People"
+    }
+  ],
+  "whoFor": {
+    "eyebrow": "WHO IT'S FOR",
+    "heading": "For teams ready to think bigger.",
+    "items": [
+      "New managers and high-potential ICs stepping into more ownership",
+      "Teams stuck in self-doubt, hesitation or fear of visibility",
+      "Orgs investing in growth mindset alongside skills training"
+    ],
+    "outcomes": [
+      {
+        "value": "Clarity",
+        "label": "Named goals people actually own"
+      },
+      {
+        "value": "Voice",
+        "label": "More speaking up in the room"
+      },
+      {
+        "value": "Drive",
+        "label": "Renewed momentum on stalled work"
+      },
+      {
+        "value": "Belief",
+        "label": "Fewer limiting-belief blocks"
+      }
+    ]
+  },
+  "prep": {
+    "eyebrow": "WHAT TO EXPECT",
+    "heading": "Simple to host. We handle the rest.",
+    "intro": "Here's exactly what your team needs to prepare — and what we bring.",
+    "cards": [
+      {
+        "title": "Your team provides",
+        "items": [
+          "A workshop room with seating + writing surface",
+          "Whiteboard or flip-chart if available",
+          "90 min–5 hrs depending on format",
+          "Team pre-briefed that it's interactive"
+        ]
+      },
+      {
+        "title": "Good to know",
+        "items": [
+          "Bring a notebook or we provide journals",
+          "Come willing to reflect and share lightly",
+          "No prep reading required",
+          "We tailor exercises to your team's role mix"
+        ]
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "PRICING",
+    "heading": "How engagements are priced.",
+    "intro": "Every quote is fixed in writing before you commit, and depends on team size, location and format. GST invoice provided.",
+    "cards": [
+      {
+        "featured": false,
+        "tier": "Single Session",
+        "amount": "Per session",
+        "description": "A one-off reset for your team.",
+        "items": [
+          "1 facilitated session",
+          "All materials included",
+          "On-site in Gurgaon/NCR"
+        ],
+        "ctaLabel": "Get a quote"
+      },
+      {
+        "featured": true,
+        "tier": "Series (4–6)",
+        "amount": "Per series",
+        "description": "Recurring slots that build a habit.",
+        "items": [
+          "Discounted per-session rate",
+          "Consistent facilitator",
+          "Simple feedback summary"
+        ],
+        "ctaLabel": "Get a quote"
+      },
+      {
+        "featured": false,
+        "tier": "Retainer",
+        "amount": "Monthly",
+        "description": "Ongoing partner for larger orgs.",
+        "items": [
+          "Multi-program mix",
+          "Priority scheduling",
+          "Tailored reporting"
+        ],
+        "ctaLabel": "Talk to us"
+      }
+    ],
+    "note": "Prices exclude GST and travel for offsite formats. Free rescheduling with 72 hours' notice."
+  },
+  "faq": {
+    "eyebrow": "QUESTIONS, ANSWERED",
+    "heading": "Questions teams ask us",
+    "items": [
+      {
+        "question": "Is this a lecture or hands-on?",
+        "answer": "Hands-on. Journaling, vision-boarding and goal frameworks — people leave with a written action plan, not just notes."
+      },
+      {
+        "question": "How big can the group be?",
+        "answer": "8–40 works best for depth. Larger groups lose the personal reflection, so we cap or split."
+      },
+      {
+        "question": "Will this actually change behaviour or just feel good on the day?",
+        "answer": "We build accountability frameworks and a 30-day action plan so it carries past the session."
+      },
+      {
+        "question": "Can you tailor it to managers vs individual contributors?",
+        "answer": "Yes — we adjust the goal-setting and inner-critic work to the seniority mix you tell us about."
+      },
+      {
+        "question": "On-site or studio?",
+        "answer": "Usually on-site as a workshop; studio works for smaller cohorts. We cover Gurgaon and Delhi-NCR."
+      },
+      {
+        "question": "What space do we need?",
+        "answer": "A workshop-style room where people can sit in a circle or pods and write."
+      },
+      {
+        "question": "What does it cost?",
+        "answer": "Quoted to your group size and duration. Get a fixed number on a quick call."
+      },
+      {
+        "question": "How far ahead should we book?",
+        "answer": "5–7 days is comfortable; we can move faster for urgent offsites."
+      }
+    ]
+  },
+  "related": {
+    "eyebrow": "RELATED PROGRAMS",
+    "heading": "Other formats",
+    "intro": "Continue the work through restoration, movement, retreat depth, or focused circles. Each program shifts the outcome while keeping the same calm facilitation style.",
+    "items": [
+      {
+        "href": "emotional-wellness-stress-reset.html",
+        "number": "01",
+        "title": "Emotional Wellness & Stress Reset",
+        "description": "For teams that need nervous-system calm, breathwork and deep emotional restoration.",
+        "image": {
+          "src": "/assets/images/session-room-640.webp",
+          "alt": "Emotional wellness"
+        },
+        "width": "640",
+        "height": "1138"
+      },
+      {
+        "href": "movement-relaxation-sessions.html",
+        "number": "03",
+        "title": "Movement & Relaxation Sessions",
+        "description": "For body-led release through yoga, mobility, stretching and gentle movement.",
+        "image": {
+          "src": "/assets/images/session-movement-800.webp",
+          "alt": "Movement session"
+        },
+        "width": "800",
+        "height": "590"
+      },
+      {
+        "href": "nature-based-wellness-retreats.html",
+        "number": "04",
+        "title": "Nature-Based Wellness Retreats",
+        "description": "For deeper offsite recovery, team bonding and a full reset outside routine.",
+        "image": {
+          "src": "/assets/images/session-mats-800.webp",
+          "alt": "Nature retreat"
+        },
+        "width": "800",
+        "height": "1000"
+      },
+      {
+        "href": "women-centric-wellness-circles.html",
+        "number": "05",
+        "title": "Women-Centric Wellness Circles",
+        "description": "For safe, facilitated sharing spaces built around trust and emotional release.",
+        "image": {
+          "src": "/assets/images/session-office-800.webp",
+          "alt": "Women circle"
+        },
+        "width": "800",
+        "height": "1000"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "BOOK PROGRAM 02",
+    "headingHtml": "Build Clearer<br/>Team Momentum.",
+    "body": "Start with a 30-minute consultation and shape this workshop around your team goals.",
+    "primaryLabel": "Request a proposal",
+    "whatsappLabel": "WhatsApp us",
+    "whatsappText": "Hi Heal With Mahima, I want to book the Confidence and Mindset Building program."
+  }
+}

@@ -9,11 +9,11 @@ export function createFooter(isSubpage = false) {
         <div class="footer-brand-sub">Corporate Wellness &amp; Mindfulness</div>
       </div>
       <nav class="footer-nav">
-        <a href="${prefix}index.html#about">About</a>
+        <a href="${prefix}index.html#about-mahima">About</a>
         <a href="${prefix}index.html#programs">Programs</a>
         <a href="${prefix}index.html#stats">Results</a>
-        <a href="${prefix}index.html#testimonials">Clients</a>
-        <a href="${prefix}index.html#cta">Contact</a>
+        <a href="${prefix}index.html#faq">FAQ</a>
+        <a href="${prefix}index.html#enquire">Contact</a>
       </nav>
     </div>
     <div class="footer-divider"></div>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script>document.documentElement.classList.add('js')</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{program.seo.title}}</title>
+  <meta name="description" content="{{program.seo.description}}">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HEALWITHMAHIMA">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:url" content="{{absoluteUrl program.seo.canonical}}">
+  <meta property="og:title" content="{{program.seo.ogTitle}}">
+  <meta property="og:description" content="{{program.seo.ogDescription}}">
+  <meta property="og:image" content="{{absoluteUrl program.seo.ogImage}}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{program.seo.ogImageAlt}}">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="{{absoluteUrl program.seo.canonical}}">
+  <meta name="twitter:title" content="{{program.seo.twitterTitle}}">
+  <meta name="twitter:description" content="{{program.seo.twitterDescription}}">
+  <meta name="twitter:image" content="{{absoluteUrl program.seo.twitterImage}}">
+
+  <!-- Additional SEO -->
+  <meta name="keywords" content="{{program.seo.keywords}}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{absoluteUrl program.seo.canonical}}">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preload" href="/fonts/playfairdisplay-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Structured Data / Schema.org -->
+  <script type="application/ld+json">
+  {{{jsonLd program.jsonLd.service}}}
+  </script>
+  <script type="application/ld+json">
+  {{{jsonLd program.jsonLd.breadcrumb}}}
+  </script>
+  <script type="application/ld+json">
+  {{{jsonLd program.jsonLd.faq}}}
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav class="navbar">
+    <a href="../index.html" class="navbar-brand">HEALWITHMAHIMA</a>
+    <div class="navbar-links">
+      <a href="../index.html#about-mahima">About</a>
+      <a href="../index.html#programs">Programs</a>
+      <a href="../index.html#stats">Results</a>
+      <a href="../index.html#how-it-works">How it works</a>
+    </div>
+    <a href="{{program.enquiryHref}}" class="btn-nav">Get a proposal</a>
+  </nav>
+
+  <main id="main" class="program-page program-page--refined {{program.styleModifier}}">
+    <section class="program-hero">
+      <div class="program-hero-copy">
+        <a href="../index.html#programs" class="program-back">← Back to Programs</a>
+        <div class="program-num">{{program.hero.number}}</div>
+        <div class="hero-eyebrow">{{program.hero.eyebrow}}</div>
+        <h1>{{{headingHtml program.hero.headingHtml}}}</h1>
+        <p>{{program.hero.intro}}</p>
+        <div class="hero-btns">
+          <a href="{{program.enquiryHref}}" class="btn-white">Request a proposal</a>
+          <a href="../index.html#programs" class="btn-ghost">View All Programs</a>
+        </div>
+      </div>
+      <div class="program-hero-image">
+        <img {{{responsiveImage program.hero.image.src}}}{{#if program.hero.image.sizes}} sizes="{{program.hero.image.sizes}}"{{/if}} alt="{{program.hero.image.alt}}" {{{imageDimensions program.hero.image.src}}} fetchpriority="high" decoding="async">
+      </div>
+    </section>
+
+    <section class="program-detail-grid">
+      <div class="program-overview reveal-left">
+        <div class="eyebrow">{{program.shift.eyebrow}}</div>
+        <h2>{{program.shift.heading}}</h2>
+        <p>{{program.shift.body}}</p>
+      </div>
+      <div class="program-includes reveal-right">
+        <div class="program-includes-title">{{program.includes.eyebrow}}</div>
+        <ul>
+          {{#each program.includes.items}}<li>{{this}}</li>{{/each}}
+        </ul>
+      </div>
+    </section>
+
+    <section class="program-arc">
+      <div class="program-arc-copy reveal-left">
+        <div class="eyebrow">{{program.rhythm.eyebrow}}</div>
+        <h2>{{program.rhythm.heading}}</h2>
+        <p>{{program.rhythm.body}}</p>
+      </div>
+      <div class="program-arc-steps">
+        {{#each program.rhythm.steps}}
+        <div class="program-arc-card reveal {{delayClass @index}}">
+          <span>{{number}}</span>
+          <h3>{{title}}</h3>
+          <p>{{description}}</p>
+        </div>
+        {{/each}}
+      </div>
+    </section>
+
+    <section class="program-meta-panel reveal">
+      {{#each program.meta}}
+      <div class="program-meta-item">
+        <div class="program-meta-label">{{label}}</div>
+        <div class="program-meta-value">{{value}}</div>
+      </div>
+      {{/each}}
+    </section>
+
+    <section class="msec" id="who-for">
+      <div class="msec-head reveal"><span class="eyebrow">{{program.whoFor.eyebrow}}</span><h2>{{program.whoFor.heading}}</h2></div>
+      <div class="whofor-grid">
+        <div class="whofor-list" data-stagger>
+          {{#each program.whoFor.items}}<div class="row"><span class="mk">›</span><span>{{this}}</span></div>{{/each}}
+        </div>
+        <div class="outcomes" data-stagger>
+          {{#each program.whoFor.outcomes}}<div class="outcome-tile"><div class="big">{{value}}</div><div class="lbl">{{label}}</div></div>{{/each}}
+        </div>
+      </div>
+    </section>
+
+    <section class="msec msec--tint" id="what-to-expect">
+      <div class="msec-head reveal"><span class="eyebrow">{{program.prep.eyebrow}}</span><h2>{{program.prep.heading}}</h2><p>{{program.prep.intro}}</p></div>
+      <div class="prep-grid" data-stagger>
+        {{#each program.prep.cards}}
+        <div class="prep-card"><h3>{{title}}</h3><ul>{{#each items}}<li>{{this}}</li>{{/each}}</ul></div>
+        {{/each}}
+      </div>
+    </section>
+
+    <section class="msec" id="pricing">
+      <div class="msec-head reveal"><span class="eyebrow">{{program.pricing.eyebrow}}</span><h2>{{program.pricing.heading}}</h2><p>{{program.pricing.intro}}</p></div>
+      <div class="pricing-grid" data-stagger>
+        {{#each program.pricing.cards}}
+        <div class="price-card{{#if featured}} featured{{/if}}"><div class="tier">{{tier}}</div><div class="amt">{{amount}}</div><div class="price-desc">{{description}}</div><ul>{{#each items}}<li>{{this}}</li>{{/each}}</ul><a class="btn-cta price-cta" href="{{@root.program.enquiryHref}}">{{ctaLabel}}</a></div>
+        {{/each}}
+      </div>
+      <p class="price-note">{{program.pricing.note}}</p>
+    </section>
+
+    <section class="msec msec--tint" id="faq">
+      <div class="msec-head reveal"><span class="eyebrow">{{program.faq.eyebrow}}</span><h2>{{program.faq.heading}}</h2></div>
+      <div class="faq-wrap" data-stagger>
+        {{#each program.faq.items}}
+        <details class="faq-item">
+          <summary>{{question}}</summary>
+          <div class="faq-a">{{answer}}</div>
+        </details>
+        {{/each}}
+      </div>
+    </section>
+
+    <section class="related-programs related-programs--designed">
+      <div class="related-heading reveal">
+        <div>
+          <div class="eyebrow">{{program.related.eyebrow}}</div>
+          <h2>{{program.related.heading}}</h2>
+        </div>
+        <p>{{program.related.intro}}</p>
+      </div>
+      <div class="related-grid">
+        {{#each program.related.items}}
+        <a class="related-card reveal {{delayClass @index}}" href="{{href}}">
+          <span class="related-card-num">{{number}}</span>
+          <div class="related-card-media">
+            <img {{{responsiveImage image.src}}} alt="{{image.alt}}" {{{imageDimensions image.src}}} loading="lazy" decoding="async">
+          </div>
+          <div class="related-card-copy">
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+          </div>
+        </a>
+        {{/each}}
+      </div>
+    </section>
+
+    <section class="cta" id="book">
+      <div class="cta-eyebrow reveal">{{program.cta.eyebrow}}</div>
+      <h2 class="reveal delay-1">{{{headingHtml program.cta.headingHtml}}}</h2>
+      <p class="reveal delay-2">{{program.cta.body}}</p>
+      <div class="cta-btns reveal delay-3">
+        <a href="{{program.enquiryHref}}" class="btn-cta">{{program.cta.primaryLabel}}</a>
+        <a href="{{whatsappHref site.whatsapp.number program.cta.whatsappText}}" class="btn-cta-outline" target="_blank" rel="noopener">{{program.cta.whatsappLabel}}</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name">HEALWITHMAHIMA</div>
+        <div class="footer-brand-sub">Corporate Wellness &amp; Mindfulness</div>
+        <address class="footer-nap">
+          Gurgaon, Haryana &middot; Delhi-NCR, India<br>
+          <a href="tel:{{site.phone.href}}">{{site.phone.display}}</a> &middot;
+          <a href="mailto:{{site.email}}">{{site.email}}</a>
+        </address>
+      </div>
+      <nav class="footer-nav">
+        <a href="../index.html#about-mahima">About</a>
+        <a href="../index.html#programs">Programs</a>
+        <a href="../index.html#stats">Results</a>
+        <a href="../index.html#faq">FAQ</a>
+        <a href="#book">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <span>© 2026 HEALWITHMAHIMA. All rights reserved.</span>
+      <span>Gurgaon, Haryana · India</span>
+    </div>
+  </footer>
+
+  <script type="module" src="../js/main.js"></script>
+</body>
+
+</html>

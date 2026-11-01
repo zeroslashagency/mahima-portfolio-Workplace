@@ -1,0 +1,305 @@
+{
+  "slug": "nature-based-wellness-retreats",
+  "styleModifier": "program-page--retreat",
+  "seo": {
+    "title": "Nature-Based Wellness Retreats — HEALWITHMAHIMA Gurgaon",
+    "description": "Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and outdoor sessions for team connection.",
+    "keywords": "wellness retreats, nature retreats, sound healing, team building, outdoor wellness, corporate retreat, Gurgaon",
+    "canonical": "https://healwithmahima.com/programs/nature-based-wellness-retreats.html",
+    "ogTitle": "Nature-Based Wellness Retreats — HEALWITHMAHIMA Gurgaon",
+    "ogDescription": "Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and outdoor sessions for team connection.",
+    "ogImage": "https://healwithmahima.com/og-default.jpg",
+    "ogImageAlt": "Team lying on mats during a sound healing session with singing bowls",
+    "twitterTitle": "Nature-Based Wellness Retreats — HEALWITHMAHIMA Gurgaon",
+    "twitterDescription": "Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and outdoor sessions for team connection.",
+    "twitterImage": "https://healwithmahima.com/og-default.jpg"
+  },
+  "jsonLd": {
+    "service": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Nature-Based Wellness Retreats",
+      "serviceType": "Corporate Wellness Program",
+      "description": "Half-day to two-day corporate wellness retreats. Nature walks, sound healing, and outdoor sessions for team connection.",
+      "url": "https://healwithmahima.com/programs/nature-based-wellness-retreats.html",
+      "image": "https://healwithmahima.com/assets/images/session-mats-1080.webp",
+      "areaServed": {
+        "@type": "City",
+        "name": "Gurgaon"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://healwithmahima.com/programs/nature-based-wellness-retreats.html"
+      },
+      "provider": {
+        "@type": "HealthAndBeautyBusiness",
+        "name": "HEALWITHMAHIMA",
+        "url": "https://healwithmahima.com"
+      }
+    }
+  },
+  "enquiryHref": "../index.html?program=Nature-Based%20Retreat#enquire",
+  "hero": {
+    "number": "04",
+    "eyebrow": "RETREATS · NATURE · TEAM RESET",
+    "headingHtml": "Nature-Based<br/>Wellness Retreats",
+    "intro": "Half-day to two-day offsites near Gurgaon. Nature walks, sound healing and mindful movement, with the venue, schedule and facilitation planned for you.",
+    "image": {
+      "src": "/assets/images/session-mats-1080.webp",
+      "alt": "Nature wellness retreat",
+      "width": "1080",
+      "height": "1350",
+      "sizes": "(max-width: 720px) 100vw, 50vw"
+    }
+  },
+  "shift": {
+    "eyebrow": "THE RETREAT",
+    "heading": "For teams that need distance from routine and deeper reconnection.",
+    "body": "This retreat format creates space for recovery, bonding and reflection. It works well for leadership groups,\n          culture resets and teams carrying prolonged work intensity."
+  },
+  "includes": {
+    "eyebrow": "INSIDE THE RETREAT",
+    "items": [
+      "Forest bathing & nature walks",
+      "Outdoor sound healing ceremony",
+      "Sunrise yoga & breathwork",
+      "Team bonding & sharing circles",
+      "Sattvic meals & herbal teas"
+    ]
+  },
+  "rhythm": {
+    "eyebrow": "RETREAT RHYTHM",
+    "heading": "Step away, soften, reconnect.",
+    "body": "The retreat gives teams enough distance from routine to reset honestly. Nature, movement and shared pauses\n          create a slower container for recovery and connection.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Arrive",
+        "description": "Nature walks and grounding practices help the group transition out of work intensity."
+      },
+      {
+        "number": "02",
+        "title": "Open",
+        "description": "Outdoor sound healing, breathwork and sharing circles create space for honest release."
+      },
+      {
+        "number": "03",
+        "title": "Return",
+        "description": "Integration practices and team bonding bring the retreat back into daily collaboration."
+      }
+    ]
+  },
+  "meta": [
+    {
+      "label": "DURATION",
+      "value": "Half-day to 2 Days"
+    },
+    {
+      "label": "FORMAT",
+      "value": "Offsite Retreat"
+    },
+    {
+      "label": "TEAM SIZE",
+      "value": "8–30 People"
+    }
+  ],
+  "whoFor": {
+    "eyebrow": "WHO IT'S FOR",
+    "heading": "For teams that need a real reset, not a meeting room.",
+    "items": [
+      "Leadership offsites and annual team resets",
+      "Teams that bonded over Slack but rarely in person",
+      "Orgs rewarding a hard year with something restorative"
+    ],
+    "outcomes": [
+      {
+        "value": "Bonded",
+        "label": "Real connection outside work roles"
+      },
+      {
+        "value": "Restored",
+        "label": "Deep recovery, not just a break"
+      },
+      {
+        "value": "Aligned",
+        "label": "Shared intention for the next quarter"
+      },
+      {
+        "value": "Memorable",
+        "label": "An offsite people talk about"
+      }
+    ]
+  },
+  "prep": {
+    "eyebrow": "WHAT TO EXPECT",
+    "heading": "Simple to host. We handle the rest.",
+    "intro": "Here's exactly what your team needs to prepare — and what we bring.",
+    "cards": [
+      {
+        "title": "How we plan it",
+        "items": [
+          "We shortlist venues near Gurgaon/NCR",
+          "Half-day to 2-day formats",
+          "Transport coordinated with you",
+          "Group size locked 2 weeks ahead"
+        ]
+      },
+      {
+        "title": "Good to know",
+        "items": [
+          "Pack light, comfortable outdoor clothing",
+          "Openness to unplug from devices",
+          "Dietary needs shared in advance (sattvic meals)",
+          "We handle facilitation, flow and materials"
+        ]
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "PRICING",
+    "heading": "How engagements are priced.",
+    "intro": "Every quote is fixed in writing before you commit, and depends on team size, location and format. GST invoice provided.",
+    "cards": [
+      {
+        "featured": false,
+        "tier": "Half day",
+        "amount": "Per head",
+        "description": "A 4–5 hour reset at a venue near Gurgaon.",
+        "items": [
+          "Guided nature walk + sound healing",
+          "Venue shortlist and booking help",
+          "All facilitation materials"
+        ],
+        "ctaLabel": "Get a quote"
+      },
+      {
+        "featured": true,
+        "tier": "Full day",
+        "amount": "Per head",
+        "description": "The most common offsite format.",
+        "items": [
+          "Morning and afternoon sessions",
+          "Meals planned with the venue",
+          "Short feedback summary after"
+        ],
+        "ctaLabel": "Get a quote"
+      },
+      {
+        "featured": false,
+        "tier": "Overnight",
+        "amount": "Per head",
+        "description": "One or two nights for leadership groups.",
+        "items": [
+          "Evening sound bath + sunrise practice",
+          "Transport coordinated with you",
+          "Tailored agenda and debrief"
+        ],
+        "ctaLabel": "Talk to us"
+      }
+    ],
+    "note": "Prices exclude GST and travel for offsite formats. Free rescheduling with 72 hours' notice."
+  },
+  "faq": {
+    "eyebrow": "QUESTIONS, ANSWERED",
+    "heading": "Questions teams ask us",
+    "items": [
+      {
+        "question": "Where do the retreats happen?",
+        "answer": "At nature venues within reach of Gurgaon/Delhi-NCR. We match the site to your group size and budget."
+      },
+      {
+        "question": "How long are they?",
+        "answer": "Half-day, full-day or up to two days with overnight stay. Longer formats go deeper on bonding."
+      },
+      {
+        "question": "What group size works?",
+        "answer": "8–30. Small enough for real sharing circles, big enough for team energy."
+      },
+      {
+        "question": "Do you handle logistics and meals?",
+        "answer": "We coordinate flow, facilitation and sattvic meals; travel/stay is arranged with you or your admin team."
+      },
+      {
+        "question": "What activities are included?",
+        "answer": "Forest bathing, outdoor sound healing, sunrise yoga, breathwork and team sharing circles."
+      },
+      {
+        "question": "Is it physically demanding?",
+        "answer": "No — gentle, restorative pacing. Walks are easy and optional."
+      },
+      {
+        "question": "What does it cost?",
+        "answer": "Quoted per head depending on venue, nights and group size. Get a tailored number."
+      },
+      {
+        "question": "How far ahead should we plan?",
+        "answer": "2–3 weeks minimum so venue and logistics lock in cleanly."
+      }
+    ]
+  },
+  "related": {
+    "eyebrow": "RELATED PROGRAMS",
+    "heading": "Other formats",
+    "intro": "Keep the retreat feeling alive through shorter in-office resets, movement sessions, mindset work, or circles built for emotional safety.",
+    "items": [
+      {
+        "href": "emotional-wellness-stress-reset.html",
+        "number": "01",
+        "title": "Emotional Wellness & Stress Reset",
+        "description": "For teams that need nervous-system calm, breathwork and deep emotional restoration.",
+        "image": {
+          "src": "/assets/images/session-room-640.webp",
+          "alt": "Emotional wellness"
+        },
+        "width": "640",
+        "height": "1138"
+      },
+      {
+        "href": "confidence-mindset-building.html",
+        "number": "02",
+        "title": "Confidence & Mindset Building",
+        "description": "For teams ready to turn reflection into clearer goals and stronger self-belief.",
+        "image": {
+          "src": "/assets/images/session-gong-800.webp",
+          "alt": "Confidence workshop"
+        },
+        "width": "800",
+        "height": "1000"
+      },
+      {
+        "href": "movement-relaxation-sessions.html",
+        "number": "03",
+        "title": "Movement & Relaxation Sessions",
+        "description": "For body-led release through yoga, mobility, stretching and gentle movement.",
+        "image": {
+          "src": "/assets/images/session-movement-800.webp",
+          "alt": "Movement session"
+        },
+        "width": "800",
+        "height": "590"
+      },
+      {
+        "href": "women-centric-wellness-circles.html",
+        "number": "05",
+        "title": "Women-Centric Wellness Circles",
+        "description": "For safe, facilitated sharing spaces built around trust and emotional release.",
+        "image": {
+          "src": "/assets/images/session-office-800.webp",
+          "alt": "Women circle"
+        },
+        "width": "800",
+        "height": "1000"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "BOOK PROGRAM 04",
+    "headingHtml": "Take the Team<br/>Out to Reset.",
+    "body": "Start with a 30-minute consultation and shape the retreat around time, group size and\n        desired depth.",
+    "primaryLabel": "Request a proposal",
+    "whatsappLabel": "WhatsApp us",
+    "whatsappText": "Hi Heal With Mahima, I want to book the Nature-Based Wellness Retreats program."
+  }
+}

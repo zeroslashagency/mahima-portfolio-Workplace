@@ -5,12 +5,12 @@ export function createNavbar(isSubpage = false) {
   <nav class="navbar">
     <a href="${prefix}index.html" class="navbar-brand">HEALWITHMAHIMA</a>
     <div class="navbar-links">
-      <a href="${prefix}index.html#about">About</a>
+      <a href="${prefix}index.html#about-mahima">About</a>
       <a href="${prefix}index.html#programs">Programs</a>
       <a href="${prefix}index.html#stats">Results</a>
-      <a href="${prefix}index.html#testimonials">Clients</a>
+      <a href="${prefix}index.html#how-it-works">How it works</a>
     </div>
-    <a href="${prefix}index.html#cta" class="btn-nav">Book Now</a>
+    <a href="${prefix}index.html#enquire" class="btn-nav">Get a proposal</a>
   </nav>
   `;
 }
